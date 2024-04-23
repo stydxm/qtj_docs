@@ -1,4 +1,4 @@
-## RM相关QQ群
+# RM相关QQ群
 以下来源于[该表格](https://docs.qq.com/sheet/DRG1zRXFtYWFDb0pJ)
 |群名|加入方式|内容|
 |:-:|:-:|:-:|
