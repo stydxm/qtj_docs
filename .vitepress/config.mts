@@ -25,7 +25,8 @@ export default withMermaid({
   markdown: {
     config: md => {
       md.use(footnote)
-    }
+    },
+    math: true
   }
 })
 

@@ -9,5 +9,8 @@
     "mermaid": "^10.9.0",
     "vitepress": "^1.1.3",
     "vitepress-plugin-mermaid": "^2.0.16"
+  },
+  "dependencies": {
+    "markdown-it-mathjax3": "^4.3.2"
   }
 }
