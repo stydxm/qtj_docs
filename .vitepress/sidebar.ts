@@ -5,7 +5,6 @@ export const sidebar = {
             items: [
                 { text: '总览', link: '/get-started/' },
                 { text: '如何学习', link: '/get-started/how-to-learn' },
-                { text: '如何使用这本教材', link: '/get-started/how-to-read' },
                 { text: '常见问题', link: '/get-started/faq' }
             ]
         },
