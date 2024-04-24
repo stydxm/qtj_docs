@@ -20,7 +20,7 @@ export const sidebar = {
             text: '各组通用内容',
             items: [
                 { text: '相关QQ群', link: '/get-started/qq-group' },
-                { text: '各兵种介绍', link: '/get-started/robots' }
+                { text: '兵种介绍', link: '/get-started/robots' }
             ]
         }
     ],
