@@ -91,7 +91,7 @@ git clone https://github.com/opencv/opencv.git
 ```
 这一步可能会非常慢，建议换成
 ``` bash
-git clone https://gitee.com/opencv/opencv.git
+git clone https://gitcode.net/opencv/opencv.git
 ```
 :::
 ::: tip 提示
