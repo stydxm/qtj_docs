@@ -13,7 +13,8 @@ export default withMermaid({
       { text: '开始', link: '/get-started/' },
       { text: '算法组', link: '/algorithm/' },
       { text: '电控组', link: '/control/（一）学习路线+课程概要+预备知识' },
-      { text: '机械组', link: '/mechanics/（一）前言' }
+      { text: '机械组', link: '/mechanics/（一）前言' },
+      { text: '硬件组', link: '/hardware/' }
     ],
 
     sidebar: sidebar,

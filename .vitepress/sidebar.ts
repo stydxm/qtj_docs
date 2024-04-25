@@ -89,4 +89,12 @@ export const sidebar = {
             ]
         }
     ],
+    '/hardware/': [
+        {
+            text: '硬件组',
+            items: [
+                { text: '总览', link: '/hardware/' }
+            ]
+        }
+    ]
 }
