@@ -19,10 +19,12 @@
 
 # 参考文献
 以下是编写本教程的一些参考资料：  
+[An introduction to computer vision and RoboMaster algorithm group](https://github.com/NeoZng/vision_tutorial)  
 [UC Berkeley CS61A](https://cs61a.org/)  
 [Harvard CS50x](https://cs50.harvard.edu/x/)  
 [CS自学指南 ](https://csdiy.wiki/)  
 [HDU计算机科学讲义](https://hdu-cs.wiki/)  
 [Linux 101](https://101.lug.ustc.edu.cn)  
-[An introduction to computer vision and RoboMaster algorithm group](https://github.com/NeoZng/vision_tutorial)  
+[Python 文档](https://docs.python.org/zh-cn/3/)  
+[Composing Programs](https://www.composingprograms.com/)  
 [北极熊RoboMaster](https://flowus.cn/lihanchen/share/d2e24166-8a8d-4262-a4b4-b4d25f52d890)
