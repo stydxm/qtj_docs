@@ -1,5 +1,5 @@
 import footnote from 'markdown-it-footnote'
-import {withMermaid} from 'vitepress-plugin-mermaid'
+import { withMermaid } from 'vitepress-plugin-mermaid'
 import { icons } from './icons'
 import { sidebar } from './sidebar'
 
