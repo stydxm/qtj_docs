@@ -79,9 +79,12 @@ export const sidebar = {
     ],
     '/mechanics/': [
         {
-            text: '开始',
+            text: '机械保姆级入门教学之普通话讲解建模仿真（隔壁村猫子看完都会了） ',
             items: [
-                { text: '总览', link: '/mechanics/' },
+                { text: '（一）前言', link: '/mechanics/（一）前言' },
+                { text: '（二）软件安装', link: '/mechanics/（二）软件安装' },
+                { text: '（三）软件使用', link: '/mechanics/（三）软件使用' },
+                { text: '（四）选材培训', link: '/mechanics/（四）选材培训' }
             ]
         }
     ],
