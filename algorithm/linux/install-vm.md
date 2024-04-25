@@ -6,7 +6,8 @@
 前面我们说到过，Linux发行版最常见的有`Debian分支`、`Red Hat分支`和`Arch Linux分支`，其中Debian分支的Ubuntu是所有发行版中最流行最通用的，很多机器学习相关工具链支持最好的也是ubuntu,因此我们选择ubuntu作为教学和部署用的系统。   
 
 ![](/ubuntu.png)
-这张图就是ubuntu的logo  
+这张图就是ubuntu的logo ~~不是下面这个~~  
+![](https://mirror.ghproxy.com/raw.githubusercontent.com/SAWARATSUKI/ServiceLogos/main/Ubuntu/Ubuntu.png)
 
 不同于windows，ubuntu的版本命名规则非常简单，就是`年份.月份`，比如`22.04`就是2022年4月份发布的ubuntu版本，比如`23.10`就是2023年10月份发布的。  
 按现行的策略，两年发布一个`LTS`版，即长支持版本，一些较复杂的库通常只会提供lts的支持（虽然很可能别的版本也能跑）  

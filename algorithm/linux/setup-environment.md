@@ -54,6 +54,7 @@ python --version
 ::: tip 提示
 这里推荐用vscode，它对于python和c++都提供了很好的支持。如果你习惯jetbrains的软件，那么pycharm和clion也是很好的选择
 :::
+![](https://mirror.ghproxy.com/raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png)
 ``` bash
 sudo apt-get install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
