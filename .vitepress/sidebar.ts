@@ -70,8 +70,8 @@ export const sidebar = {
                     link: '/algorithm/tasks/2-1',
                     collapsed: true,
                     items: [
-                        { text: '任务1-1', link: '/algorithm/tasks/2-1' },
-                        { text: '任务1-2', link: '/algorithm/tasks/2-2' }
+                        { text: '任务2-1', link: '/algorithm/tasks/2-1' },
+                        { text: '任务2-2', link: '/algorithm/tasks/2-2' }
                     ]
                 },
             ]
