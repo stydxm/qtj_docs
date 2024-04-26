@@ -46,7 +46,12 @@ export const sidebar = {
                 {
                     text: '编程语言', link: '/algorithm/language',
                     items: [
-                        { text: "Python", collapsed: true, link: '/algorithm/python/' },
+                        { text: "Python", 
+                        collapsed: true, 
+                        link: '/algorithm/python/',
+                    items:[
+                        {text:'语法',link:'/algorithm/python/syntax'}
+                    ] },
                         { text: "C++", collapsed: true, link: '/algorithm/cpp/' }]
                 },
                 { text: 'OpenCV', link: '/algorithm/opencv' },
@@ -54,6 +59,7 @@ export const sidebar = {
         },
         {
             text: '课后任务',
+            collapsed: true,
             link: '/algorithm/tasks/',
             items: [
                 {
@@ -61,8 +67,8 @@ export const sidebar = {
                     link: '/algorithm/tasks/1-1',
                     collapsed: true,
                     items: [
-                        { text: '任务1-1', link: '/algorithm/tasks/1-1' },
-                        { text: '任务1-2', link: '/algorithm/tasks/1-2' }
+                        { text: '任务1-1（Linux下的Hello World）', link: '/algorithm/tasks/1-1' },
+                        { text: '任务1-2（配置开发环境）', link: '/algorithm/tasks/1-2' }
                     ]
                 },
                 {
@@ -70,8 +76,9 @@ export const sidebar = {
                     link: '/algorithm/tasks/2-1',
                     collapsed: true,
                     items: [
-                        { text: '任务2-1', link: '/algorithm/tasks/2-1' },
-                        { text: '任务2-2', link: '/algorithm/tasks/2-2' }
+                        { text: '任务2-1（原样输出）', link: '/algorithm/tasks/2-1' },
+                        { text: '任务2-2（找出所有的水仙花数）', link: '/algorithm/tasks/2-2' },
+                        { text: '任务2-3（分解质因数）', link: '/algorithm/tasks/2-3' }
                     ]
                 },
             ]
