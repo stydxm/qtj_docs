@@ -3,10 +3,12 @@
 :::
 
 # 安装系统
-前面我们说到过，Linux发行版最常见的有`Debian分支`、`Red Hat分支`和`Arch Linux分支`。其中Debian分支的Ubuntu是所有发行版中最流行最通用的，很多机器学习相关工具链支持最好的也是ubuntu,因此我们选择ubuntu作为教学和部署用的系统。   
+前面我们说到过，Linux发行版最常见的有`Debian分支`、`Red Hat分支`和`Arch Linux分支`。其中Debian分支的Ubuntu是所有发行版中最流行最通用的，很多机器学习相关工具链支持最好的也是ubuntu,因此我们选择ubuntu作为开发和部署用的系统。   
 
 ![](/ubuntu.png)
-这张图就是ubuntu的logo ~~不是下面这个~~  
+
+这张图就是ubuntu的logo，~~不是下面这个~~
+
 ![](https://mirror.ghproxy.com/raw.githubusercontent.com/SAWARATSUKI/ServiceLogos/main/Ubuntu/Ubuntu.png)
 
 不同于windows，ubuntu的版本命名规则非常简单，就是`年份.月份`，比如`22.04`就是2022年4月份发布的ubuntu版本，比如`23.10`就是2023年10月份发布的。
@@ -37,8 +39,16 @@
 ## 下载系统镜像
 浏览器直接打开[这个链接](http://mirrors.nju.edu.cn/ubuntu-releases/22.04.4/ubuntu-22.04.4-desktop-amd64.iso)，然后等下载完成就行
 
-::: info 说明
+::: tip 提示
 我们的NAS里也有，在视觉组的目录下，如果你在实验室，下载会快一点
+:::
+
+::: info 说明
+本页写于2024.4.23，此时距24.04LTS发布还有两天
+
+各类环境和库不可能几周内完成适配，因此还是推荐22.04
+
+请后人维护文档时注意与时俱进，不要老用着EOL的古董！
 :::
 
 ## 创建虚拟机
