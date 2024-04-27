@@ -138,5 +138,5 @@ git clone https://gitcode.net/opencv/opencv.git
 不要按原教程写.cc，而是写.cpp，以后也一样
 :::
 
-# 任务
+## 任务
 完成[任务1-2](../tasks/1-2)
