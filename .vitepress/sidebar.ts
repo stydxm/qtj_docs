@@ -46,12 +46,15 @@ export const sidebar = {
                 {
                     text: '编程语言', link: '/algorithm/language',
                     items: [
-                        { text: "Python", 
-                        collapsed: true, 
-                        link: '/algorithm/python/',
-                    items:[
-                        {text:'语法',link:'/algorithm/python/syntax'}
-                    ] },
+                        {
+                            text: "Python",
+                            collapsed: true,
+                            link: '/algorithm/python/',
+                            items: [
+                                { text: '基础语法', link: '/algorithm/python/syntax' },
+                                { text: '标准库', link: '/algorithm/python/standard-library' }
+                            ]
+                        },
                         { text: "C++", collapsed: true, link: '/algorithm/cpp/' }]
                 },
                 { text: 'OpenCV', link: '/algorithm/opencv' },
@@ -81,6 +84,14 @@ export const sidebar = {
                         { text: '任务2-3（分解质因数）', link: '/algorithm/tasks/2-3' }
                     ]
                 },
+                {
+                    text: '任务3',
+                    link: '/algorithm/tasks/3-1',
+                    collapsed: true,
+                    items: [
+                        { text: '任务3-1（使用标准库）', link: '/algorithm/tasks/3-1' }
+                    ]
+                }
             ]
         },
     ],
