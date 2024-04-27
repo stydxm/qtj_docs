@@ -89,7 +89,8 @@ export const sidebar = {
                     link: '/algorithm/tasks/3-1',
                     collapsed: true,
                     items: [
-                        { text: '任务3-1（使用标准库）', link: '/algorithm/tasks/3-1' }
+                        { text: '任务3-1（导入）', link: '/algorithm/tasks/3-1' },
+                        { text: '任务3-2（使用标准库）', link: '/algorithm/tasks/3-2' }
                     ]
                 }
             ]
