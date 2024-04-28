@@ -120,6 +120,16 @@ C/C++ Extension Pack
 跳过文中的`7. 通过 cmake和gcc 来构建C/C++程序调用OpenCV`，从6直接到`8. 使用VS Code 配置C/C++项目环境来调用OpenCV`
 :::
 
+::: info 信息
+配置的时候可能会出现找不到`launch.json`和`c_cpp_properties.json`的情况，生成方式：
+
+### lauch.json
+在你刚才写cpp文件的那个页面，右上角有一个齿轮形状的按钮，点一下
+
+## c_cpp_properties.json
+同时按`ctrl+shift+p`，搜索找到`C/C++: 编辑配置(JSON)`，如果没切中文的话就是`C/C++: Edit Configurations(JSON)`
+:::
+
 ::: tip 提示
 ``` bash
 git clone https://github.com/opencv/opencv.git
