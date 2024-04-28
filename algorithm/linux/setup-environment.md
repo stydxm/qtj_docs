@@ -114,7 +114,7 @@ C/C++ Extension Pack
 ## C++环境和opencv
 `gcc`编译器和`cmake`这些应该会随系统安装，我们只需要手动装`opencv`并配置
 
-按照[这篇文章](https://www.cnblogs.com/booturbo/p/17399215.html)的步骤配置，这里不赘述  
+按照[这篇文章](https://www.cnblogs.com/booturbo/p/17399215.html)的步骤配置，这里不赘述 **（看完下面的再去配！！！）**
 
 ::: tip 提示
 跳过文中的`7. 通过 cmake和gcc 来构建C/C++程序调用OpenCV`，从6直接到`8. 使用VS Code 配置C/C++项目环境来调用OpenCV`
@@ -126,8 +126,14 @@ C/C++ Extension Pack
 ### lauch.json
 在你刚才写cpp文件的那个页面，右上角有一个齿轮形状的按钮，点一下
 
-## c_cpp_properties.json
+### c_cpp_properties.json
 同时按`ctrl+shift+p`，搜索找到`C/C++: 编辑配置(JSON)`，如果没切中文的话就是`C/C++: Edit Configurations(JSON)`
+:::
+
+::: warning 警告
+1（3）安装各种依赖库这一节里面有一行命令`sudo apt-get install python-dev python-numpy`
+
+这个是有问题的，应该改成`sudo apt-get install python3-dev python3-numpy`
 :::
 
 ::: tip 提示
