@@ -23,6 +23,7 @@
 然后输入
 
 ``` bash
+sudo sed -i 's/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 sudo apt update
 ```
@@ -80,7 +81,7 @@ python --version
 ![](https://mirror.ghproxy.com/raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png)
 
 ``` bash
-sudo apt-get install wget gpg
+sudo apt install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
 sudo sh -c 'echo "deb [arch=amd64,arm64,armhf signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
@@ -114,7 +115,7 @@ C/C++ Extension Pack
 ## C++环境和opencv
 `gcc`编译器和`cmake`这些应该会随系统安装，我们只需要手动装`opencv`并配置
 
-按照[这篇文章](https://www.cnblogs.com/booturbo/p/17399215.html)的步骤配置，这里不赘述 **（看完下面的再去配！！！）**
+<strong style="color: red">（看完下面的再去配！！！）</strong> 按照[这篇文章](https://www.cnblogs.com/booturbo/p/17399215.html)的步骤配置，这里不赘述  <strong style="color: red">（看完下面的再去配！！！）</strong>
 
 ::: tip 提示
 跳过文中的`7. 通过 cmake和gcc 来构建C/C++程序调用OpenCV`，从6直接到`8. 使用VS Code 配置C/C++项目环境来调用OpenCV`
