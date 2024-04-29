@@ -3,7 +3,7 @@
 很多在windows下需要配置很久的软件，在linux下往往只需要几行命令就可以实现，方便很多哦
 :::
 
-::: warning 警告
+::: warning 注意
 先不要按csdn奇怪的教程去装别的环境，尤其是c和c++相关的，不然装别的东西的时候会遇到更令人迷惑的情况
 :::
 
@@ -131,7 +131,7 @@ C/C++ Extension Pack
 同时按`ctrl+shift+p`，搜索找到`C/C++: 编辑配置(JSON)`，如果没切中文的话就是`C/C++: Edit Configurations(JSON)`
 :::
 
-::: warning 警告
+::: warning 注意
 1（3）安装各种依赖库这一节里面有一行命令`sudo apt-get install python-dev python-numpy`
 
 这个是有问题的，应该改成`sudo apt-get install python3-dev python3-numpy`

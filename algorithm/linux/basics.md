@@ -102,7 +102,7 @@ gcc hello.c -o hello
 ## 学习更多
 正如开头所说，linux内容繁多，算法组的任务只需要简单了解即可，如果还想学习更多，可以去看中科大写的这本[Linux 101](https://101.lug.ustc.edu.cn/)
 
-::: warning 警告
+::: warning 注意
 不需要全部看，尤其是第四五六九章，对不常用linux系统的人没什么用处
 :::
 
