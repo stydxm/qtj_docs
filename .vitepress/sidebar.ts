@@ -61,12 +61,11 @@ export const sidebar = {
                 { text: 'OpenCV', link: '/algorithm/opencv' },
             ]
         },
-        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+        {
             text: '课后任务',
-            collapsed: true,
             link: '/algorithm/tasks/',
             items: [
-                {text:'关于课后任务',link:'/algorithm/tasks/'},
+                { text: '关于课后任务', link: '/algorithm/tasks/' },
                 {
                     text: '任务1',
                     link: '/algorithm/tasks/1-1',
@@ -93,6 +92,15 @@ export const sidebar = {
                     items: [
                         { text: '任务3-1（导入）', link: '/algorithm/tasks/3-1' },
                         { text: '任务3-2（使用标准库）', link: '/algorithm/tasks/3-2' }
+                    ]
+                },
+                {
+                    text: '任务4',
+                    link: '/algorithm/tasks/4-1',
+                    collapsed: true,
+                    items: [
+                        { text: '任务4-1（下载图片）', link: '/algorithm/tasks/4-1' },
+                        { text: '任务4-2（格式转换）', link: '/algorithm/tasks/4-2' }
                     ]
                 }
             ]

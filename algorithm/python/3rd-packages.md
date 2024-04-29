@@ -1,3 +1,9 @@
+::: danger 警告
+从这里开始，所有的操作都需要在 **同一个目录中** 进行，即之前在vscode里写了那三个json文件的目录的父目录
+
+关于如何进入目录，查看前面的章节
+:::
+
 # 第三方库
 前面提到过，python有着丰富的生态，其中重要的组成部分就是python的第三方库
 
@@ -46,10 +52,38 @@ python的包管理工具还有PDM和Poetry，使用率都远不及pip
 pip3 config set global.index-url https://mirror.nju.edu.cn/pypi/web/simple
 ```
 
+### 安装新的包
+使用pip安装包的命令是`pip install 包名`，卸载是`pip uninstall 包名`
+
+如果要指定安装版本（通常不需要），那么输入`pip install 包名==版本号`
+
+::: tip 提示
+更多用法参考[官方文档](https://docs.python.org/zh-cn/3/library/venv.html)
+:::
+
 因为虚拟环境是隔离的，所以虚拟环境外的包是用不了的，那我们先装个`opencv`吧
 
 ``` bash
 pip3 install opencv-python
 ```
 
-更多用法参考[官方文档](https://docs.python.org/zh-cn/3/library/venv.html)
+新建一个python程序尝试一下
+
+``` python
+import numpy as np
+import cv2
+
+image = np.full((540, 960, 3), (0, 0, 255), dtype=np.uint8)
+cv2.imshow("Image", image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
+```
+
+::: info 信息
+从这里就可以看出来，包名和在代码里import的名字有可能不同
+
+那么如何知道包名呢？看文档，查资料
+:::
+
+## 任务
+完成[任务4-1](../tasks/4-1)和[任务4-2](../tasks/4-2)
