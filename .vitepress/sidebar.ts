@@ -52,7 +52,8 @@ export const sidebar = {
                             link: '/algorithm/python/',
                             items: [
                                 { text: '基础语法', link: '/algorithm/python/syntax' },
-                                { text: '标准库', link: '/algorithm/python/standard-library' }
+                                { text: '标准库', link: '/algorithm/python/standard-library' },
+                                { text: '第三方库', link: '/algorithm/python/3rd-packages' }
                             ]
                         },
                         { text: "C++", collapsed: true, link: '/algorithm/cpp/' }]
@@ -60,11 +61,12 @@ export const sidebar = {
                 { text: 'OpenCV', link: '/algorithm/opencv' },
             ]
         },
-        {
+        {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
             text: '课后任务',
             collapsed: true,
             link: '/algorithm/tasks/',
             items: [
+                {text:'关于课后任务',link:'/algorithm/tasks/'},
                 {
                     text: '任务1',
                     link: '/algorithm/tasks/1-1',
