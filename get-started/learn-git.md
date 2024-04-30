@@ -83,13 +83,18 @@ commit是Git里最基本的单位，用的时候交互最多的还是commit
 可以理解为一个档里的存档点，每个存档点都在一个档里，回档能且只能回到存档点
 :::
 
+每个commit都附带一个commit message,相当于是对这个commit的注释，应当简单明了地写出这个commit中做了什么，如实现某功能，修复某bug等
+
 ## 使用Git
 因为命令行使用git有一定难度，所以这里介绍有图形界面的git工具
+
 ::: tip 提示
 对于算法的同学，还是更推荐学一下命令行，`clone`  `pull`  `add`  `commit`  `push`等命令的使用，最好再学一下如何处理冲突
 
 官方的[Pro Git](https://git-scm.com/book/zh/v2/)和[尚硅谷的Git教程](https://www.bilibili.com/video/BV1vy4y1s7k6/)都是很好的资料
 :::
+
+我们实验室在内网搭建了Git服务器，具体请看[前面的章节](git)
 
 ### 安装
 
