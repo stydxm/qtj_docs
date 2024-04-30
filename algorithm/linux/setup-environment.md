@@ -115,6 +115,12 @@ C/C++ Extension Pack
 ## C++环境和opencv
 `gcc`编译器和`cmake`这些应该会随系统安装，我们只需要手动装`opencv`并配置
 
+::: danger 警告
+从这里开始，所有的操作都需要在 **同一个目录中** 进行，即之前在vscode里写了那三个json文件的目录的父目录
+
+关于如何进入目录，查看前面的章节
+:::
+
 <strong style="color: red">（看完下面的再去配！！！）</strong> 按照[这篇文章](https://www.cnblogs.com/booturbo/p/17399215.html)的步骤配置，这里不赘述  <strong style="color: red">（看完下面的再去配！！！）</strong>
 
 ::: tip 提示
