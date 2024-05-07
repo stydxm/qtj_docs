@@ -1,24 +1,21 @@
 export const sidebar = {
     '/get-started/': [
         {
-            text: '开始',
-            items: [
+            text: '开始', items: [
                 { text: '总览', link: '/get-started/' },
                 { text: '如何学习', link: '/get-started/how-to-learn' },
                 { text: '常见问题', link: '/get-started/faq' }
             ]
         },
         {
-            text: '实验室网络资源',
-            items: [
+            text: '实验室网络资源', items: [
                 { text: '网络', link: '/get-started/network' },
                 { text: 'Git服务器', link: '/get-started/git' },
                 { text: 'NAS', link: '/get-started/nas' }
             ]
         },
         {
-            text: '各组通用内容',
-            items: [
+            text: '各组通用内容', items: [
                 { text: '相关QQ群', link: '/get-started/qq-group' },
                 { text: '兵种介绍', link: '/get-started/robots' },
                 { text: '学习Git', link: '/get-started/learn-git' },
@@ -28,30 +25,25 @@ export const sidebar = {
     ],
     '/algorithm': [
         {
-            text: '开始',
-            items: [
+            text: '开始', items: [
                 { text: '总览', link: '/algorithm/' },
                 { text: '一些学习建议', link: '/algorithm/advices' }
             ]
         },
         {
-            text: '课程内容',
-            items: [
+            text: '课程内容', items: [
                 {
-                    text: 'Linux', link: '/algorithm/linux/', items: [
+                    text: 'Linux', link: '/algorithm/linux/', collapsed: true, items: [
                         { text: '安装虚拟机', link: '/algorithm/linux/install-vm' },
                         { text: 'Linux基础', link: '/algorithm/linux/basics' },
-                        { text: '安装环境', link: '/algorithm/linux/setup-environment' }
+                        { text: '安装环境', link: '/algorithm/linux/setup-environment' },
+                        { text: '使用SSH连接', link: '/algorithm/linux/ssh' }
                     ]
                 },
                 {
-                    text: '编程语言', link: '/algorithm/language',
-                    items: [
+                    text: '编程语言', link: '/algorithm/language', items: [
                         {
-                            text: "Python",
-                            collapsed: true,
-                            link: '/algorithm/python/',
-                            items: [
+                            text: "Python", collapsed: true, link: '/algorithm/python/', items: [
                                 { text: '基础语法', link: '/algorithm/python/syntax' },
                                 { text: '标准库', link: '/algorithm/python/standard-library' },
                                 { text: '第三方库', link: '/algorithm/python/3rd-packages' }
@@ -63,43 +55,29 @@ export const sidebar = {
             ]
         },
         {
-            text: '课后任务',
-            link: '/algorithm/tasks/',
-            items: [
+            text: '课后任务', link: '/algorithm/tasks/', items: [
                 { text: '关于课后任务', link: '/algorithm/tasks/' },
                 {
-                    text: '任务1',
-                    link: '/algorithm/tasks/1-1',
-                    collapsed: true,
-                    items: [
+                    text: '任务1', link: '/algorithm/tasks/1-1', collapsed: true, items: [
                         { text: '任务1-1（Linux下的Hello World）', link: '/algorithm/tasks/1-1' },
                         { text: '任务1-2（配置开发环境）', link: '/algorithm/tasks/1-2' }
                     ]
                 },
                 {
-                    text: '任务2',
-                    link: '/algorithm/tasks/2-1',
-                    collapsed: true,
-                    items: [
+                    text: '任务2', link: '/algorithm/tasks/2-1', collapsed: true, items: [
                         { text: '任务2-1（原样输出）', link: '/algorithm/tasks/2-1' },
                         { text: '任务2-2（找出所有的水仙花数）', link: '/algorithm/tasks/2-2' },
                         { text: '任务2-3（分解质因数）', link: '/algorithm/tasks/2-3' }
                     ]
                 },
                 {
-                    text: '任务3',
-                    link: '/algorithm/tasks/3-1',
-                    collapsed: true,
-                    items: [
+                    text: '任务3', link: '/algorithm/tasks/3-1', collapsed: true, items: [
                         { text: '任务3-1（导入）', link: '/algorithm/tasks/3-1' },
                         { text: '任务3-2（使用标准库）', link: '/algorithm/tasks/3-2' }
                     ]
                 },
                 {
-                    text: '任务4',
-                    link: '/algorithm/tasks/4-1',
-                    collapsed: true,
-                    items: [
+                    text: '任务4', link: '/algorithm/tasks/4-1', collapsed: true, items: [
                         { text: '任务4-1（下载图片）', link: '/algorithm/tasks/4-1' },
                         { text: '任务4-2（格式转换）', link: '/algorithm/tasks/4-2' }
                     ]
