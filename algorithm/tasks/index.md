@@ -35,6 +35,13 @@ git init
 
 其他都不用改，点击页面最下方的`创建仓库`
 
+### 设置本地git信息
+输入
+```
+git config --global user.name "用户名"
+git config --global user.email 邮箱
+```
+
 ### 添加git远程
 网页上应该会有“克隆当前仓库”这一项，点这一行最右边的复制按钮
 
@@ -50,6 +57,10 @@ git remote add origin 刚才复制的url
 ``` bash
 git push --set-upstream origin master
  ```
+
+::: tip 提示
+此时可能会要求你输入账号密码，注意这里的账号和密码都是git服务器的，就是之前在网页上用过的那个
+:::
 
 ### 在vscode里操作
 此时点击切换到vscode左栏第三个（三个圈两条线的图标），可以看到有一些更改的文件
