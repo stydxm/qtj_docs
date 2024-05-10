@@ -49,8 +49,15 @@ export const sidebar = {
                                 { text: '第三方库', link: '/algorithm/python/3rd-packages' }
                             ]
                         },
-                        { text: "C++", collapsed: true, link: '/algorithm/cpp/' }]
+                        {
+                            text: "C++", collapsed: true, link: '/algorithm/cpp/', items: [
+                                { text: '基础语法', link: '/algorithm/cpp/syntax' },
+                                { text: '标准库', link: '/algorithm/cpp/standard-library' },
+                                { text: '第三方库', link: '/algorithm/cpp/3rd-packages' }
+                            ]
+                        }]
                 },
+
                 { text: 'OpenCV', link: '/algorithm/opencv' },
             ]
         },
