@@ -51,8 +51,7 @@ export const sidebar = {
                         },
                         {
                             text: "C++", collapsed: true, link: '/algorithm/cpp/', items: [
-                                { text: '基础语法', link: '/algorithm/cpp/syntax' },
-                                { text: '标准库', link: '/algorithm/cpp/standard-library' },
+                                { text: '基础语法和面向对象', link: '/algorithm/cpp/syntax' },
                                 { text: '第三方库', link: '/algorithm/cpp/3rd-packages' }
                             ]
                         }]
@@ -87,6 +86,12 @@ export const sidebar = {
                     text: '任务4', link: '/algorithm/tasks/4-1', collapsed: true, items: [
                         { text: '任务4-1（下载图片）', link: '/algorithm/tasks/4-1' },
                         { text: '任务4-2（格式转换）', link: '/algorithm/tasks/4-2' }
+                    ]
+                },
+                {
+                    text: '任务6', link: '/algorithm/tasks/4-1', collapsed: true, items: [
+                        { text: '任务6-1（struct）', link: '/algorithm/tasks/6-1' },
+                        { text: '任务6-2（格式转换）', link: '/algorithm/tasks/6-2' }
                     ]
                 }
             ]
