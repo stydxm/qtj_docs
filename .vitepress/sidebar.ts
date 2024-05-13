@@ -46,7 +46,8 @@ export const sidebar = {
                             text: "Python", collapsed: true, link: '/algorithm/python/', items: [
                                 { text: '基础语法', link: '/algorithm/python/syntax' },
                                 { text: '标准库', link: '/algorithm/python/standard-library' },
-                                { text: '第三方库', link: '/algorithm/python/3rd-packages' }
+                                { text: '第三方库', link: '/algorithm/python/3rd-packages' },
+                                { text: '面向对象', link: '/algorithm/python/oop' }
                             ]
                         },
                         {
@@ -89,9 +90,15 @@ export const sidebar = {
                     ]
                 },
                 {
-                    text: '任务6', link: '/algorithm/tasks/4-1', collapsed: true, items: [
+                    text: '任务5', link: '/algorithm/tasks/5-1', collapsed: true, items: [
+                        { text: '任务5-1（编写类）', link: '/algorithm/tasks/5-1' },
+                        { text: '任务5-2（继承类）', link: '/algorithm/tasks/5-2' }
+                    ]
+                },
+                {
+                    text: '任务6', link: '/algorithm/tasks/6-1', collapsed: true, items: [
                         { text: '任务6-1（struct）', link: '/algorithm/tasks/6-1' },
-                        { text: '任务6-2（格式转换）', link: '/algorithm/tasks/6-2' }
+                        { text: '任务6-2（class）', link: '/algorithm/tasks/6-2' }
                     ]
                 }
             ]
