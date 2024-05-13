@@ -5,7 +5,7 @@
 
 算法组在很多队伍内被称为视觉组，因为在以前，算法方面的主要任务是装甲板和能量机关（大符）的识别和解算。
 
-但是从2023赛季开始，哨兵可以在整个场地内自由活动，因此视觉组增加了自主导航的任务。[南科大](https://www.bilibili.com/video/BV1QA4m1w7KN)、[湖南大学](https://www.bilibili.com/video/BV1um411r7oj)等一些学校的战队甚至开始了强化学习的研究，未来这部分任务也会落在原视觉组上。同时，[广工的无下位机](https://github.com/rm-controls)方案也逐渐降低了算法组与电控组的技术路线差距
+但是从2023赛季开始，哨兵可以在整个场地内自由活动，因此视觉组增加了自主导航的任务。[南科大](https://www.bilibili.com/video/BV1QA4m1w7KN)、[湖南大学](https://www.bilibili.com/video/BV1um411r7oj)等一些学校的战队甚至开始了强化学习的研究，未来这部分任务也会落在原视觉组上。同时，[广工的无下位机方案](https://github.com/rm-controls)则是用ros替换了单片机，减少了算法组与电控组的学习路线差距
 ![](/Image_1713863204116.jpg)
 
 # 计算机基础
@@ -41,7 +41,7 @@ Search the F**king website
 [北极熊RoboMaster](https://flowus.cn/lihanchen/share/d2e24166-8a8d-4262-a4b4-b4d25f52d890)  
 [UC Berkeley CS61A](https://cs61a.org/)  
 [Harvard CS50x](https://cs50.harvard.edu/x/)  
-[CS自学指南 ](https://csdiy.wiki/)  
+[CS自学指南](https://csdiy.wiki/)  
 [HDU计算机科学讲义](https://hdu-cs.wiki/)  
 [Linux 101](https://101.lug.ustc.edu.cn)  
 [Python 文档](https://docs.python.org/zh-cn/3/)  
