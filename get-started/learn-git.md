@@ -96,8 +96,9 @@ commit是Git里最基本的单位，用的时候交互最多的还是commit
 
 我们实验室在内网搭建了Git服务器，具体请看[前面的章节](git)
 
-### 安装
-
+::: tip 提示
+下面的还没写，直接参考[深北莫北极熊战队的这篇文章](https://gitee.com/SMBU-POLARBEAR/Technical_Knowledge_Base/blob/master/Git%E7%9A%84%E4%BD%BF%E7%94%A8.md)吧
+:::
 
 [^1]: [Git](https://en.wikipedia.org/wiki/Git)
 [^2]: 大型游戏项目占空间极大，虽然Git有对应的模块LFS，但SVN的可以部分下载仓库的特性使其依然被大型游戏项目所使用
