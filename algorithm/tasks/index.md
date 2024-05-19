@@ -1,6 +1,7 @@
 # 关于课后任务
 ## 任务要求
-以任何方式，用你学的内容，完成要求的任务  
+以任何方式，用你学的内容，完成要求的任务
+
 抄袭和使用现成项目的除外
 
 ## 何时完成
@@ -8,12 +9,16 @@
 
 > 完成任务xx
 
-就说明你已经看完了这个任务所需的所有内容，可以开始实操了  
-具体完成的期限，你那届负责培训的成员会告诉说的（
+就说明你已经看完了这个任务所需的所有内容，可以开始实操了
+
+具体完成的期限，你那届负责培训的老队员会安排的（
+
 ![](/Screenshot_20240423_172703.jpg)
 
 ## 如何提交
 按照[前文教的git内容](../../get-started/learn-git)，在我们团队的gitea服务器中登陆你的账户，在 **个人空间** 中创建一个 **私有** 仓库，上传文件或者代码，注意标明是第几次任务
+
+<strong style="color: red">用命令行或者vscode操作git时，看清楚要求输入的用户名密码是系统的还是git的，不要输错了</strong>
 
 ### 初始化本地git仓库
 打开命令行，在你写代码的目录里输入
@@ -37,7 +42,7 @@ git init
 
 ### 设置本地git信息
 输入
-```
+``` bash
 git config --global user.name "用户名"
 git config --global user.email 邮箱
 ```
@@ -52,12 +57,6 @@ git config --global user.email 邮箱
 git remote add origin 刚才复制的url
 ```
 
-然后再输入
-
-``` bash
-git push --set-upstream origin master
- ```
-
 ::: tip 提示
 此时可能会要求你输入账号密码，注意这里的账号和密码都是git服务器的，就是之前在网页上用过的那个
 :::
@@ -70,3 +69,11 @@ git push --set-upstream origin master
 ::: tip 提示
 鼠标移到更改字样上再点右侧加号，可以添加所有的文件
 :::
+
+提交后，第一次推送前，还需要在命令行里输入
+
+``` bash
+git push --set-upstream origin master
+ ```
+
+ 这一步的作用是把本地的master分支绑定到远程（即我们git的服务器）上
