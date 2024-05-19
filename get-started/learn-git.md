@@ -86,17 +86,19 @@ commit是Git里最基本的单位，用的时候交互最多的还是commit
 每个commit都附带一个commit message,相当于是对这个commit的注释，应当简单明了地写出这个commit中做了什么，如实现某功能，修复某bug等
 
 ## 使用Git
-因为命令行使用git有一定难度，所以这里介绍有图形界面的git工具
-
-::: tip 提示
-对于算法的同学，还是更推荐学一下命令行，`clone`  `pull`  `add`  `commit`  `push`等命令的使用，最好再学一下如何处理冲突
-
-官方的[Pro Git](https://git-scm.com/book/zh/v2/)和[尚硅谷的Git教程](https://www.bilibili.com/video/BV1vy4y1s7k6/)都是很好的资料
-:::
-
 我们实验室在内网搭建了Git服务器，具体请看[前面的章节](git)
 
+因为命令行使用git有一定难度，所以这里介绍带有图形界面的git工具
+
 ::: tip 提示
+~~对于算法的同学，还是更推荐学一下命令行，主要是`clone`  `pull`  `add`  `commit`  `push`等命令的使用，最好再学一下如何处理冲突~~
+
+~~官方的[Pro Git](https://git-scm.com/book/zh/v2/)和[尚硅谷的Git教程](https://www.bilibili.com/video/BV1vy4y1s7k6/)都是很好的资料~~
+
+算法组的同学，先参考课后任务部分的内容，后续会要求学习git cli
+:::
+
+::: info 信息
 下面的还没写，直接参考[深北莫北极熊战队的这篇文章](https://gitee.com/SMBU-POLARBEAR/Technical_Knowledge_Base/blob/master/Git%E7%9A%84%E4%BD%BF%E7%94%A8.md)吧
 :::
 
