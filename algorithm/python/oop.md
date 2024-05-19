@@ -1,7 +1,7 @@
 # 面向对象
 
 ::: details credits
-本章主要来自[2.5 Object-Oriented Programming](https://www.composingprograms.com/pages/25-object-oriented-programming.html)，译者[CIQi6](https://github.com/CIQi6)，内容有删减
+本章主要来自[Composing Programs](https://www.composingprograms.com/pages/25-object-oriented-programming.html)，译者[CIQi6](https://github.com/CIQi6)，内容有删减
 :::
 
 面向对象编程（OOP）是一种组织程序的方法，它将许多思想结合在一起。与其他可变数据结构一样，对象具有无法从全局环境直接访问的本地状态。Python 对象系统提供了方便的语法来促进使用这些技术来组织程序。这种语法的大部分在其他面向对象的编程语言之间共享。
