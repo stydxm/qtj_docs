@@ -7,7 +7,7 @@ hero:
   text: 技术文档
   tagline: 浙江理工大学robomaster战队
   image:
-    src: logo.jpg
+    src: ./logo.png
   actions:
     - theme: brand
       text: 开始➡️
