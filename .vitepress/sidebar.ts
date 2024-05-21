@@ -27,7 +27,8 @@ export const sidebar = {
         {
             text: '开始', items: [
                 { text: '总览', link: '/algorithm/' },
-                { text: '一些学习建议', link: '/algorithm/advices' }
+                { text: '一些学习建议', link: '/algorithm/advices' },
+                { text: '关于编程语言', link: '/algorithm/language' }
             ]
         },
         {
@@ -41,24 +42,23 @@ export const sidebar = {
                     ]
                 },
                 {
-                    text: '编程语言', link: '/algorithm/language', items: [
-                        {
-                            text: "Python", collapsed: true, link: '/algorithm/python/', items: [
-                                { text: '基础语法', link: '/algorithm/python/syntax' },
-                                { text: '标准库', link: '/algorithm/python/standard-library' },
-                                { text: '第三方库', link: '/algorithm/python/3rd-packages' },
-                                { text: '面向对象', link: '/algorithm/python/oop' }
-                            ]
-                        },
-                        {
-                            text: "C++", collapsed: true, link: '/algorithm/cpp/', items: [
-                                { text: '基础语法和面向对象', link: '/algorithm/cpp/syntax' },
-                                { text: '第三方库', link: '/algorithm/cpp/3rd-packages' }
-                            ]
-                        }]
+                    text: "Python", link: '/algorithm/python/', collapsed: true, items: [
+                        { text: '基础语法', link: '/algorithm/python/syntax' },
+                        { text: '标准库', link: '/algorithm/python/standard-library' },
+                        { text: '第三方库', link: '/algorithm/python/3rd-packages' },
+                        { text: '面向对象', link: '/algorithm/python/oop' }
+                    ]
+                },
+                {
+                    text: "C++", link: '/algorithm/cpp/', collapsed: true, items: [
+                        { text: '基础语法和面向对象', link: '/algorithm/cpp/syntax' },
+                        { text: '第三方库', link: '/algorithm/cpp/3rd-packages' },
+                        { text: 'CMake', link: '/algorithm/cpp/cmake' }
+                    ]
                 },
 
-                { text: 'OpenCV', link: '/algorithm/opencv' },
+
+                { text: 'OpenCV', link: '/algorithm/opencv', collapsed: true },
             ]
         },
         {
