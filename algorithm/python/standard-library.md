@@ -13,7 +13,7 @@
 :::
 
 ## 任务
-[任务3-1](../tasks/3-1)
+[任务3-1](../tasks/3)
 
 ## 常用标准库
 
@@ -31,4 +31,4 @@
 |json|json编解码|https://docs.python.org/zh-cn/3/library/json.html|
 
 ## 任务
-[任务3-2](../tasks/3-2)
+[任务3-2](../tasks/3)

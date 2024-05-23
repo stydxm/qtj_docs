@@ -168,4 +168,4 @@ git clone https://gitcode.com/opencv/opencv.git
 :::
 
 ## 任务
-完成[任务1-2](../tasks/1-2)
+完成[任务1-2](../tasks/1)

@@ -64,43 +64,12 @@ export const sidebar = {
         {
             text: '课后任务', link: '/algorithm/tasks/', items: [
                 { text: '关于课后任务', link: '/algorithm/tasks/' },
-                {
-                    text: '任务1', link: '/algorithm/tasks/1-1', collapsed: true, items: [
-                        { text: '任务1-1（Linux下的Hello World）', link: '/algorithm/tasks/1-1' },
-                        { text: '任务1-2（配置开发环境）', link: '/algorithm/tasks/1-2' }
-                    ]
-                },
-                {
-                    text: '任务2', link: '/algorithm/tasks/2-1', collapsed: true, items: [
-                        { text: '任务2-1（原样输出）', link: '/algorithm/tasks/2-1' },
-                        { text: '任务2-2（找出所有的水仙花数）', link: '/algorithm/tasks/2-2' },
-                        { text: '任务2-3（分解质因数）', link: '/algorithm/tasks/2-3' }
-                    ]
-                },
-                {
-                    text: '任务3', link: '/algorithm/tasks/3-1', collapsed: true, items: [
-                        { text: '任务3-1（导入）', link: '/algorithm/tasks/3-1' },
-                        { text: '任务3-2（使用标准库）', link: '/algorithm/tasks/3-2' }
-                    ]
-                },
-                {
-                    text: '任务4', link: '/algorithm/tasks/4-1', collapsed: true, items: [
-                        { text: '任务4-1（下载图片）', link: '/algorithm/tasks/4-1' },
-                        { text: '任务4-2（格式转换）', link: '/algorithm/tasks/4-2' }
-                    ]
-                },
-                {
-                    text: '任务5', link: '/algorithm/tasks/5-1', collapsed: true, items: [
-                        { text: '任务5-1（编写类）', link: '/algorithm/tasks/5-1' },
-                        { text: '任务5-2（继承类）', link: '/algorithm/tasks/5-2' }
-                    ]
-                },
-                {
-                    text: '任务6', link: '/algorithm/tasks/6-1', collapsed: true, items: [
-                        { text: '任务6-1（struct）', link: '/algorithm/tasks/6-1' },
-                        { text: '任务6-2（class）', link: '/algorithm/tasks/6-2' }
-                    ]
-                }
+                { text: '任务1', link: '/algorithm/tasks/1' },
+                { text: '任务2', link: '/algorithm/tasks/2' },
+                { text: '任务3', link: '/algorithm/tasks/3' },
+                { text: '任务4', link: '/algorithm/tasks/4' },
+                { text: '任务5', link: '/algorithm/tasks/5', },
+                { text: '任务6', link: '/algorithm/tasks/6' }
             ]
         },
     ],

@@ -80,4 +80,4 @@ cv2.destroyAllWindows()
 :::
 
 ## 任务
-完成[任务4-1](../tasks/4-1)和[任务4-2](../tasks/4-2)
+完成[任务4](../tasks/4)
