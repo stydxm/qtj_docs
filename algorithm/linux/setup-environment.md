@@ -38,11 +38,9 @@ sudo apt update
 :::
 
 ::: tip 提示
-linux下粘贴时，有时ctrl+c可能不起效，那么试试shift+insert吧
+linux下的复制粘贴不是`ctrl+c`和`ctrl+v`，请使用`ctrl+shift+c`和`ctrl+shift+v`，`ctrl+c`是强制停止的意思
 
-insert键在键盘上可能写成ins，笔记本的话可能是组合键或者关闭小键盘才能按
-
-找不到就右键点粘贴
+或者右键点复制和粘贴
 :::
 
 ## Python环境
