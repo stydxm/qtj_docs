@@ -93,7 +93,8 @@ export const sidebar = {
                 { text: '（一）前言', link: '/mechanics/（一）前言' },
                 { text: '（二）软件安装', link: '/mechanics/（二）软件安装' },
                 { text: '（三）软件使用', link: '/mechanics/（三）软件使用' },
-                { text: '（四）选材培训', link: '/mechanics/（四）选材培训' }
+                { text: '（四）选材培训', link: '/mechanics/（四）选材培训' },
+                { text: '（五）打印机教程', link: '/mechanics/（五）打印机教程' }
             ]
         }
     ],
