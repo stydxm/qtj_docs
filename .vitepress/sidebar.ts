@@ -52,8 +52,7 @@ export const sidebar = {
                 {
                     text: "C++", link: '/algorithm/cpp/', collapsed: true, items: [
                         { text: '基础语法和面向对象', link: '/algorithm/cpp/syntax' },
-                        { text: '第三方库', link: '/algorithm/cpp/3rd-packages' },
-                        { text: 'CMake', link: '/algorithm/cpp/cmake' }
+                        { text: 'CMake和第三方库', link: '/algorithm/cpp/cmake' }
                     ]
                 },
 
