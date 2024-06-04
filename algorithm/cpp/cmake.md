@@ -30,7 +30,7 @@ make
 注意`CMake`和`CMake Tools`是不一样的
 :::
 
-cmake本体在前面的步骤里应该已经安装过了，如果你在运行cmake命令时仍有找不到命令的报错，那么就在终端里输入
+cmake本体安装也很简单，在终端里输入
 
 ``` bash
 sudo apt install cmake
