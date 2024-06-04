@@ -61,15 +61,17 @@ export const sidebar = {
                         { text: '神经网络介绍', link: '/algorithm/ai/networks' },
                         { text: '数据集及其标注', link: '/algorithm/ai/dataset' },
                         { text: 'yolo与目标检测', link: '/algorithm/ai/yolo' },
-                        { text: '基于yolo训练目标检测模型', link: '/algorithm/ai/train' }
+                        { text: '基于自有数据集训练模型', link: '/algorithm/ai/train' }
                     ]
                 },
+                { text: 'ROS', link: '/algorithm/ros/' },
                 {
-                    text: 'Docker与容器化技术', link: '/algorithm/docker', collapsed: true, items: [
-                        { text: '' }
+                    text: 'Docker与容器化技术', link: '/algorithm/docker/', collapsed: true, items: [
+                        { text: '安装和使用', link: '/algorithm/docker/usage' },
+                        { text: '构建镜像', link: '/algorithm/docker/build_image' }
                     ]
                 },
-                {text:'与其他岗位协作需要的知识',link:'/algorithm/others'}
+                { text: '与其他岗位协作需要的知识', link: '/algorithm/others' }
             ]
         },
         {

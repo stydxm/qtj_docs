@@ -7,9 +7,9 @@
 
 ![](/ubuntu.png)
 
-这张图就是ubuntu的logo，~~不是下面这个~~
+这张图就是ubuntu的logo<!--，~~不是下面这个~~-->
 
-![](https://mirror.ghproxy.com/raw.githubusercontent.com/SAWARATSUKI/ServiceLogos/main/Ubuntu/Ubuntu.png)
+<!--![](https://mirror.ghproxy.com/raw.githubusercontent.com/SAWARATSUKI/ServiceLogos/main/Ubuntu/Ubuntu.png)-->
 
 不同于windows，ubuntu的版本命名规则非常简单，就是`年份.月份`，比如`22.04`就是2022年4月份发布的ubuntu版本，比如`23.10`就是2023年10月份发布的。
 
@@ -18,12 +18,12 @@
 ::: info 说明
 如果你了解这一部分内容，那就不用看了，自己配好opencv和pytorch就好了
 
-别的系统通常也没问题，比如我自己用的是Arch，但如果你啥都不懂就别自己整花活（
+别的系统通常也没问题，比如我自己用的是Arch，但不懂就别自己乱整花活（
 :::
 
 ## 安装虚拟机软件
 ::: tip 提示
-推荐的安装方法是虚拟机，如果你有空闲的电脑可以直接安装那更好，也可以自己去折腾WSL这些方案（同样的，啥都不懂就先按课程走）
+推荐的安装方法是虚拟机，如果你有空闲的电脑可以直接安装那更好，也可以自己去折腾WSL这些方案（同上，不懂就先按课程走，别瞎搞）
 :::
 
 打开[这个网页](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)，往下滑，点`Workstation 17 Pro for Windows`然后点`DOWNLOAD NOW`
@@ -53,6 +53,10 @@
 
 ## 创建虚拟机
 打开前面安装的VMware,点首页中间的`创建新的虚拟机`
+
+::: tip 说明
+这里CPU和内存都可以给多一点，具体多少要看电脑配置，近几年主流配置给到8个CPU核心和8G内存应该是没有问题的，这样可以减少虚拟机带来的卡顿
+:::
 
 点击：创建新的虚拟机 - 典型（推荐）- 下一步 - 安装程序 iso 选中你刚下的 iso
 
