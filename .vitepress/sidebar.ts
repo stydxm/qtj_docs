@@ -70,7 +70,12 @@ export const sidebar = {
                         { text: '安装和使用', link: '/algorithm/docker/usage' },
                         { text: '构建镜像', link: '/algorithm/docker/build_image' }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            text: '其他', items: [
+                { text: '开源项目整理', link: '/algorithm/open-sources' },
                 { text: '与其他岗位协作需要的知识', link: '/algorithm/others' }
             ]
         },
