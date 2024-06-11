@@ -98,8 +98,17 @@ commit是Git里最基本的单位，用的时候交互最多的还是commit
 算法组的同学，先参考课后任务部分的内容，后续会要求学习git cli
 :::
 
+## 配置密钥
+通过配置ssh密钥，可以避免每次都输入密码的麻烦
+
+打开Gitea网页，点右上角头像，设置-SSH/GPG密钥-管理SSH密钥-增加密钥
+
+![](/Screenshot_20240611_130846.png)
+
+这里名称自己写，内容就是复制[这个步骤](/algorithm/linux/ssh.html#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5)生成的密钥
+
 ::: info 信息
-下面的还没写，直接参考[深北莫北极熊战队的这篇文章](https://gitee.com/SMBU-POLARBEAR/Technical_Knowledge_Base/blob/master/Git%E7%9A%84%E4%BD%BF%E7%94%A8.md)吧
+下面的还没写，直接参考[深北莫北极熊战队的基于VSCode的代码合作](https://gitee.com/SMBU-POLARBEAR/Technical_Knowledge_Base/blob/master/Git%E7%9A%84%E4%BD%BF%E7%94%A8.md#%E5%9F%BA%E4%BA%8Evscode%E7%9A%84%E4%BB%A3%E7%A0%81%E5%90%88%E4%BD%9C)吧
 :::
 
 [^1]: [Git](https://en.wikipedia.org/wiki/Git)
