@@ -16,7 +16,7 @@ export default withMermaid({
     nav: [
       { text: '开始', link: '/get-started/' },
       { text: '算法组', link: '/algorithm/' },
-      { text: '电控组', link: '/control/（一）学习路线+课程概要+预备知识' },
+      { text: '电控组', link: 'https://nine-hunter-507.notion.site/STM32F4-ca420374c7b84e53b4dd2efc7f8bf295' },
       { text: '机械组', link: '/mechanics/（一）前言' },
       { text: '硬件组', link: '/hardware/' }
     ],

@@ -91,19 +91,6 @@ export const sidebar = {
             ]
         },
     ],
-    '/control/': [
-        {
-            text: '嵌入式保姆级入门教学之人话讲解C型板开发（隔壁村狗子看完都会了）',
-            items: [
-                { text: '（一）学习路线+课程概要+预备知识', link: '/control/（一）学习路线+课程概要+预备知识' },
-                { text: '（二）软件安装+环境配置+新建工程一步到位', link: '/control/（二）软件安装+环境配置+新建工程一步到位' },
-                { text: '（三）GPIO：学会点亮一个LED', link: '/control/（三）GPIO：学会点亮一个LED' },
-                { text: '（四）EXTI：学会操控按钮', link: '/control/（四）EXTI：学会操控按钮' },
-                { text: '（五）SysTic : HalDelay背后的原理', link: '/control/（五）SysTic HalDelay背后的原理' },
-                { text: '（六）定时器及其中断：中断控制流水灯', link: '/control/（六）定时器及其中断：中断控制流水灯' },
-            ]
-        }
-    ],
     '/mechanics/': [
         {
             text: '机械保姆级入门教学之普通话讲解建模仿真（隔壁村猫子看完都会了） ',
