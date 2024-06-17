@@ -23,11 +23,11 @@
 关于这些任务，请看[这里](tasks/)
 
 # 先学会两个名词
-::: RTFM
+::: danger RTFM
 Read the F**king Manual
 :::
 
-::: STFW
+::: danger STFW
 Search the F**king website
 :::
 
