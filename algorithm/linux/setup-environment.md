@@ -1,4 +1,4 @@
-# 配置环境
+# 系统配置
 ::: tip 提示
 很多在windows下需要配置很久的软件，在linux下往往只需要几行命令就可以实现，方便很多哦
 :::
@@ -8,11 +8,11 @@
 :::
 
 ## 换源
-::: info 说明
+<!--::: info 说明
 这一步可以跳过，建议你先试试下面的内容，如果发现速度特别慢再来做这一步
-:::
+:::-->
 
-在下载软件的过程中，因为源文件在国外服务器上，速度可能比较慢，所以可以通过这一步指定从国内服务器上下载文件，加速安装过程
+在下载软件的过程中，因为源文件在国外服务器上，速度很可能非常慢，所以可以通过这一步告诉系统从国内服务器上下载文件，加速安装过程
 
 首先打开命令行
 
@@ -26,6 +26,7 @@
 sudo sed -i 's/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
 sudo apt update
+sudo apt upgrade -y
 ```
 ```
 # 命令解释：sudo代表用最高权限执行，后面的是sed替换这个命令的内容，不常用故不介绍
@@ -43,7 +44,12 @@ linux下的复制粘贴不是`ctrl+c`和`ctrl+v`，请使用`ctrl+shift+c`和`ct
 或者右键点复制和粘贴
 :::
 
-## Python环境
+## 安装一些常用包
+``` bash
+sudo apt install -y git curl wget vim tmux screen zip unzip gcc g++ make cmake build-essential pkg-config 
+```
+
+<!--## Python环境
 命令行输入
 
 ``` bash
@@ -69,7 +75,7 @@ python --version
 
 ::: info 说明
 最后几个数字不一样没关系，3开头的就行
-:::
+:::-->
 
 ## VSCode安装和配置
 ::: tip 提示
@@ -82,7 +88,7 @@ python --version
 sudo apt install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" > /etc/apt/sources.list.d/vscode.list'
+echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
 rm -f packages.microsoft.gpg
 sudo apt install apt-transport-https
 sudo apt update
@@ -90,7 +96,7 @@ sudo apt install code
 sudo update-alternatives --set editor /usr/bin/code
 ```
 
-这里命令较多，不逐个解释，主要干的事是添加了微软的软件源并从中安装vscode，然后再把它设为默认编辑器
+这里命令较多，大多不常用，故不作解释。主要干的事是添加了微软的软件源并从中安装vscode，然后再把它设为默认编辑器
 
 ![](/vscode.jpg)
 
@@ -110,7 +116,7 @@ C/C++ Extension Pack
 打前面几个词再等会儿，要装的包应该在搜索结果很靠前的位置
 :::
 
-## C++环境和opencv
+<!--## C++环境和opencv
 `gcc`编译器和`cmake`这些应该会随系统安装，我们只需要手动装`opencv`并配置
 
 ::: danger 警告
@@ -163,7 +169,7 @@ git clone https://gitcode.com/opencv/opencv.git
 
 ::: tip 提示
 不要按原教程写.cc，而是写.cpp，以后也一样
-:::
+:::-->
 
 ## 任务
 完成[任务1-2](../tasks/1)

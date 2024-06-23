@@ -4,17 +4,29 @@ CMake是一个编译工具，主要作用就是能够使用统一的语法，生
 
 举个例子，在linux下用g++编译软件，需要写`Makefile`，windows下的MSVC编译器有自己的.sln文件，在不同平台、不同版本，它们的格式和内容都会有差异
 
+::: info 信息
+编写C++需要一系列工具，其中一些工具的输出是另一些工具的输入，按顺序组成一条链，故称工具链
+
+CMake和make都是工具链的一部分，也是最常用的方案
+:::
+
 而如果我们使用CMake，那只需要写一个`CMakeLists.txt`，由cmake去生成出编译器需要的文件
 
-同时，cmake还可以简化编译的过程
+同时，cmake还可以简化编译的过程：
 
-在前面配置环境的时候你可能已经注意到了，编译的设置繁琐且容易出错。在用gcc编译调用了opencv的c++程序时其实我们已经用过一个`pkg-config`这个工具了，如果不使用别的工具，那实际运行的命令其实是这样的（我直接复制的，若安装的时候加入更多模块那还会更长）：
+在编译包含大量源代码的程序时，编译的设置繁琐且容易出错。比如在用gcc编译调用了opencv的c++程序时，如果不使用别的工具，那实际运行的命令其实是这样的（这是直接复制的，若安装的时候加入更多模块那还会更长）：
 
 ``` bash
 gcc -lstdc++ main.cpp -o main -I/usr/include/opencv4 -lopencv_gapi -lopencv_stitching -lopencv_alphamat -lopencv_aruco -lopencv_bgsegm -lopencv_bioinspired -lopencv_ccalib -lopencv_cvv -lopencv_dnn_objdetect -lopencv_dnn_superres -lopencv_dpm -lopencv_face -lopencv_freetype -lopencv_fuzzy -lopencv_hdf -lopencv_hfs -lopencv_img_hash -lopencv_intensity_transform -lopencv_line_descriptor -lopencv_mcc -lopencv_quality -lopencv_rapid -lopencv_reg -lopencv_rgbd -lopencv_saliency -lopencv_stereo -lopencv_structured_light -lopencv_phase_unwrapping -lopencv_superres -lopencv_optflow -lopencv_surface_matching -lopencv_tracking -lopencv_highgui -lopencv_datasets -lopencv_text -lopencv_plot -lopencv_videostab -lopencv_videoio -lopencv_viz -lopencv_wechat_qrcode -lopencv_xfeatures2d -lopencv_shape -lopencv_ml -lopencv_ximgproc -lopencv_video -lopencv_xobjdetect -lopencv_objdetect -lopencv_calib3d -lopencv_imgcodecs -lopencv_features2d -lopencv_dnn -lopencv_flann -lopencv_xphoto -lopencv_photo -lopencv_imgproc -lopencv_core
 ```
+如果使用pkg-config这个工具，编译命令可以写成这样
 
-而使用cmake后，可以简化成这样：
+
+``` bash
+g++ -std=c++11 -g main.cpp -o main `pkg-config --cflags --libs opencv4`
+```
+
+而使用cmake后，无论再加多少个库，编译的命令都可以被简化成这样：
 
 ``` bash
 cmake .
