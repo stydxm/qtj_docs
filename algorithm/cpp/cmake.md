@@ -1,5 +1,5 @@
 # CMake和第三方库
-## 什么是CMake/为什么要用CMake
+## 什么是CMake/为什么要用CMake [^1]
 CMake是一个编译工具，主要作用就是能够使用统一的语法，生成能够指导编译器完成编译工作的文件
 
 举个例子，在linux下用g++编译软件，需要写`Makefile`，windows下的MSVC编译器有自己的.sln文件，在不同平台、不同版本，它们的格式和内容都会有差异
@@ -36,7 +36,7 @@ cmake本体安装也很简单，在终端里输入
 sudo apt install cmake
 ```
 
-## 如何运行
+### 如何运行
 在前面已经提到过了，cmake的运行非常简单，只需要一行命令
 
 但是它在运行时会生成很多文件，导致目录看起来很乱，所以我们一般都会先新建一个叫build的目录（名字是约定俗成的），让cmake把生成的文件放在里面
@@ -55,21 +55,22 @@ make -C build
 ```
 :::
 
-## CMake的文件
+### CMake的文件
 在项目根目录创建一个叫`CMakeLists.txt`的文件，接下来所有你需要写的内容，默认都写在这个文件 里
 
 ::: tip 提示
 项目达到一定规模时需要拆分成多个模块，此时可能会有多个`CMakeLists.txt`存在在不同目录下
 :::
 
-## 输出
+## 语法
+### 输出
 我们还是从最简单的开始，打印一个字符串，在cmake中函数是`message`
 
 ``` cmake
 message("Hello World!")
 ```
 
-## 变量
+### 变量
 cmake中定义变量的语法是`set(<变量名> <变量值>)`，例如：
 ``` cmake
 set(example_var "hello world")
@@ -82,7 +83,7 @@ message("${example_var}")
 ```
 此时就会输出`hello world`
 
-## 运算符与条件、循环语句
+### 运算符与条件、循环语句
 和C++一样，cmake也有运算符、条件、循环语句，但对于我们的用例不一定会用到，所以请自行了解
 
 要注意一点，大多数语言中一个函数的多个参数用逗号分割，cmake中是空格
@@ -105,7 +106,7 @@ int main() {
 然后是cmake
 
 ``` cmake
-check_minimum_required(VERSION 3.16)
+cmake_minimum_required(VERSION 3.16)
 project(hello_world)
 add_executable(hello hello.cpp)
 ```
@@ -114,14 +115,14 @@ add_executable(hello hello.cpp)
 
 其中最低版本可以设的略高，因为一般安装的都比较新
 
-## 加入头文件
+### 加入头文件
 删除前面写的两个文件，我们重新开始
 
 首先，我们来写一个头文件和两个程序（注意文件名中的路径）
 
 ::: code-group
 ``` cpp [src/main.cpp]
-#include "hello.h"
+#include "hello.hpp"
 
 int main() {
     hello();
@@ -145,8 +146,8 @@ void hello();
 
 然后写cmake
 
-``` cmake
-check_minimum_required(VERSION 3.16)
+``` cmake {3-4}
+cmake_minimum_required(VERSION 3.16)
 project(simple_project)
 include_directories(include)
 add_executable(main src/main.cpp src/hello.cpp)
@@ -158,15 +159,85 @@ add_executable(main src/main.cpp src/hello.cpp)
 
 - 最后一行的`add_executable`多了一个参数，这是因为代码包含在了两个文件中，都需要写进去
 
-## 第三方库
-c++也有着比较丰富的生态（当然库的数量、安装方便程度都不如python javascript go等现代语言）
+### 构建整个目录
+
+掏出刚才那个cmake文件，最后这么一行
+
+``` cmake {4}
+cmake_minimum_required(VERSION 3.16)
+project(simple_project)
+include_directories(include)
+add_executable(main src/main.cpp src/hello.cpp) // [!code focus]
+```
+
+对的，程序写在了`main.cpp`和`hello.cpp`这两个文件中，编译时要把这两个文件都包含进去，听起来是很合理
+
+但是，如果项目越来越大，这一行要变长变长再变长，把文件名都写在这里吗？好像太麻烦了点
+
+这时候我们可以使用`aux_source_directory`函数，找出目录下所有的代码文件
+
+``` cmake {4}
+cmake_minimum_required(VERSION 3.16)
+project(simple_project)
+include_directories(include)
+aux_source_directory(src my_lib_dir)
+add_executable(main ${my_lib_dir})
+```
+
+## 库
+随着工程变大，代码量增长的同时往往功能也能分为几个明确的模块，这时候我们就要把程序分为若干个模块了
+
+这里只有两个文件，我们就把hello.cpp看成是一个单独的模块
+
+``` cmake {5-6}
+cmake_minimum_required(VERSION 3.16)
+project(simple_project)
+include_directories(include)
+add_executable(main src/main.cpp)
+add_library(hello src/hello.cpp)
+target_link_libraries(main hello)
+```
+
+### 静态库与动态库
+运行上面的命令完成编译后，build目录中会多一个叫`libhello.a`的文件[^2]，这个文件就是我们写的hello.cpp编译后的结果，即静态库
+
+库还有一种形式是动态库
+
+``` cmake {5}
+cmake_minimum_required(VERSION 3.16)
+project(simple_project)
+include_directories(include)
+add_executable(main src/main.cpp)
+add_library(hello SHARED src/hello.cpp)
+target_link_libraries(main hello)
+```
+
+如果把cmake文件改成这样，编译出来的就是动态库了，而这时build目录里就会有`libhello.so`文件[^2]（原来.a结尾的文件不会被自动删除，但不会参与到实际构建过程中去），so是shared object的缩写
+
+它们的区别在于静态库会被嵌入到最终的构建产物，即那个叫main的二进制文件里，但动态库不会，因此运行时它必须和main都存在，否则无法运行
+
+::: tip 提示
+这里建议动手试试
+:::
+
+使用静态库时只需要一个二进制文件就能运行整个程序，而动态库则需要把所有的so文件都一起带上，而优点是编译时节省了把库嵌入的过程（这个过程我们称为链接）
+
+对我们来说，其实区别不大，为了避免丢库造成的问题，还是建议写的所有都采用静态库，当然一些别人写的已有的库要根据实际情况看文档
+
+### 第三方库
+c++也有着比较丰富的生态（当然库的数量、安装方便程度都不如python， javascript， go等现代语言）
 
 但不同的是，它没有像pypi npm这样的统一的托管平台，且安装方法可能会有差异，因此没有一种完全通用的方法
 
 这里给出一些建议：
 
-- 一定要优先去官网或者项目readme里找资料，遇到没有写的问题的时候再去直接搜索
+- 一定要优先去官网或者项目readme里找资料，遇到没有写的问题的时候再去搜索
 
 - 有些库可能提供了apt包，直接安装一般不会有什么大问题
 
-- 把库文件放到该放的地方，例如`/usr/include`等
+- `sudo make install`
+
+使用库时要先找到库再把它链接到构建目标中。而使用第三方库时，如果库文件在系统中而非当前目录下，那么就要使用`find_library`代替`add_library`和`add_subdirectory`，链接用到的`target_link_libraries`不变
+
+[^1]: 还有[xmake](https://xmake.io/), [build2](https://build2.org/), [Meson](https://mesonbuild.com/), [qmake](https://doc.qt.io/qt-6/qmake-manual.html)等等非常多的工具也可以完成这一点
+[^2]: 这里.a和.so都是对于linux系统而言的，windows系统下是.lib和.dll
