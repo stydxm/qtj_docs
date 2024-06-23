@@ -35,14 +35,16 @@ export const sidebar = {
             text: '课程内容', items: [
                 {
                     text: 'Linux', link: '/algorithm/linux/', collapsed: true, items: [
+                        { text: '基础概念', link: '/algorithm/linux/' },
                         { text: '安装虚拟机', link: '/algorithm/linux/install-vm' },
                         { text: 'Linux基础', link: '/algorithm/linux/basics' },
-                        { text: '安装环境', link: '/algorithm/linux/setup-environment' },
+                        { text: '系统配置', link: '/algorithm/linux/setup-environment' },
                         { text: '使用SSH连接', link: '/algorithm/linux/ssh' }
                     ]
                 },
                 {
                     text: "Python", link: '/algorithm/python/', collapsed: true, items: [
+                        { text: '关于Python', link: '/algorithm/python/' },
                         { text: '基础语法', link: '/algorithm/python/syntax' },
                         { text: '标准库', link: '/algorithm/python/standard-library' },
                         { text: '第三方库', link: '/algorithm/python/3rd-packages' },
@@ -51,13 +53,20 @@ export const sidebar = {
                 },
                 {
                     text: "C++", link: '/algorithm/cpp/', collapsed: true, items: [
+                        { text: '关于C++', link: '/algorithm/cpp/' },
                         { text: '基础语法和面向对象', link: '/algorithm/cpp/syntax' },
                         { text: 'CMake和第三方库', link: '/algorithm/cpp/cmake' }
                     ]
                 },
-                { text: 'OpenCV与传统图像识别', link: '/algorithm/opencv/', collapsed: true },
+                {
+                    text: 'OpenCV与传统视觉', link: '/algorithm/opencv/', collapsed: true, items: [
+                        { text: '基础概念', link: '/algorithm/opencv/' },
+                        { text: '相机标定', link: '/algorithm/opencv/camera-calibration' }
+                    ]
+                },
                 {
                     text: '人工智能', link: '/algorithm/ai/', collapsed: true, items: [
+                        { text: '基础概念', link: '/algorithm/ai/' },
                         { text: '神经网络介绍', link: '/algorithm/ai/networks' },
                         { text: '数据集及其标注', link: '/algorithm/ai/dataset' },
                         { text: 'yolo与目标检测', link: '/algorithm/ai/yolo' },
@@ -67,6 +76,7 @@ export const sidebar = {
                 { text: 'ROS', link: '/algorithm/ros/' },
                 {
                     text: 'Docker与容器化技术', link: '/algorithm/docker/', collapsed: true, items: [
+                        { text: '基础概念', link: '/algorithm/docker/' },
                         { text: '安装和使用', link: '/algorithm/docker/usage' },
                         { text: '构建镜像', link: '/algorithm/docker/build_image' }
                     ]
