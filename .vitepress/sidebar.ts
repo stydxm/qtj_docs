@@ -98,7 +98,8 @@ export const sidebar = {
                 { text: '任务4', link: '/algorithm/tasks/4' },
                 { text: '任务5', link: '/algorithm/tasks/5' },
                 { text: '任务6', link: '/algorithm/tasks/6' },
-                { text: '任务7', link: '/algorithm/tasks/7' }
+                { text: '任务7', link: '/algorithm/tasks/7' },
+                { text: '任务8', link: '/algorithm/tasks/8' }
             ]
         },
     ],

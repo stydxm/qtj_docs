@@ -93,3 +93,6 @@ sudo apt install libopencv-dev libopencv-contrib-dev python3-opencv
 ::: info 信息
 更多内容后续介绍，具体的类、方法等可在文档中查阅
 :::
+
+## 任务
+完成[任务8-1](../tasks/8)
