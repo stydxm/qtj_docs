@@ -59,8 +59,8 @@ export const sidebar = {
                     ]
                 },
                 {
-                    text: 'OpenCV与传统视觉', link: '/algorithm/opencv/', collapsed: true, items: [
-                        { text: '基础概念', link: '/algorithm/opencv/' },
+                    text: 'CV与OpenCV', link: '/algorithm/opencv/', collapsed: true, items: [
+                        { text: '计算机视觉', link: '/algorithm/opencv/' },
                         { text: '相机标定', link: '/algorithm/opencv/camera-calibration' }
                     ]
                 },
