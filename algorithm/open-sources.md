@@ -9,7 +9,7 @@
 |中南|2024|视觉|https://github.com/CSU-FYT-Vision/FYT2024_vision|基于rm_vision|
 |沈航|2023|哨兵|https://github.com/tup-robomaster/TUP2023-Sentry-Framework|目测比较完善|
 |华农|2023|哨兵|https://github.com/SCAU-RM-NAV/rm2023_auto_sentry_ws|场上效果好|
-|深北莫|2023|哨兵并仿真|https://gitee.com/SMBU-POLARBEAR/pb_rm_simulation|持续更新中|
+|深北莫|2023|哨兵仿真|https://gitee.com/SMBU-POLARBEAR/pb_rm_simulation|持续更新中|
 |华工|2023-2024|视觉框架|https://github.com/cv-rmvl/rmvl|文档完善|
 |哈工深|2023|打标工具|https://github.com/MonthMoonBird/LabelRoboMaster||
 |沈航|2023|雷达站|https://github.com/tup-robomaster/RM_Radar2023||
