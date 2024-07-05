@@ -61,7 +61,9 @@ export const sidebar = {
                 {
                     text: 'CV与OpenCV', link: '/algorithm/opencv/', collapsed: true, items: [
                         { text: '计算机视觉', link: '/algorithm/opencv/' },
-                        { text: '相机标定', link: '/algorithm/opencv/camera-calibration' }
+                        { text: '相机标定', link: '/algorithm/opencv/camera-calibration' },
+                        { text: '常用函数', link: '/algorithm/opencv/usual-functions' },
+                        { text: '形态学方法', link: '/algorithm/opencv/morphology' }
                     ]
                 },
                 {
