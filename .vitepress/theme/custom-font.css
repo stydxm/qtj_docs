@@ -1,7 +1,7 @@
-@import 'lxgw-wenkai-screen-webfont/style.css';
+@import 'lxgw-wenkai-webfont/style.css';
 
 :root {
-    --vp-font-family-base: "LXGW WenKai Screen", sans-serif;
+    --vp-font-family-base: "LXGW WenKai", sans-serif;
     --vp-font-family-mono: "JetBrains Mono","LXGW WenKai Screen", sans-serif;
 }
 
