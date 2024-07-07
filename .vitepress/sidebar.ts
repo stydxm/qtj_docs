@@ -69,7 +69,8 @@ export const sidebar = {
                 {
                     text: '人工智能', link: '/algorithm/ai/', collapsed: true, items: [
                         { text: '基础概念', link: '/algorithm/ai/' },
-                        { text: '神经网络介绍', link: '/algorithm/ai/networks' },
+                        { text: '机器学习', link: '/algorithm/ai/machine-learning' },
+                        { text: '神经网络', link: '/algorithm/ai/neural-network' },
                         { text: '数据集及其标注', link: '/algorithm/ai/dataset' },
                         { text: 'yolo与目标检测', link: '/algorithm/ai/yolo' },
                         { text: '基于自有数据集训练模型', link: '/algorithm/ai/train' }

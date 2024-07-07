@@ -49,3 +49,4 @@ Search the F**king website
 [Standford CS 106L](https://web.stanford.edu/class/cs106l/)  
 [Dive into Deep Learning](https://d2l.ai/)
 [AI By Doing](https://aibydoing.com)
+[CS50’s Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai)
