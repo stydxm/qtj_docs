@@ -52,3 +52,6 @@
 
 ## 任务
 完成[任务8-2](../tasks/8)，可以尝试一下[8-3](../tasks/8)
+
+## 拓展
+如果想要了解更多关于标定的内容，如鱼眼相机标定、双目相机标定、多传感器联合标定等，可以参考[这篇文章](https://github.com/KangLiao929/Awesome-Deep-Camera-Calibration)
