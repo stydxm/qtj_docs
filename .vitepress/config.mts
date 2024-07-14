@@ -2,7 +2,7 @@ import footnote from 'markdown-it-footnote'
 import { withMermaid } from 'vitepress-plugin-mermaid'
 import { icons } from './icons'
 import { sidebar } from './sidebar'
-
+import taskCheckbox from 'markdown-it-task-checkbox'
 // https://vitepress.dev/reference/site-config
 export default withMermaid({
   title: "浙理钱塘蛟",
@@ -29,6 +29,7 @@ export default withMermaid({
   markdown: {
     config: md => {
       md.use(footnote)
+      md.use(taskCheckbox)
     },
     math: true
   }

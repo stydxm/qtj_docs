@@ -19,6 +19,7 @@ export const sidebar = {
                 { text: '相关QQ群', link: '/get-started/qq-group' },
                 { text: '兵种介绍', link: '/get-started/robots' },
                 { text: '学习Git', link: '/get-started/learn-git' },
+                { text: 'Markdown语法', link: '/get-started/markdown' },
                 { text: '维护基础设施', link: '/get-started/maintain-infra' }
             ]
         }
