@@ -2,11 +2,19 @@
 为便于文件共享， 我们搭建了一套NAS，目前使用8+8TB软RAID1方案
 
 ::: warning 警告
+内网直接传输文件不要过nas，可以直接通过内网点对点传输
+
+建议使用LocalSend：[windows电脑版下载](https://github.com/localsend/localsend/releases/download/v1.15.0/LocalSend-1.15.0-windows-x86-64.exe)、[android手机版下载](https://github.com/localsend/localsend/releases/download/v1.15.0/LocalSend-1.15.0.apk)
+:::
+
+
+## 内网连接
+::: info 信息
 在实验室里务必使用内网连接！！！不然传文件极其痛苦
 :::
 
-## 内网连接
 如果你在实验室里，那么请你根据上一章内容连接实验室网络，然后按以下步骤操作
+
 ::: tip 提示
 仅windows教程，macos应该大差不差，至于linux……你都用linux了肯定会连
 :::
