@@ -41,4 +41,4 @@
 |setTrackbarPos|设置滑动条位置|
 
 ## 任务
-完成[任务9](/algorithm/tasks/9)
+完成[任务9-1](/algorithm/tasks/9)

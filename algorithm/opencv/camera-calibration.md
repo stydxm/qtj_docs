@@ -45,13 +45,15 @@
 :::
 
 ::: info 说明
-标定板可以从[这个网站](https://calib.io/pages/camera-calibration-pattern-generator)快速生成，实验室里也有一块较大的，它的参数写在了背面
+标定板可以从[这个网站](https://calib.io/pages/camera-calibration-pattern-generator)生成
 
-最常见的是checker board样式的，对应的是例程里的`CHESSBOARD`，其他的样式也都可以的
+最常见的是checker board样式的，对应的是例程里的`CHESSBOARD`，其他的样式也可以
+
+实验室里有一块大的，参数写在背面，用更大的标定板时标定更容易
 :::
 
 ## 任务
-完成[任务8-2](../tasks/8)，可以尝试一下[8-3](../tasks/8)
+完成[任务8-2](../tasks/8)，尝试一下[8-3](../tasks/8)
 
 ## 拓展
 如果想要了解更多关于标定的内容，如鱼眼相机标定、双目相机标定、多传感器联合标定等，可以参考[这篇文章](https://github.com/KangLiao929/Awesome-Deep-Camera-Calibration)
