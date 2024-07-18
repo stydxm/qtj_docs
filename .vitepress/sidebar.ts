@@ -89,7 +89,8 @@ export const sidebar = {
         },
         {
             text: '其他', items: [
-                { text: '开源项目整理', link: '/algorithm/open-sources' },
+                { text: 'RM优质开源项目整理', link: '/algorithm/open-sources' },
+                {text:'优秀学习资源',link:'/algorithm/resources'},
                 { text: '与其他岗位协作需要的知识', link: '/algorithm/others' }
             ]
         },
