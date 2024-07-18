@@ -17,6 +17,29 @@ Linux 内核并不是一个完整的操作系统，因为它过于精简，单�
 
 Linux发行版最常见的有`Debian分支`、`Red Hat分支`和`Arch Linux分支`。
 
+一些常见的Linux发行版：
+
+|发行版名称|分支|其他说明|
+|:-:|:-:|:-:|
+|AlmaLinux|Red Hat|CentOS停止维护后的替代品|
+|Alpine Linux||非常轻量级，常用与边缘和容器|
+|Arch Linux|Arch Linux||
+|CentOS|Red Hat|现已停止维护|
+|Debian|Debian||
+|deepin|Debian|国产，附带了DDE桌面环境|
+|EulerOS|Red Hat|华为自研服务器系统的成功实践|
+|Fedora Linux|Red Hat|实际是RHEL基于它，但因知名度原因而如此分类|
+|Gentoo Linux|||
+|Kali Linux|Debian|被某些营销号莫名吹捧，实际只是自带了一些渗透相关软件|
+|Linux Mine|Debian||
+|Manjaro Linux|Arch Linux||
+|OpenSUSE|||
+|Red Hat Linux|Red Hat|它还有一个企业版，简称RHEL|
+|Rocky Linux|Red Hat|CentOS停止维护后的替代品|
+|Ubuntu|Debian|还有一些Kubuntu、Ubuntu MATE等只替换了桌面环境的版本|
+
+如Android和ChromeOS等从技术上说其实也属于Linux发行版，但由于生态非常割裂，一般提及的时候不会考虑它
+
 ## 为什么要使用Linux
 相当多的开发软件在 Linux 上有更好的兼容性，而到 windows 上你将会花费大量的时间配置各种环境变量还容易出错。
 
