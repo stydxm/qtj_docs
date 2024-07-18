@@ -90,7 +90,7 @@ export const sidebar = {
         {
             text: '其他', items: [
                 { text: 'RM优质开源项目整理', link: '/algorithm/open-sources' },
-                {text:'优秀学习资源',link:'/algorithm/resources'},
+                { text: '优秀学习资源', link: '/algorithm/resources' },
                 { text: '与其他岗位协作需要的知识', link: '/algorithm/others' }
             ]
         },
@@ -98,12 +98,17 @@ export const sidebar = {
             text: '课后任务', link: '/algorithm/tasks/', items: [
                 { text: '关于课后任务', link: '/algorithm/tasks/' },
                 { text: '任务1', link: '/algorithm/tasks/1' },
-                { text: '任务2', link: '/algorithm/tasks/2' },
-                { text: '任务3', link: '/algorithm/tasks/3' },
-                { text: '任务4', link: '/algorithm/tasks/4' },
-                { text: '任务5', link: '/algorithm/tasks/5' },
-                { text: '任务6', link: '/algorithm/tasks/6' },
-                { text: '任务7', link: '/algorithm/tasks/7' },
+                {
+                    text: '任务2-5(Python)', link: '/algorithm/tasks/2', collapsed: true, items: [
+                        { text: '任务2', link: '/algorithm/tasks/2' },
+                        { text: '任务3', link: '/algorithm/tasks/3' },
+                        { text: '任务4', link: '/algorithm/tasks/4' },
+                        { text: '任务5', link: '/algorithm/tasks/5' }]
+                }, {
+                    text: '任务6-7(C++)', link: '/algorithm/tasks/2', collapsed: true, items: [
+                        { text: '任务6', link: '/algorithm/tasks/6' },
+                        { text: '任务7', link: '/algorithm/tasks/7' },]
+                },
                 { text: '任务8', link: '/algorithm/tasks/8' }
             ]
         },
