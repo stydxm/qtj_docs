@@ -13,19 +13,20 @@ hero:
       text: 开始➡️
       link: /get-started/
     - theme: alt
-      text: 实验室资源💻
-      link: /get-started/network
+      text: 了解RoboMaster💻
+      link: https://www.bilibili.com/video/BV14g4y1z7QC
 
 features:
   - title: 算法组
-    details: 自瞄射击、环境感知、自主决策导航
+    details: AI识别、环境感知、自主决策导航
   - title: 电控组
-    details: 嵌入式算法设计
+    details: 嵌入式算法编写和调试
   - title: 机械组
-    details: 机器人结构设计及制造
+    details: 机器人机械结构设计及制造
   - title: 硬件组
-    details: 电路板和线路的设计制造
+    details: 电路板和线路的设计、制造和调试
 ---
+
 <style>
 :root {
   --vp-home-hero-name-color: transparent;
