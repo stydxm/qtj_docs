@@ -33,3 +33,9 @@ features:
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #23AC3A 30%, #00B6E9);
 }
 </style>
+
+**笔记本问题问得比较多，直接放主页了**
+
+如果只买一台笔记本，那就不要考虑轻薄本了，尤其不要买macbook，最好是游戏本，近几年的主流配置可以满足要求
+
+在此基础上，你的预算是最大因素（参考[这篇文章](https://mp.weixin.qq.com/s/O-id6nwjOZuS696ki63VUw)）
