@@ -9,7 +9,14 @@ https://www.bilibili.com/video/BV1rC4y1d7vb
 
 
 ### 2.学习单片机部分
-#### （1）先斥“巨资”买点东西
+#### （1）学习C语言
+下面两个教程二选一，一定要动手敲代码，学到指针就勉强够用了
+
+https://www.bilibili.com/video/BV1dr4y1n7vA （比较经典）
+
+https://www.bilibili.com/video/BV12v411a74s （比较有意思）
+
+#### （2）先斥“巨资”买点东西
 STM32F103C8T6最小系统板：
 https://m.tb.cn/h.gl2XRUBWXlhSjfT?tk=Mg8F3eoF5pM
 
@@ -19,11 +26,11 @@ https://m.tb.cn/h.gO1Dl8KyFcdqrf8?tk=5XAc3eovuFD
 USB转TTL， CH340模块， USB转串口：
 https://m.tb.cn/h.gO1wahBhWLfnPsB?tk=RiH53eouifs
 
-#### （2）基础入门视频
+#### （3）基础入门视频
 
 https://www.bilibili.com/video/BV1m7411H7oT （P1-P9）
 
-#### （3）可以参照大疆教程学习一下robomaster的C板（开发板可以来实验室借，也有学长自制的）
+#### （4）可以参照大疆教程学习一下robomaster的C板（开发板可以来实验室借，也有学长自制的）
 
 资料链接：
 https://pan.baidu.com/s/1JvrMd4vQGSzX-LfxVK23AQ?pwd=nzud
