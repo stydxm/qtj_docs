@@ -126,12 +126,5 @@ export const sidebar = {
         }
     ],
     '/hardware/': [
-        {
-            text: '硬件保姆级入门教学之普通话讲解电路板制作（隔壁村熊二看完都会了）',
-            items: [
-                { text: '（一）前言', link: '/hardware/' },
-                { text: '（二）培训方案', link: '/hardware/（二）培训方案' }
-            ]
-        }
     ]
 }
