@@ -59,6 +59,8 @@ Shell 中有很多这样的小技巧，你也可以使用其他的工具提供�
 
 进入正确的目录后就可以编辑文件了，linux主流的两大编辑器是 `vi(m)` [^1]和 `emacs`, 更常用的是`vim`
 
+[^1]: Vim由Vi改进而来，因此它们用起来区别不大，可以放在一起说
+
 ```bash
 sudo apt install vim
 ```
@@ -116,5 +118,3 @@ gcc hello.c -o hello
 ::: info 说明
 确保先阅读[任务要求](/algorithm/tasks/)
 :::
-
-[^1]: Vim由Vi改进而来，因此它们其实用起来区别不大

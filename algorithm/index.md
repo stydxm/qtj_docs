@@ -35,6 +35,8 @@ Search the F**king website
 
 ![](/images.jpg)
 
+<iframe src="//player.bilibili.com/player.html?bvid=BV1om4y1H71S&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%;height: 23rem;"></iframe>
+
 # 参考文献
 以下是编写本教程的一些参考资料：  
 [An introduction to computer vision and RoboMaster algorithm group](https://github.com/NeoZng/vision_tutorial)  

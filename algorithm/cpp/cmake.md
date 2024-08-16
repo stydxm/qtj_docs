@@ -1,5 +1,8 @@
 # CMake和第三方库
 ## 什么是CMake/为什么要用CMake [^1]
+
+[^1]: 还有[xmake](https://xmake.io/), [build2](https://build2.org/), [Meson](https://mesonbuild.com/), [qmake](https://doc.qt.io/qt-6/qmake-manual.html)等等非常多的工具也可以完成这一点
+
 CMake是一个编译工具，主要作用就是能够使用统一的语法，生成能够指导编译器完成编译工作的文件
 
 举个例子，在linux下用g++编译软件，需要写`Makefile`，windows下的MSVC编译器有自己的.sln文件，在不同平台、不同版本，它们的格式和内容都会有差异
@@ -213,6 +216,8 @@ target_link_libraries(main hello)
 ### 静态库与动态库
 运行上面的命令完成编译后，build目录中会多一个叫`libhello.a`的文件[^2]，这个文件就是我们写的hello.cpp编译后的结果，即静态库
 
+[^2]: 这里.a是对于linux系统而言的，windows系统下是.lib，即library
+
 库还有一种形式是动态库
 
 ``` cmake {5}
@@ -224,7 +229,9 @@ add_library(hello SHARED src/hello.cpp)
 target_link_libraries(main hello)
 ```
 
-如果把cmake文件改成这样，编译出来的就是动态库了，而这时build目录里就会有`libhello.so`文件[^2]（原来.a结尾的文件不会被自动删除，但不会参与到实际构建过程中去），so是shared object的缩写
+如果把cmake文件改成这样，编译出来的就是动态库了，而这时build目录里就会有`libhello.so`文件[^3]（原来.a结尾的文件不会被自动删除，但不会参与到实际构建过程中去），so是shared object的缩写
+
+[^3]: 这里.so是对于linux系统而言的，windows系统下是.dll，即dynamic link library
 
 它们的区别在于静态库会被嵌入到最终的构建产物，即那个叫main的二进制文件里，但动态库不会，因此运行时它必须和main都存在，否则无法运行
 
@@ -253,6 +260,3 @@ c++也有着比较丰富的生态（当然库的数量、安装方便程度都�
 
 ## 任务
 完成[任务7](../tasks/7)
-
-[^1]: 还有[xmake](https://xmake.io/), [build2](https://build2.org/), [Meson](https://mesonbuild.com/), [qmake](https://doc.qt.io/qt-6/qmake-manual.html)等等非常多的工具也可以完成这一点
-[^2]: 这里.a和.so都是对于linux系统而言的，windows系统下是.lib和.dll

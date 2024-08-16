@@ -2,6 +2,8 @@
 ## 什么是机器学习
 > A computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, improves with experience E.[^1]
 
+[^1]: Tom M. Mitchell. Machine Learning. McGraw-Hill. 1997年3月: 第2页. ISBN 0070428077
+
 这是机器学习的一个很经典的定义，来自Tom Mitchell
 
 只看关键词，就可以很容易理解：program improves with experience，可以从经验中提升自身性能的程序
@@ -64,5 +66,3 @@
 
 ### 模型
 对数据进行一系列的训练操作，最后获得一些参数，即为模型
-
-[^1]: Tom M. Mitchell. Machine Learning. McGraw-Hill. 1997年3月: 第2页. ISBN 0070428077
