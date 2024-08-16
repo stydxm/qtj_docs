@@ -72,7 +72,7 @@ export const sidebar = {
                         { text: '基础概念', link: '/algorithm/ai/' },
                         { text: '机器学习', link: '/algorithm/ai/machine-learning' },
                         { text: '神经网络', link: '/algorithm/ai/neural-network' },
-                        { text: '数据集及其标注', link: '/algorithm/ai/dataset' },
+                        { text: '数据集及标注', link: '/algorithm/ai/dataset' },
                         { text: 'yolo与目标检测', link: '/algorithm/ai/yolo' },
                         { text: '基于自有数据集训练模型', link: '/algorithm/ai/train' }
                     ]
@@ -105,11 +105,21 @@ export const sidebar = {
                         { text: '任务4', link: '/algorithm/tasks/4' },
                         { text: '任务5', link: '/algorithm/tasks/5' }]
                 }, {
-                    text: '任务6-7(C++)', link: '/algorithm/tasks/2', collapsed: true, items: [
+                    text: '任务6-7(C++)', link: '/algorithm/tasks/6', collapsed: true, items: [
                         { text: '任务6', link: '/algorithm/tasks/6' },
                         { text: '任务7', link: '/algorithm/tasks/7' },]
+                }, {
+                    text: '任务8-9(CV)', link: '/algorithm/tasks/8', collapsed: true, items: [
+                        { text: '任务8', link: '/algorithm/tasks/8' },
+                        { text: '任务9', link: '/algorithm/tasks/9' },]
                 },
-                { text: '任务8', link: '/algorithm/tasks/8' }
+                {
+                    text: '任务10-13(AI)', link: '/algorithm/tasks/10', collapsed: true, items: [
+                        { text: '任务10', link: '/algorithm/tasks/10' },
+                        { text: '任务11', link: '/algorithm/tasks/11' },
+                        { text: '任务12', link: '/algorithm/tasks/12' },
+                        { text: '任务13', link: '/algorithm/tasks/13' },]
+                },
             ]
         },
     ],
