@@ -13,6 +13,7 @@
     "vitepress-plugin-mermaid": "^2.0.16"
   },
   "dependencies": {
+    "@chenfengyuan/vue-qrcode": "^2.0.0",
     "@fontsource/jetbrains-mono": "^5.0.20",
     "lxgw-wenkai-webfont": "^1.7.0"
   }
