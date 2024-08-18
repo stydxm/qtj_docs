@@ -2,7 +2,7 @@
 为便于文件共享， 我们搭建了一套NAS，目前使用8+8TB软RAID1方案
 
 ::: warning 警告
-内网直接传输文件不要过nas，可以直接通过内网点对点传输
+内网直接传输文件不要过nas，请直接通过内网点对点传输
 
 建议使用LocalSend：[windows电脑版下载](https://mirror.ghproxy.com/github.com/localsend/localsend/releases/download/v1.15.3/LocalSend-1.15.3-windows-x86-64.exe)、[android手机版下载](https://mirror.ghproxy.com/github.com/localsend/localsend/releases/download/v1.15.3/LocalSend-1.15.3-android-arm64v8.apk)
 :::

@@ -8,5 +8,5 @@
 ::: warning 重要
 git和github是完全不同的概念，就好像高数之于浙理，浙理教高数但不高数并非浙理专有
 
-可以[点此](https://www.bilibili.com/video/BV1uZ421S79B)感受我的情绪，但不要跟他学java
+可以[点此](https://www.bilibili.com/video/BV1uZ421S79B)感受我的情绪，**但不要跟他学java**
 :::

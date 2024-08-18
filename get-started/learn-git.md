@@ -41,7 +41,7 @@ Git 的设计非常优雅，但初学者通常因为很难理解其内部逻辑�
 ### 仓库(repository)
 一个Git仓库就是一个项目，仓库与仓库之间没有关联[^3]
 
-[^3]: 这里不考虑submodule和monorepo，因为ie我们暂时不会用到
+[^3]: 这里不考虑submodule和monorepo等情况，因为我们暂时不会用到
 
 ::: info 信息
 你的一个可以存档的游戏
@@ -55,7 +55,7 @@ Git 的设计非常优雅，但初学者通常因为很难理解其内部逻辑�
 仓库分为用户仓库和组织仓库，用户仓库是每个用户创建的，组织仓库是组织创建的。用户拥有自己所有仓库的权限，组织内的所有用户都有组织的仓库的权限
 
 ::: tip 提示
-除了作业等内容，一般所有项目都请创建在组织下
+除了作业等内容，一般项目都请创建在组织下
 :::
 
 ### 分支(branch)
@@ -68,11 +68,9 @@ Git 的设计非常优雅，但初学者通常因为很难理解其内部逻辑�
 ::: tip 提示
 我们的项目较简单，只需要一个分支即可
 
-::: info 信息
-你的一个可以存档的游戏
 :::
+
 一般会命名为master或者main
-:::
 
 ::: info 信息
 仓库类比游戏，那么分支可以类比成游戏的一个档
@@ -94,7 +92,7 @@ commit是Git里最基本的单位，用的时候交互最多的还是commit
 每个commit都附带一个commit message,相当于是对这个commit的注释，应当简单明了地写出这个commit中做了什么，如实现某功能，修复某bug等
 
 ## 使用Git
-我们实验室在内网搭建了Git服务器，具体请看[前面的章节](git)
+我们实验室使用自建的Git服务器，具体请看[前面的章节](git)
 
 因为命令行使用git有一定难度，所以这里介绍带有图形界面的git工具
 
@@ -115,6 +113,5 @@ commit是Git里最基本的单位，用的时候交互最多的还是commit
 
 这里名称自己写，内容就是复制[这个步骤](/algorithm/linux/ssh.html#%E7%94%9F%E6%88%90%E5%AF%86%E9%92%A5)生成的密钥
 
-::: info 信息
-下面的还没写，直接参考[深北莫北极熊战队的基于VSCode的代码合作](https://gitee.com/SMBU-POLARBEAR/Technical_Knowledge_Base/blob/master/Git%E7%9A%84%E4%BD%BF%E7%94%A8.md#%E5%9F%BA%E4%BA%8Evscode%E7%9A%84%E4%BB%A3%E7%A0%81%E5%90%88%E4%BD%9C)吧
-:::
+## 使用VSCode提供的Git界面
+参考[深北莫北极熊战队的基于VSCode的代码合作](https://gitee.com/SMBU-POLARBEAR/Technical_Knowledge_Base/blob/master/Git%E7%9A%84%E4%BD%BF%E7%94%A8.md#%E5%9F%BA%E4%BA%8Evscode%E7%9A%84%E4%BB%A3%E7%A0%81%E5%90%88%E4%BD%9C)

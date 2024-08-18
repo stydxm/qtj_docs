@@ -11,7 +11,7 @@
 
 顶部导航栏配置文件位于`.vitepress/config.mts`
 
-确保可以读写[TypeScript](https://wangdoc.com/typescript/)后编辑（用到的语法非常简单，基本可以等同json格式）
+确保可以读写[TypeScript](https://wangdoc.com/typescript/)后编辑，最好再有一些前端知识
 :::
 
 正常情况下，commit会被立即同步到[github仓库](https://github.com/stydxm/qtj_docs)，几分钟后由cloudflare pages构建并部署分发
