@@ -20,11 +20,18 @@ export default withMermaid({
       { text: '机械组', link: '/mechanics/（一）前言' },
       { text: '硬件组', link: '/hardware/' }
     ],
-
+    outline: {
+      label: "本页目录"
+    },
     sidebar: sidebar,
     socialLinks: [
       { icon: { svg: icons['bilibili'] }, link: 'https://space.bilibili.com/1085023682' },
-    ]
+    ],
+    notFound: {
+      title: "找不到页面",
+      quote: "检查你的链接，这里什么都没有捏",
+      linkText: "返回首页"
+    }
   },
   markdown: {
     config: md => {
