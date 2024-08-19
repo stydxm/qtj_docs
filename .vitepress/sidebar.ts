@@ -74,7 +74,7 @@ export const sidebar = {
                         { text: '神经网络', link: '/algorithm/ai/neural-network' },
                         { text: '数据集及标注', link: '/algorithm/ai/dataset' },
                         { text: 'yolo与目标检测', link: '/algorithm/ai/yolo' },
-                        { text: '基于自有数据集训练模型', link: '/algorithm/ai/train' }
+                        { text: '训练模型', link: '/algorithm/ai/train' }
                     ]
                 },
                 { text: 'ROS', link: '/algorithm/ros/' },
