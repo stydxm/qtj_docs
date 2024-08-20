@@ -4,7 +4,9 @@
 ::: warning 警告
 内网直接传输文件不要过nas，请直接通过内网点对点传输
 
-建议使用LocalSend：[windows电脑版下载](https://mirror.ghproxy.com/github.com/localsend/localsend/releases/download/v1.15.3/LocalSend-1.15.3-windows-x86-64.exe)、[android手机版下载](https://mirror.ghproxy.com/github.com/localsend/localsend/releases/download/v1.15.3/LocalSend-1.15.3-android-arm64v8.apk)
+建议使用LocalSend：[windows电脑版下载](https://mirror.ghproxy.com/github.com/localsend/localsend/releases/download/v1.15.4/LocalSend-1.15.4-windows-x86-64.exe)、[android手机版下载](https://mirror.ghproxy.com/github.com/localsend/localsend/releases/download/v1.15.4/LocalSend-1.15.4-android-arm64v8.apk)
+
+Linux使用可以[装deb包](https://mirror.ghproxy.com/github.com/localsend/localsend/releases/download/v1.15.4/LocalSend-1.15.4-linux-x86-64.deb)或者[用AppImage](https://mirror.ghproxy.com/github.com/localsend/localsend/releases/download/v1.15.4/LocalSend-1.15.4-linux-x86-64.AppImage)
 :::
 
 

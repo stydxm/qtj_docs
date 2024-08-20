@@ -6,9 +6,11 @@ SSID: `15-609`
 密码：`qiantangjiao`
 
 可以用支付宝或手机相机扫这个码连接（微信不行）：
-![](/wifi.png)
+
+<Qrcode content="WIFI:S:15-609;T:WPA;P:qiantangjiao;" size="400" />
 
 或者到实验室用手机扫这个NFC标签（需要手机支持，苹果不行，其他大多可以）
+
 ![](/mmexport1713797290365.jpg)
 
 ~~别问我为啥这么高，问图右边那个学长~~
