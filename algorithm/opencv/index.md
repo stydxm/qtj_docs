@@ -22,8 +22,8 @@ const x = ref(0)
 const y = ref(0)
 
 function update(event) {
-  x.value = event.pageX
-  y.value = event.pageY
+  x.value = event.clientX
+  y.value = event.clientY
 }
 
 onMounted(() => window.addEventListener('mousemove', update))
