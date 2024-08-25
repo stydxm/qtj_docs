@@ -77,7 +77,12 @@ export const sidebar = {
                         { text: '训练模型', link: '/algorithm/ai/train' }
                     ]
                 },
-                { text: 'ROS', link: '/algorithm/ros/' },
+                {
+                    text: 'ROS', link: '/algorithm/ros/', collapsed: true, items: [
+                        { text: '基础概念', link: '/algorithm/ros/' },
+                        { text: '安装', link: '/algorithm/ros/install' }
+                    ]
+                },
                 {
                     text: 'Docker与容器化技术', link: '/algorithm/docker/', collapsed: true, items: [
                         { text: '基础概念', link: '/algorithm/docker/' },
@@ -96,7 +101,7 @@ export const sidebar = {
         },
         {
             text: '课后任务', link: '/algorithm/tasks/', items: [
-                { text: '关于课后任务', link: '/algorithm/tasks/' },
+                { text: '课后任务说明', link: '/algorithm/tasks/' },
                 { text: '任务1', link: '/algorithm/tasks/1' },
                 {
                     text: '任务2-5(Python)', link: '/algorithm/tasks/2', collapsed: true, items: [
@@ -112,13 +117,17 @@ export const sidebar = {
                     text: '任务8-9(CV)', link: '/algorithm/tasks/8', collapsed: true, items: [
                         { text: '任务8', link: '/algorithm/tasks/8' },
                         { text: '任务9', link: '/algorithm/tasks/9' },]
-                },
+                }, { text: '提交复杂任务', link: '/algorithm/tasks/submit-complex' },
                 {
                     text: '任务10-13(AI)', link: '/algorithm/tasks/10', collapsed: true, items: [
                         { text: '任务10', link: '/algorithm/tasks/10' },
                         { text: '任务11', link: '/algorithm/tasks/11' },
                         { text: '任务12', link: '/algorithm/tasks/12' },
                         { text: '任务13', link: '/algorithm/tasks/13' },]
+                },
+                {
+                    text: '任务14(ros)', link: '/algorithm/tasks/14', collapsed: true, items: [
+                        { text: '任务14', link: '/algorithm/tasks/14' },]
                 },
             ]
         },
