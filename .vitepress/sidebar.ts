@@ -79,8 +79,10 @@ export const sidebar = {
                 },
                 {
                     text: 'ROS', link: '/algorithm/ros/', collapsed: true, items: [
-                        { text: '基础概念', link: '/algorithm/ros/' },
-                        { text: '安装', link: '/algorithm/ros/install' }
+                        { text: '关于ROS', link: '/algorithm/ros/' },
+                        { text: '安装', link: '/algorithm/ros/install' },
+                        { text: '基础概念', link: '/algorithm/ros/basics' },
+                        { text: '实现节点', link: '/algorithm/ros/simple-node' }
                     ]
                 },
                 {
@@ -94,9 +96,9 @@ export const sidebar = {
         },
         {
             text: '其他', items: [
-                { text: 'RM优质开源项目整理', link: '/algorithm/open-sources' },
-                { text: '优秀学习资源', link: '/algorithm/resources' },
-                { text: '与其他岗位协作需要的知识', link: '/algorithm/others' }
+                { text: 'RM优质开源项目', link: '/algorithm/open-sources' },
+                { text: '优秀学习资料', link: '/algorithm/resources' },
+                { text: '与其他工种协作', link: '/algorithm/others' }
             ]
         },
         {

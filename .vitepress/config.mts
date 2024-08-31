@@ -1,9 +1,10 @@
 import footnote from 'markdown-it-footnote'
+import taskCheckbox from 'markdown-it-task-checkbox'
 import { withMermaid } from 'vitepress-plugin-mermaid'
+import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import { icons } from './icons'
 import { sidebar } from './sidebar'
-import taskCheckbox from 'markdown-it-task-checkbox'
-// https://vitepress.dev/reference/site-config
+
 export default withMermaid({
   title: "浙理钱塘蛟",
   description: "浙江理工大学robomaster战队",
@@ -12,9 +13,10 @@ export default withMermaid({
     ['meta', { property: 'og:title', href: '浙理钱塘蛟' }],
     ['meta', { property: 'og:description', href: '浙江理工大学 Robomaster 战队' }],
     ['meta', { property: 'og:img', href: 'https://docs.015609.best/logo.png' }],
-    ['script', { async: '', src: "/global.js" }]],
+    ['script', { async: '', src: "/global.js" }]
+  ],
+  lang: "zh-cn",
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: '开始', link: '/get-started/' },
       { text: '算法组', link: '/algorithm/' },
@@ -41,6 +43,20 @@ export default withMermaid({
       md.use(taskCheckbox)
     },
     math: true
+  },
+  vite: {
+    plugins: [pagefindPlugin({
+      btnPlaceholder: '搜索',
+      placeholder: '搜索文档',
+      emptyText: '空空如也',
+      heading: '共: {{searchResult}} 条结果',
+      customSearchQuery(input) {
+        // 将搜索的每个中文单字两侧加上空格，缓解pagefind分词效果不好的情况
+        return input.replace(/[\u4E00-\u9FA5]/g, ' $& ')
+          .replace(/\s+/g, ' ')
+          .trim()
+      }
+    })]
   }
 })
 

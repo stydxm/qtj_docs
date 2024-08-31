@@ -1,7 +1,7 @@
-import DefaultTheme from 'vitepress/theme-without-fonts'
 import "@fontsource/jetbrains-mono"
-import './custom-font.css'
+import DefaultTheme from 'vitepress/theme-without-fonts'
 import Qrcode from './components/Qrcode.vue'
+import './custom-font.css'
 
 export default {
     extends: DefaultTheme,
