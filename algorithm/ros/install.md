@@ -1,4 +1,5 @@
 # 安装
+## 安装
 在ubuntu系统上ros的安装并不复杂，网上也有一些脚本，但不推荐，因为可能你会找到一些过时的资源
 
 因此我直接把所有命令写好放在下面，全部复制执行即可
@@ -11,6 +12,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 # 安装并启用
 sudo apt update
 sudo apt install -y ros-humble-desktop python3-rosdep
+sudo apt install -y ros-humble-rqt rviz
 echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 

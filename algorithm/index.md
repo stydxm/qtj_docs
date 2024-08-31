@@ -60,3 +60,4 @@ Search the F**king website
 [AI By Doing](https://aibydoing.com)  
 [CS50’s Introduction to Artificial Intelligence with Python](https://cs50.harvard.edu/ai)  
 [华南虎视觉组主页](https://vision.scutbot.cn/)  
+[动手学ROS2](https://fishros.com/d2lros2/)  
