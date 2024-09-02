@@ -15,6 +15,9 @@ hero:
     - theme: alt
       text: 了解RoboMaster💻
       link: https://www.bilibili.com/video/BV14g4y1z7QC
+    - theme: alt
+      text: 常见问题❔
+      link: /get-started/faq
 
 features:
   - title: 算法组

@@ -45,18 +45,20 @@ export default withMermaid({
     math: true
   },
   vite: {
-    plugins: [pagefindPlugin({
-      btnPlaceholder: '搜索',
-      placeholder: '搜索文档',
-      emptyText: '空空如也',
-      heading: '共: {{searchResult}} 条结果',
-      customSearchQuery(input) {
-        // 将搜索的每个中文单字两侧加上空格，缓解pagefind分词效果不好的情况
-        return input.replace(/[\u4E00-\u9FA5]/g, ' $& ')
-          .replace(/\s+/g, ' ')
-          .trim()
-      }
-    })]
+    plugins: [
+      pagefindPlugin({
+        btnPlaceholder: '搜索',
+        placeholder: '搜索文档',
+        emptyText: '空空如也',
+        heading: '共: {{searchResult}} 条结果',
+        customSearchQuery(input) {
+          // 将搜索的每个中文单字两侧加上空格，缓解pagefind分词效果不好的情况
+          return input.replace(/[\u4E00-\u9FA5]/g, ' $& ')
+            .replace(/\s+/g, ' ')
+            .trim()
+        }
+      })
+    ]
   }
 })
 
