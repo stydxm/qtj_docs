@@ -20,5 +20,5 @@ const browser = detectBrowser()
 const mobile = detectMobile()
 if (dir !== "/") {
     if (browser) alert(`请不要使用${browser}访问\n建议使用电脑端的chrome或firefox或edge`)
-    else if (mobile) alert("建议使用电脑访问")
+    // else if (mobile) alert("建议使用电脑访问")
 }
