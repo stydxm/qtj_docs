@@ -1,4 +1,5 @@
-# 关于算法组
+# 总览
+## 关于算法组
 ::: tip 提示
 与其他组不同，算法组的工作更偏向计算机和软件工程方向，因此需要有计算机科学的基本知识并至少掌握一门编程语言
 :::
@@ -17,7 +18,7 @@
 
 [这里有一份学习路线的思维导图](https://www.processon.com/view/link/6236db1a5653bb071e70457b)可供参考，内容很多但不要被它吓住，实际不会用到这么多知识
 
-# 计算机基础
+## 计算机基础
 ::: warning 提示
 零基础指的是没有计算机基础而不是不会用电脑，赛博文盲[这边请](https://cyber.gledos.science/skills/index.html)
 :::
@@ -26,12 +27,12 @@
 
 这里虽然有一些资料可以提供，但是并不建议你去学习，它们内容较广较深，包含了一些还不需要了解的知识
 
-# 关于任务
+## 关于任务
 在教程中，你还需要完成一些任务
 
 关于这些任务，请看[这里](tasks/)
 
-# 先学会两个名词
+## 先学会两个名词
 ::: danger RTFM
 Read the F**king Manual
 :::
@@ -42,9 +43,10 @@ Search the F**king website
 
 ![](/images.jpg)
 
-<iframe src="//player.bilibili.com/player.html?bvid=BV1om4y1H71S&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%;height: 23rem;"></iframe>
+<iframe src="//player.bilibili.com/player.html?bvid=BV1om4y1H71S&autoplay=false" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%;height: 23rem;border: none;"></iframe>
+<!--  -->
 
-# 参考文献
+## 参考文献
 以下是编写本教程的一些参考资料：  
 [An introduction to computer vision and RoboMaster algorithm group](https://github.com/NeoZng/vision_tutorial)  
 [北极熊RoboMaster](https://flowus.cn/lihanchen/share/d2e24166-8a8d-4262-a4b4-b4d25f52d890)  
