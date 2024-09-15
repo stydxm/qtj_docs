@@ -134,6 +134,14 @@ export const sidebar = {
             ]
         },
     ],
+    '/senior-control/': [
+        {
+            items: [
+                { text: 'Git', link: '/senior-control/git/' },
+                { text: 'LQR控制', link: '/senior-control/lqr/' },
+            ]
+        }
+    ],
     '/mechanics/': [
         {
             items: [
