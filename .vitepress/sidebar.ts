@@ -138,7 +138,7 @@ export const sidebar = {
         {
             items: [
                 { text: 'Git', link: '/senior-control/git/' },
-                { text: 'LQR控制', link: '/senior-control/lqr/' },
+                { text: 'LQR', link: '/senior-control/lqr/' },
             ]
         }
     ],

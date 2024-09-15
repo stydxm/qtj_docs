@@ -4,7 +4,9 @@
 
 要维护此文档，请加入自托管git服务器上的`infra`组织，文档构建前的源文件位于`infra/qjt_docs`
 
-请阅读[VitePress文档](https://vitepress.dev/zh/)，学习[Markdown](https://soc.ustc.edu.cn/Digital/lab0/markdown/)语法，编写内容后提交
+请阅读[VitePress文档](https://vitepress.dev/zh/)，学习[Markdown](/get-started/markdown)语法，编写内容后提交
+
+如果不动导航栏、自定义内容等，只是改md的内容的话，直接编辑好提交到git服务器即可
 
 ::: tip 提示
 左侧边栏配置文件位于`.vitepress/sidebar.ts`

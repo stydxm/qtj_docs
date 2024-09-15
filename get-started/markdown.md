@@ -122,6 +122,9 @@ int main() {
 ```
 
 ---
+这里的公式其实不是markdown的一部分，它是另一种叫[LaTeX](https://latex-project.org/)的语言
+
+但因为绝大多数Markdown的编辑器解析器都能支持，而且用的也比较多，所以一起写在这里了
 
 数学公式块:
 
