@@ -23,10 +23,12 @@
 
 ## 安装虚拟机软件
 ::: tip 提示
-推荐的安装方法是虚拟机，如果你有空闲的电脑可以直接安装那更好，也可以自己去折腾WSL这些方案（同上，不懂就先按课程走，别瞎搞）
+推荐的安装方法是虚拟机，如果你有空闲的电脑，直接在裸机上安装那更好，也可以自己去折腾WSL这些方案（同上，不懂就先按课程走，别瞎搞）
+
+如果你愿意折腾，双系统是学习体验更好的方案，这部分可以看[这个教程](https://hx-cn.top/archives/dual-boot-ubuntu-2204-and-windows-11)，注意其中的下载系统镜像部分可以参照我下面写的
 :::
 
-打开[这个网页](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)，往下滑，点`Workstation 17 Pro for Windows`然后点`DOWNLOAD NOW`
+<!-- 打开[这个网页](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)，往下滑，点`Workstation 17 Pro for Windows`然后点`DOWNLOAD NOW`
 
 ![](/Screenshot_20240423_182343.png)
 
@@ -34,7 +36,11 @@
 
 **`JU090-6039P-08409-8J0QH-2YR7F`**
 
-![](/boxcndgDKfTuio3nF0QboemIPHe.png)
+![](/boxcndgDKfTuio3nF0QboemIPHe.png) -->
+
+我们推荐的虚拟机软件是VMware，但由于它刚被broadcom收购，软件的下载、授权方式发生了比较大的变化，网上很多老的教程不再适用
+
+建议参考[这个教程](https://www.cnblogs.com/EthanS/p/18211302)，如果觉得官网注册麻烦也可以从网上很多教程里找到网盘链接
 
 ## 下载系统镜像
 浏览器直接打开[这个链接](http://mirrors.nju.edu.cn/ubuntu-releases/22.04.4/ubuntu-22.04.4-desktop-amd64.iso)，然后等下载完成就行
@@ -46,7 +52,7 @@
 ::: info 说明
 本页写于2024.4.23，此时距24.04LTS发布还有两天
 
-各类环境和库不可能几周内完成适配，因此还是推荐22.04
+各类环境和库完成适配还需要一段时间，因此还是推荐22.04
 
 请后人维护文档时注意与时俱进，不要老用着EOL的古董！
 :::
