@@ -84,4 +84,5 @@ https://pan.baidu.com/s/11BclIdWCZy47IBXv-1bJOA?pwd=9gn9
 #### （10）学习更多的电路知识
 https://github.com/DonotFreeze/RoboMater-Hardware-Group-Learning-Path?tab=readme-ov-file （学习第三章硬件知识）
 
-#### （11）造超电！！！
+#### （11）SMT下单教程
+https://pan.baidu.com/s/14igsrnHJBQWPlRYUrWfOjw?pwd=qva7
