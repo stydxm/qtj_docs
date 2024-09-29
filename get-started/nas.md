@@ -20,6 +20,7 @@ Linux使用可以[装deb包](https://mirror.ghproxy.com/github.com/localsend/loc
 ::: tip 提示
 仅windows教程，macos应该大差不差，至于linux……你都用linux了肯定会连
 :::
+
 - 在任意文件夹点击左侧`网络`，如果提示网络共享未开启，自行搜索打开方式
 - **理论上**可以看见一个叫`MEMOSPACE`的设备，点进去即可
 ![](/mmexport1713798840420.png)
@@ -33,7 +34,7 @@ Linux使用可以[装deb包](https://mirror.ghproxy.com/github.com/localsend/loc
 
 - 打开[http://nas.015609.best/](http://nas.015609.best/)，理论上浏览器应该会自动跳转到登陆界面
 ![](/Screenshot_20240422_230652.png)
-- 点击白框右下角的钉钉logo，授权并登陆
+- 点击白框右下角的按钮，然后再跳出的窗口里点下方钉钉logo，授权并登陆
 - 登陆完成后应该会跳转到这样的一个界面，点击左栏的主页
 ![](/Screenshot_20240422_230828.png)
 - 这时候你应该可以看见文件夹了

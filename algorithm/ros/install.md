@@ -11,8 +11,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 
 # 安装并启用
 sudo apt update
-sudo apt install -y ros-humble-desktop python3-rosdep
-sudo apt install -y ros-humble-rqt rviz
+sudo apt install -y ros-humble-desktop python3-rosdep ros-humble-rqt rviz
 echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 
