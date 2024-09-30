@@ -7,15 +7,14 @@
 ``` bash
 sudo apt install -y python3 python3-pip python3-venv python3-opencv python-is-python3
 ```
-```
-# 命令解释：
-# sudo代表用最高权限执行
-# apt是debian系的包管理器，可以用命令安装或卸载软件
-# install是apt的子命令，用于代表安装软件
-# 后面的都是软件的包名，如果你还有需要安装的软件，可以用空格隔开然后放在后面
-```
 
 如果问是否同意，输入y再按回车
+
+命令解释：
+- sudo代表用最高权限执行
+- apt是debian系的包管理器，可以用命令安装或卸载软件
+- install是apt的子命令，用于代表安装软件
+- 后面的都是软件的包名，如果你还有需要安装的软件，可以用空格隔开然后放在后面
 
 理论上说装好了的话，输入
 
@@ -47,7 +46,7 @@ python3 main.py
 :::
 
 ## 开始学习
-这里推荐[Python官方的中文教程](https://docs.python.org/zh-cn/3/tutorial/introduction.html)，从`3. Python 速览`开始看到`6.2. 标准模块`，其中以下章节可以不看
+这里推荐[Python的官方中文教程](https://docs.python.org/zh-cn/3/tutorial/introduction.html)，从`3. Python 速览`开始看到`6.2. 标准模块`，其中以下章节可以跳过不看
 
 - 4.8.3
 - 4.8.6-4.9

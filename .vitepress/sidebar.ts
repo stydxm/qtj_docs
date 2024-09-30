@@ -47,9 +47,9 @@ export const sidebar = {
                     text: "Python", link: '/algorithm/python/', collapsed: true, items: [
                         { text: '关于Python', link: '/algorithm/python/' },
                         { text: '基础语法', link: '/algorithm/python/syntax' },
+                        { text: '面向对象', link: '/algorithm/python/oop' },
                         { text: '标准库', link: '/algorithm/python/standard-library' },
-                        { text: '第三方库', link: '/algorithm/python/3rd-packages' },
-                        { text: '面向对象', link: '/algorithm/python/oop' }
+                        { text: '第三方库', link: '/algorithm/python/3rd-packages' }
                     ]
                 },
                 {
