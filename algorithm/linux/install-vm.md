@@ -1,5 +1,5 @@
 ::: tip 提示
-这里只有大致的步骤描述，应该都能看懂，哪一步是在搞不明白可以看看[这篇文章](https://hdu-cs.wiki/2.%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9D%97/2.1%20NekoBytes-TheMissing/2.1.1%20Book/2.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)，里面有每一步的截图
+这里只有大致的步骤描述，应该都能看懂，哪一步实在搞不明白可以看看[这篇文章](https://hdu-cs.wiki/2.%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9D%97/2.1%20NekoBytes-TheMissing/2.1.1%20Book/2.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)，里面有每一步的截图
 :::
 
 # 安装系统
