@@ -1,5 +1,5 @@
 ::: tip 提示
-这里只有大致的步骤描述，应该都能看懂，哪一步是在搞不明白可以看看[这篇文章](https://juejin.cn/post/7122273969520001061)，里面有每一步的截图（文章里是vmware16，现在已经更新到17了，操作应该是一模一样的）
+这里只有大致的步骤描述，应该都能看懂，哪一步是在搞不明白可以看看[这篇文章](https://hdu-cs.wiki/2.%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9D%97/2.1%20NekoBytes-TheMissing/2.1.1%20Book/2.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)，里面有每一步的截图
 :::
 
 # 安装系统
@@ -7,13 +7,13 @@
 
 ![](/ubuntu.png)
 
-这张图就是ubuntu的logo<!--，~~不是下面这个~~-->
-
-<!--![](https://mirror.ghproxy.com/raw.githubusercontent.com/SAWARATSUKI/ServiceLogos/main/Ubuntu/Ubuntu.png)-->
+这张图就是ubuntu的logo
 
 不同于windows，ubuntu的版本命名规则非常简单，就是`年份.月份`，比如`22.04`就是2022年4月份发布的ubuntu版本，比如`23.10`就是2023年10月份发布的。
 
-按现行的策略，两年发布一个`LTS`版，即长支持版本，一些较复杂的库通常只会提供lts的支持（虽然很可能别的版本也能跑）
+按现行的策略，两年发布一个`LTS`版，即长支持版本，规模大的项目通常只会提供lts的支持[^1]
+
+[^1]: 不支持不代表不能跑，很可能直接就能运行，或者需要手动编译。但除非你在开发这些项目或者有特殊的原因，不然不要去这么做
 
 ::: info 说明
 如果你了解这一部分内容，那就不用看了，自己按习惯配好环境装好IDE就行了
@@ -28,19 +28,13 @@
 如果你愿意折腾，双系统是学习体验更好的方案，这部分可以看[这个教程](https://hx-cn.top/archives/dual-boot-ubuntu-2204-and-windows-11)，注意其中的下载系统镜像部分可以参照我下面写的
 :::
 
-<!-- 打开[这个网页](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)，往下滑，点`Workstation 17 Pro for Windows`然后点`DOWNLOAD NOW`
+我们推荐的虚拟机软件是VirtualBox。这一方面是因为它是开源软件，同时VMWare被broadcom收购后下载、授权方式发生了比较大的变化
 
-![](/Screenshot_20240423_182343.png)
+[点击这里下载](https://mirrors.bfsu.edu.cn/virtualbox/7.0.20/VirtualBox-7.0.20-163906-Win.exe)VirtualBox软件本体
 
-下载完直接双击打开，一路下一步，最后一步点许可证，然后输入这个
+下载完直接双击打开，一路下一步完成安装
 
-**`JU090-6039P-08409-8J0QH-2YR7F`**
-
-![](/boxcndgDKfTuio3nF0QboemIPHe.png) -->
-
-我们推荐的虚拟机软件是VMware，但由于它刚被broadcom收购，软件的下载、授权方式发生了比较大的变化，网上很多老的教程不再适用
-
-建议参考[这个教程](https://www.cnblogs.com/EthanS/p/18211302)，如果觉得官网注册麻烦也可以从网上很多教程里找到网盘链接
+然后[再点这里下载拓展包](https://mirrors.bfsu.edu.cn/virtualbox/7.0.20/Oracle_VM_VirtualBox_Extension_Pack-7.0.20.vbox-extpack)，下载完成后双击打开既可完成安装
 
 ## 下载系统镜像
 浏览器直接打开[这个链接](http://mirrors.nju.edu.cn/ubuntu-releases/22.04.4/ubuntu-22.04.4-desktop-amd64.iso)，然后等下载完成就行
@@ -64,13 +58,27 @@
 这里CPU和内存都可以给多一点，具体多少要看电脑配置，近几年主流配置给到8个CPU核心和8G内存应该是没有问题的，这样可以减少虚拟机带来的卡顿
 :::
 
-点击：创建新的虚拟机 - 典型（推荐）- 下一步 - 安装程序 iso 选中你刚下的 iso
+点击上方新建，名称可以自己写（英文），虚拟光盘这里选中刚才下载的iso，勾选下面的跳过自动安装
 
-![](/boxcnGHnjgZvtcBrm0XXitFl4Jg.png)
+![](/virtualbox-ubuntu2.png)
 
-启动后一路next就好
+硬件的部分，配置按情况写但不要太低，建议是内存和CPU都分实体机的一半
 
-![](/boxcnLxZnyFN3ohE8zrTwNaCA8e.png)
+硬盘不要设太小，后续扩容很麻烦，注意储存的位置
+
+完成后点完成回到主界面，再点击上方启动
+
+::: info 信息
+安装阶段虚拟机有可能不会自动处理鼠标捕获，按右边的ctrl就可以释放鼠标
+:::
+
+等待一会儿，在进入这个界面后，点击右侧的Install Ubuntu
+
+::: info 信息
+左侧可以选语言，也可以安装完了在系统里选
+:::
+
+![](/virtualbox-ubuntu7.png)
 
 这里的用户名一定要写纯英文，不要有空格和任何别的字符，不然以后会遇到各种麻烦问题
 
@@ -80,8 +88,10 @@
 
 ![](/boxcnG6z1VpAYUGMSkSwDBUxEvf.png)
 
-后面我们提到的`在命令行中输入`就是指在这个窗口里，没说也是指在这里输入
+后面我们提到的`在命令行中输入`就是指在这个窗口里，没说也是指在这里输入。点左下角的按钮打开应用列表，里面的`终端`也就是这同一个软件
 
 ::: tip 提示
-命令行里输密码的时候不会有任何显示，不用怀疑有没有打进去，输完按回车就行，如果提示错误就重来一次
+命令行里输密码的时候不会有任何显示，不用怀疑有没有打进去
+
+这一点确实比较反直觉，输完按回车就行，如果提示错误就重来一次
 :::

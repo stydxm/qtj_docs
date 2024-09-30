@@ -1,6 +1,6 @@
 # 系统配置
 ::: tip 提示
-很多在windows下需要配置很久的软件，在linux下往往只需要几行命令就可以实现，方便很多哦
+很多在windows下需要配置很久的软件，在linux下往往只需要几行命令就可以实现，方便很多，还会自动处理依赖，这也是用linux的一个重要原因
 :::
 
 ::: warning 注意
@@ -46,7 +46,7 @@ linux下的复制粘贴不是`ctrl+c`和`ctrl+v`，请使用`ctrl+shift+c`和`ct
 
 ## 安装一些常用包
 ``` bash
-sudo apt install -y git curl wget vim tmux screen zip unzip gcc g++ make cmake build-essential pkg-config gnupg2
+sudo apt install -y git curl wget vim tmux screen zip unzip gcc g++ make cmake build-essential pkg-config gnupg2 gpg apt-transport-https
 ```
 
 ## Python环境
@@ -73,15 +73,12 @@ python --version
 这里推荐用vscode，它对于python和c++都提供了很好的支持。如果你习惯jetbrains的软件，那么pycharm和clion也是很好的选择
 :::
 
-![](https://mirror.ghproxy.com/raw.githubusercontent.com/Aikoyori/ProgrammingVTuberLogos/main/VSCode/VSCode-Thick.png)
 
 ``` bash
-sudo apt install wget gpg
 wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
 sudo install -D -o root -g root -m 644 packages.microsoft.gpg /etc/apt/keyrings/packages.microsoft.gpg
 echo "deb [arch=amd64 signed-by=/etc/apt/keyrings/packages.microsoft.gpg] https://packages.microsoft.com/repos/code stable main" |sudo tee /etc/apt/sources.list.d/vscode.list > /dev/null
 rm -f packages.microsoft.gpg
-sudo apt install apt-transport-https
 sudo apt update
 sudo apt install code
 sudo update-alternatives --set editor /usr/bin/code
@@ -104,63 +101,8 @@ C/C++ Extension Pack
 ```
 
 ::: tip 提示
-打前面几个词再等会儿，要装的包应该在搜索结果很靠前的位置
+打前面几个字母后可以等一会儿，要装的包应该在搜索结果很靠前的位置
 :::
-
-<!--## C++环境和opencv
-`gcc`编译器和`cmake`这些应该会随系统安装，我们只需要手动装`opencv`并配置
-
-::: danger 警告
-从这里开始，所有的操作都需要在 **同一个目录中** 进行，即之前在vscode里写了那三个json文件的目录的父目录
-
-关于如何进入目录，查看前面的章节
-:::
-
-<strong style="color: red">（看完下面的再去配！！！）</strong> 按照[这篇文章](https://www.cnblogs.com/booturbo/p/17399215.html)的步骤配置，这里不赘述。其中VScode的安装部分在上面以及完成了  <strong style="color: red">（看完下面的再去配！！！）</strong>
-
-::: tip 提示
-跳过文中的`7. 通过 cmake和gcc 来构建C/C++程序调用OpenCV`，从6直接到`8. 使用VS Code 配置C/C++项目环境来调用OpenCV`
-:::
-
-::: warning 注意
-1（3）安装各种依赖库这一节里面有一行命令`sudo apt-get install python-dev python-numpy`
-
-这个是有问题的，应该改成`sudo apt-get install python3-dev python3-numpy`
-:::
-
-::: info 信息
-配置的时候可能会出现找不到`launch.json`和`c_cpp_properties.json`的情况，生成方式：
-
-### lauch.json
-在你刚才写cpp文件的那个页面，右上角有一个齿轮形状的按钮，点一下
-
-### c_cpp_properties.json
-同时按`ctrl+shift+p`，搜索找到`C/C++: 编辑配置(JSON)`，如果没切中文的话就是`C/C++: Edit Configurations(JSON)`
-:::
-
-::: tip 提示
-编程中会用到的引号其实有三种，双引号` " `单引号` ' `和反引号``` ` ```，英文模式下按键盘1左边，tab上面的那个键就可以打出来
-
-除了反引号之外，某些图片中的下划线也有可能会打错，看图时需要注意
-:::
-
-::: tip 提示
-``` bash
-git clone https://github.com/opencv/opencv.git
-```
-这一步可能会非常慢，建议换成
-``` bash
-git clone https://gitcode.com/opencv/opencv.git
-```
-:::
-
-::: tip 提示
-里面的图片自己随便找一张就行，但注意文件名，可以改图片里的文件名，也可以选择改代码里的
-:::
-
-::: tip 提示
-不要按原教程写.cc，而是写.cpp，以后也一样
-:::-->
 
 ## 任务
 完成[任务1-2](../tasks/1)
