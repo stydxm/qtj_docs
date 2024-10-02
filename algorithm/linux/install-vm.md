@@ -37,7 +37,7 @@
 然后[再点这里下载拓展包](https://mirrors.bfsu.edu.cn/virtualbox/7.0.20/Oracle_VM_VirtualBox_Extension_Pack-7.0.20.vbox-extpack)，下载完成后双击打开既可完成安装
 
 ## 下载系统镜像
-浏览器直接打开[这个链接](http://mirrors.nju.edu.cn/ubuntu-releases/22.04.4/ubuntu-22.04.4-desktop-amd64.iso)，然后等下载完成就行
+浏览器直接打开[这个链接](https://mirrors.nju.edu.cn/ubuntu-releases/22.04.5/ubuntu-22.04.5-desktop-amd64.iso)，然后等下载完成就行
 
 ::: tip 提示
 我们的NAS里也有，在视觉组的目录下，如果你在实验室，下载会快一点
