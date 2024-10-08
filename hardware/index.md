@@ -42,7 +42,7 @@ https://www.bilibili.com/video/BV1G14y1v7be （P1-P4）
 
 ### 4.学习电路板制作
 #### （1）下载嘉立创EDA专业版和下单助手
-https://pan.baidu.com/s/1jBWVXqDMLL1h-FupYfwqbA?pwd=c8lo
+https://pan.baidu.com/s/1XmRXjiWezN_zlTliF3Y6bA?pwd=48s3
 
 #### （2）跟着视频绘制GD32E230核心板原理图和PCB
 https://www.bilibili.com/video/BV1sv4y1T7UB
