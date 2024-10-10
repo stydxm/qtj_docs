@@ -29,11 +29,11 @@ features:
   - title: 硬件组
     details: 电路板和线路的设计、制造和调试
 ---
-<script setup>
+<!-- <script setup>
   if (typeof window !== 'undefined') {
     window.location.href = '/get-started/faq/';
   }
-</script>
+</script> -->
 
 <style>
 :root {
