@@ -76,13 +76,17 @@ https://www.bilibili.com/video/BV1p741147xW?p=3
 https://www.bilibili.com/video/BV1nj411v7Lu
 
 芯片建议购买VL813，便宜，而且和VL812封装什么的一模一样，但是还是要注意很有可能买到假芯片，参考工程文件：
+
 https://pan.baidu.com/s/11BclIdWCZy47IBXv-1bJOA?pwd=9gn9
 
-#### （9）制作功率计
-主控选择STM32G431，DCDC降压、电压电流检测建议和队里的超电一样
+#### （9）单片机芯片及外围电路器件选型（以STM32为例）
+https://www.bilibili.com/video/BV1cRxCejELb
 
-#### （10）学习更多的电路知识
-https://github.com/DonotFreeze/RoboMater-Hardware-Group-Learning-Path?tab=readme-ov-file （学习第三章硬件知识）
+（word文档：https://pan.baidu.com/s/1XdfCt659niOBz0cdQDMPEw?pwd=bd8a ）
 
-#### （11）SMT下单教程
-https://pan.baidu.com/s/14igsrnHJBQWPlRYUrWfOjw?pwd=qva7
+#### （10）SMT下单教程
+https://www.bilibili.com/video/BV1hr2VYLEs5
+
+#### （11）学习更多的电路知识
+https://github.com/DonotFreeze/RoboMater-Hardware-Group-Learning-Path （学习第三章硬件知识）
+
