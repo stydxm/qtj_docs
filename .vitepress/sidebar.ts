@@ -8,7 +8,8 @@ export const sidebar = {
             ]
         },
         {
-            text: '实验室网络资源', items: [
+            text: '实验室资源', items: [
+                { text: '培训视频', link: '/get-started/record' },
                 { text: '网络', link: '/get-started/network' },
                 { text: 'Git服务器', link: '/get-started/git' },
                 { text: 'NAS', link: '/get-started/nas' }
