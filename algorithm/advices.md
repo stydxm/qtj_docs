@@ -43,6 +43,8 @@
 
 ![](/Image_1715145947275.jpg)
 
+建议阅读：[提问的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
+
 ### 浏览器
 <strong style="color: red">不要用微信自带浏览器或者任何套壳浏览器！！！</strong>
 
