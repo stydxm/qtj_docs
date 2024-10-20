@@ -22,6 +22,8 @@
 
 按照[前文教的git内容](../../get-started/learn-git)，在我们团队的gitea服务器中登陆你的账户，在 **个人空间** 中创建一个 **私有** 仓库，上传文件或者代码，注意标明是第几次任务
 
+<strong style="color: red">注意在仓库中添加一个文件，把名字写在里面，不然我很有可能不知道你是谁</strong>
+
 <strong style="color: red">用命令行或者vscode操作git时，看清楚要求输入的用户名密码是系统的还是git的，不要输错了</strong>
 
 ### 初始化本地git仓库
