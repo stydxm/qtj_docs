@@ -55,5 +55,5 @@ sudo docker run -it --rm --name ubuntu-container ubuntu:22.04 bash
 和宿主机的终端一样，输入`exit`可以退出
 
 ::: tip 提示
-如果想释放终端而不推出，可以按`Ctrl+P+Q`，再回来时输入`sudo docker exec -it ubuntu-container bash`
+如果想释放终端而不退出，可以按`Ctrl+P+Q`，再回来时输入`sudo docker exec -it ubuntu-container bash`
 :::
