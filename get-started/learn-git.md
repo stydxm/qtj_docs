@@ -194,6 +194,10 @@ git push --set-upstream origin master
 
 再在上方的输入框里写上这个commit中更改的内容（即commit message），点击提交，然后点右上角三个点，再点推送，这样就成功把你想要提交的文件传到git仓库里了
 
+::: info 说明
+vscode更新之后这个界面变了，现在应该是`提交-提交`
+:::
+
 ![](/submit.png)
 
 ::: tip 提示
