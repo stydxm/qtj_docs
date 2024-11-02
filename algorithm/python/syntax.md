@@ -35,15 +35,16 @@ python3
 ```
 就可以进入Python的交互模式
 
+::: tip 提示
+如果不想用python了，要执行其他命令，先输入`exit()`，这个函数表示结束当前程序，用在这里可以退出python
+:::
+
 对于较长的python程序，每次都输入不现实，那么可以将它写入一个`.py`结尾的文件
 
 比如，如果它叫`main.py`，那就可以写
 ``` bash
 python3 main.py
 ```
-::: tip 提示
-如果你试了上一个命令，那先关掉窗口再打开，不然会得到预期之外的结果
-:::
 
 ## 开始学习
 这里推荐[Python的官方中文教程](https://docs.python.org/zh-cn/3/tutorial/introduction.html)，从`3. Python 速览`开始看到`6.2. 标准模块`，其中以下章节可以跳过不看
