@@ -53,10 +53,11 @@ code .
 ### 创建包含节点代码的.cpp文件
 在your_package_name/src下创建.cpp文件
 
-：：：warning 警告
+:::warning 警告
 注意！要在功能包名下src文件夹创建.cpp文件，切忌在工作空间下src文件夹创建.cpp文件，不然编译的时候根本找不到对应文件。
 
-：：：
+:::
+
 示例代码如下 `cpp_node_test.cpp`：
 
 ```cpp
@@ -73,7 +74,7 @@ int main(int argc, char **argv)
 }
 ```
 
-：：：tips 提示
+:::tips 提示
 此时代码报错没关系，因为编辑器的扩展C/C++插件还没有定位到rclcpp库，所以找不到头文件。
 
 我们需要在C/C++配置中添加rclcpp头文件路径。
@@ -98,7 +99,8 @@ int main(int argc, char **argv)
 }
 ```
 
-：：：
+:::
+
 ### 在CMakeLists.txt中注册节点
 一般来说节点是一个可执行文件，所以我们需要在CMakeLists.txt中注册节点。
 
