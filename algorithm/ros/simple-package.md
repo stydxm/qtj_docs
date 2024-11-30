@@ -125,11 +125,11 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 
-add_executable(cpp_node src/cpp_node_test.cpp)# 添加可执行文件
-ament_target_dependencies(cpp_node rclcpp)# 添加依赖
-install(TARGETS
-  cpp_node
-  DESTINATION lib/${PROJECT_NAME}
+add_executable(cpp_node src/cpp_node_test.cpp)# 添加可执行文件// [!code focus]
+ament_target_dependencies(cpp_node rclcpp)# 添加依赖// [!code focus]
+install(TARGETS// [!code focus]
+  cpp_node// [!code focus]
+  DESTINATION lib/${PROJECT_NAME}// [!code focus]
 )# 将可执行文件安装到lib/${PROJECT_NAME}目录下，以便后续使用。// [!code focus]
 
 if(BUILD_TESTING)

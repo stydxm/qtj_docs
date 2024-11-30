@@ -84,7 +84,9 @@ export const sidebar = {
                         { text: '安装', link: '/algorithm/ros/install' },
                         { text: '基础概念', link: '/algorithm/ros/basics' },
                         { text: '实现节点', link: '/algorithm/ros/simple-node' },
-                        { text: '功能包与工作空间', link: '/algorithm/ros/simple-package' }
+                        { text: '功能包与工作空间', link: '/algorithm/ros/simple-package' },
+                        { text: '话题通信', link: '/algorithm/ros/topic' }
+
                     ]
                 },
                 {
