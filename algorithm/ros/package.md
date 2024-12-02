@@ -7,7 +7,6 @@
 - ament_python，适用于python程序
 - cmake，适用于C++（我们一般不使用）
 - ament_cmake，适用于C++程序,是cmake的增强版（最常用）
-
 不动就问，工作空间是什么？
 工作空间是包含若干个功能包的目录，一开始大家把工作空间理解成一个文件夹就行了,一般来说我们会将一个项目的所有功能包放在一个工作空间中。可以理解为一个项目的根目录。
 
@@ -74,9 +73,9 @@ int main(int argc, char **argv)
 }
 ```
 
-:::tips 提示
+:::warning 提示
 此时代码报错没关系，因为编辑器的扩展C/C++插件还没有定位到rclcpp库，所以找不到头文件。
-
+:::
 我们需要在C/C++配置中添加rclcpp头文件路径。
 
 ```json {7}
@@ -99,7 +98,7 @@ int main(int argc, char **argv)
 }
 ```
 
-:::
+
 
 ### 在CMakeLists.txt中注册节点
 一般来说节点是一个可执行文件，所以我们需要在CMakeLists.txt中注册节点。
