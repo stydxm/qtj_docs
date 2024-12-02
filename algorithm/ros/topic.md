@@ -83,7 +83,7 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
-# 生成接口
+# 生成接口// [!code focus]
 rosidl_generate_interfaces(${PROJECT_NAME}// [!code focus]
   "msg/AddressBook.msg"#此处为自定义接口.msg// [!code focus]
   DEPENDENCIES builtin_interfaces// [!code focus]
@@ -299,13 +299,13 @@ find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(more_interfaces REQUIRED)
 
-# Add publisher executable
-add_executable(publish_address_book src/publish_address_book.cpp)
-ament_target_dependencies(publish_address_book rclcpp more_interfaces)
+# Add publisher executable// [!code focus]
+add_executable(publish_address_book src/publish_address_book.cpp)// [!code focus]
+ament_target_dependencies(publish_address_book rclcpp more_interfaces)// [!code focus]
 
-# Add subscriber executable
-add_executable(subscribe_address_book src/subscribe_address_book.cpp)
-ament_target_dependencies(subscribe_address_book rclcpp more_interfaces)
+# Add subscriber executable// [!code focus]
+add_executable(subscribe_address_book src/subscribe_address_book.cpp)// [!code focus]
+ament_target_dependencies(subscribe_address_book rclcpp more_interfaces)// [!code focus]
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
