@@ -16,7 +16,7 @@
 一种通俗的理解：
 - 外卖餐馆是服务端，客户是客户端，可以有多个客户(client)同时点餐(request)，每个客户点餐后，餐馆(server)做菜并通过外卖小哥送回客户所点的菜品(response)。你点餐就做菜，不点餐就不做菜，这就是服务通信。
 - 而话题通信相当于你去学校食堂吃快餐。学校的食堂（publisher），根据统一的配方（interface）做好快餐(topic)并在窗口发布（publish），你(subscriber)可以选择吃（subscribe）或者不吃，但是食堂会一直批量生产快餐，不会因为你不吃而停止生产。
-- 
+
  ### 1.3 应用场景
 服务通信的概念在机器人控制上的应用有很多，以下是一些常见的可以通过服务-客户端任务构建的机器人任务：
 - 哨兵机器人导航：机器人通过服务请求导航节点，导航节点返回机器人的导航路径。
@@ -126,6 +126,7 @@ int64 sum
 
 ### 2.2服务端实现
 服务端的实现和话题的发布者实现类似，也是通过创建一个节点，然后创建一个服务来实现的。下面是一个简单的服务端实现的例子：
+在src目录下构建服务端接口功能包：
 ```bash [cmd]
 ros2 pkg create example_service --build-type ament_cmake --dependencies rclcpp example_interfaces
 ```
@@ -202,8 +203,8 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(example_interfaces REQUIRED)
-add_executable(add_two_ints_server src/add_two_ints_server.cpp)
-ament_target_dependencies(add_two_ints_server rclcpp example_interfaces)
+add_executable(add_two_ints_server src/add_two_ints_server.cpp) // [!code focus]
+ament_target_dependencies(add_two_ints_server rclcpp example_interfaces) // [!code focus]
 install(TARGETS // [!code focus]
         add_two_ints_server  // [!code focus]
         DESTINATION lib/${PROJECT_NAME}) // [!code focus]
@@ -246,6 +247,7 @@ ament_package()
   </export>
 </package>
 ```
+:::
 写好代码后，编译节点：
 ```bash
 colcon build --allow-overriding example_interfaces
