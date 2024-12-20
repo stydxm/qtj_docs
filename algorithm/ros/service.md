@@ -1,6 +1,6 @@
 # ROS2服务通信
 
-官方文档链接：
+官方文档链接：[了解服务](https://fishros.org/doc/ros2/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html)
 ## 1. 服务的概念
 ### 1.1 概念介绍
 服务分为客户端和服务端，平时我们用的手机APP都可以成为客户端，而APP服务器对于软件来说就是服务端。
@@ -255,6 +255,30 @@ colcon build --allow-overriding example_interfaces
 ```bash
 source install/setup.bash
 ```
+运行服务端节点：
+```bash
+ros2 run example_service add_two_ints_server
+```
+服务端会输出服务已启动的提示信息，类似如下：
+```bash
+[INFO] [1734720047.138933760] [add_two_ints_server]: Service is ready to add two integers.
+```
+我们可以通过 `ros2 service list` 命令查看当前运行的服务：
+```bash
+ros2 service list
+```
+如果一切正常，你会看到以下输出，说明服务已经运行：
+```bash
+/add_two_ints
+/add_two_ints_server/describe_parameters
+/add_two_ints_server/get_parameter_types
+/add_two_ints_server/get_parameters
+/add_two_ints_server/list_parameters
+/add_two_ints_server/set_parameters
+/add_two_ints_server/set_parameters_atomically
+```
+其中 `/add_two_ints` 是我们创建的服务，`/add_two_ints_server/describe_parameters` 等是 ROS 2 内部的服务,用于参数管理。
+
 
 我们目前没有编写客户端，所以我们现在使用 `ros2 service call` 命令手动发送请求，来模拟客户端发送请求。例如将 `a=10` 和 `b=20` 发送到服务端：
 ```bash
@@ -267,7 +291,7 @@ requester: making request: example_interfaces.srv.AddTwoInts_Request(a=10, b=20)
 response:
 example_interfaces.srv.AddTwoInts_Response(sum=30)
 ```
-至此，服务端的实现就完成了。
+说明服务端已经成功接收到请求，并返回了计算结果 sum=30。
 
 ### 2.3 客户端实现
 客户端的实现和话题的订阅者实现类似，也是通过创建一个节点，然后创建一个客户端来实现的。下面是一个简单的客户端实现的例子：
@@ -408,6 +432,7 @@ ros2 run example_service add_two_ints_server
 ```bash
 ros2 run example_service add_two_ints_client
 ```
+
 客户端会发送请求到服务端，服务端会返回计算结果，客户端会打印出计算结果，类似如下：
 ```bash
 [INFO] [1734687434.059710704] [add_two_ints_client]: Received response: sum=30
