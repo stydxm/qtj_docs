@@ -286,7 +286,7 @@ int main(int argc, char * argv[])
 
 ```
 
-```cmake [address_book/CMakeLists.txt] {12-20}
+```cmake [address_book/CMakeLists.txt] 
 cmake_minimum_required(VERSION 3.8)
 project(address_book)
 
@@ -318,17 +318,17 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies()
 endif()
-install(TARGETS
-  publish_address_book
-  subscribe_address_book
-  DESTINATION lib/${PROJECT_NAME}
-)
+install(TARGETS// [!code focus]
+  publish_address_book// [!code focus]
+  subscribe_address_book// [!code focus]
+  DESTINATION lib/${PROJECT_NAME}// [!code focus]
+)// [!code focus]
 
 ament_package()
 
 
 ```
-```xml [address_book/package.xml] {13}
+```xml [address_book/package.xml]
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">

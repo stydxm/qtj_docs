@@ -85,7 +85,8 @@ export const sidebar = {
                         { text: '基础概念', link: '/algorithm/ros/basics' },
                         { text: '实现节点', link: '/algorithm/ros/node' },
                         { text: '功能包与工作空间', link: '/algorithm/ros/package' },
-                        { text: '话题通信', link: '/algorithm/ros/topic' }
+                        { text: '话题通信', link: '/algorithm/ros/topic' },
+                        { tset: '服务通信', link: '/algorithm/ros/service' }
 
                     ]
                 },
