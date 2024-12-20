@@ -3,6 +3,8 @@
 
 [^1]: 还有[xmake](https://xmake.io/), [build2](https://build2.org/), [Meson](https://mesonbuild.com/), [qmake](https://doc.qt.io/qt-6/qmake-manual.html)等等非常多的工具也可以完成这一点
 
+推荐阅读：[构建工具的进化](https://lapis-router-502.notion.site/8e652fa1dff047c98d5dd74866923405)
+
 CMake是一个编译工具，主要作用就是能够使用统一的语法，生成能够指导编译器完成编译工作的文件
 
 举个例子，在linux下用g++编译软件，需要写`Makefile`，windows下的MSVC编译器有自己的.sln文件，在不同平台、不同版本，它们的格式和内容都会有差异
@@ -37,6 +39,8 @@ make
 ```
 
 而这只是编译一个文件，实际写工程时会有更多的文件互相调用，gcc编译命令会更长，而cmake依然可以用两句完成
+
+推荐阅读（比较进阶）：[程序的生前死后](https://lapis-router-502.notion.site/6580ab34f0db4b10ab3750b47a403a4b)
 
 ## 安装
 建议安装一个vscode插件，就叫`cmake`
