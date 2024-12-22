@@ -19,5 +19,7 @@
 正常情况下，commit会被立即同步到[github仓库](https://github.com/stydxm/qtj_docs)，几分钟后由cloudflare pages构建并部署分发
 
 ::: info 信息
-若不正常，请联系维护人查看构建日志
+在[GitHub commits里](https://github.com/stydxm/qtj_docs/commits/)可以看每个commit的构建状态，正常的是绿色的勾，仍在构建中的是黄色的圆，错误的是红色的叉
+
+若本地可构建通过但在服务器上无法部署，请联系维护人查看构建日志
 :::
