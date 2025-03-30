@@ -7,11 +7,11 @@ import { sidebar } from './sidebar'
 
 export default withMermaid({
   title: "浙理钱塘蛟",
-  description: "浙江理工大学robomaster战队",
+  description: "浙江理工大学RoboMaster战队",
   head: [
     ['meta', { property: 'og:type', href: 'website' }],
     ['meta', { property: 'og:title', href: '浙理钱塘蛟' }],
-    ['meta', { property: 'og:description', href: '浙江理工大学 Robomaster 战队' }],
+    ['meta', { property: 'og:description', href: '浙江理工大学 RoboMaster 战队' }],
     ['meta', { property: 'og:img', href: 'https://docs.015609.best/logo.png' }],
     ['script', { async: '', src: "/global.js" }]
   ],

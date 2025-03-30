@@ -101,7 +101,7 @@ export const sidebar = {
         },
         {
             text: '其他', items: [
-                { text: 'RM优质开源项目', link: '/algorithm/open-sources' },
+                { text: '优秀RM开源项目', link: '/algorithm/open-sources' },
                 { text: '优秀学习资料', link: '/algorithm/resources' },
                 { text: '与其他工种协作', link: '/algorithm/others' }
             ]
