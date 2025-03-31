@@ -9,10 +9,10 @@ export default withMermaid({
   title: "浙理钱塘蛟",
   description: "浙江理工大学RoboMaster战队",
   head: [
-    ['meta', { property: 'og:type', href: 'website' }],
-    ['meta', { property: 'og:title', href: '浙理钱塘蛟' }],
-    ['meta', { property: 'og:description', href: '浙江理工大学 RoboMaster 战队' }],
-    ['meta', { property: 'og:image', href: 'https://docs.015609.best/logo.png' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:title', content: '浙理钱塘蛟' }],
+    ['meta', { property: 'og:description', content: '浙江理工大学 RoboMaster 战队' }],
+    ['meta', { property: 'og:image', content: 'https://docs.015609.best/logo.png' }],
     ['script', { async: '', src: "/global.js" }]
   ],
   lang: "zh-cn",
