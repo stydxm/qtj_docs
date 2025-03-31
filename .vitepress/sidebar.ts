@@ -28,7 +28,7 @@ export const sidebar = {
     '/algorithm': [
         {
             text: '开始', items: [
-                { text: '总览', link: '/algorithm/' },
+                { text: '算法组总览', link: '/algorithm/' },
                 { text: '一些学习建议', link: '/algorithm/advices' },
                 { text: '关于编程语言', link: '/algorithm/language' }
             ]
