@@ -1,25 +1,26 @@
 ---
 author: Zou Ajie
-lastEdit: 2024-7-7
+lastEdit: 2025-3-27
 brief: 平衡步兵技术文档
 ---
-# ***BALANCED_ROBOT***
-
-***参考文献***  
+# BALANCED_ROBOT
+***参考文献***
 
 [倒立摆系统](https://ctms.engin.umich.edu/CTMS/index.php?example=InvertedPendulum&section=SystemModeling)  
 [LQR及观测器简介](https://zhuanlan.zhihu.com/p/623843252)  
-[平衡步兵](https://bbs.robomaster.com/forum.php?mod=viewthread&tid=22867)  
-[首都师范共轴麦轮](https://bbs.robomaster.com/forum.php?mod=viewthread&tid=22944)  
+[平衡步兵](https://bbs.robomaster.com/article/9533)  
+[首都师范共轴麦轮](https://bbs.robomaster.com/article/9603)  
 [哈工程轮腿](https://zhuanlan.zhihu.com/p/563048952)  
-[上交轮腿](https://bbs.robomaster.com/forum.php?mod=viewthread&tid=22756)  
+[上交轮腿](https://bbs.robomaster.com/article/9430)  
 [合工大轮腿仿真](https://www.bilibili.com/read/cv26677904)  
+[达妙科技轮腿](https://gitee.com/kit-miao/wheel-legged)  
+[中南打滑检测](https://bbs.robomaster.com/article/43412)  
 
 ## 1.倒立摆系统
 
 倒立摆是机器人学中一个非常重要的模型，火箭、导弹、独轮车、双足机器人、四足机器人、两轮自平衡机器人、轮腿机器人，基本都是倒立摆的变形。
 
-![](image\Inverted_Pendulum_1.jpg)
+![](image/Inverted_Pendulum_1.jpg)
 
 本章提到的倒立摆系统为一阶倒立摆，不考虑阻尼，以下为本章用到的物理参数
 
@@ -62,7 +63,8 @@ $$
 $$
 $T$ 为系统的总动能，$V$ 为系统的总势能
 
-[拉格朗日方程推导过程](https://zhuanlan.zhihu.com/p/156760739)  
+[拉格朗日方程推导过程](https://zhuanlan.zhihu.com/p/156760739)
+
 [保守系统的拉格朗日方程推导过程](https://zhuanlan.zhihu.com/p/124245453)
 
 ### 1.2状态空间方程推导
@@ -218,9 +220,10 @@ K = \begin{bmatrix}
     -10.0000 & -92.8749 & -12.5438 & -24.0854
 \end{bmatrix}
 $$
-![](image\Inverted_Pendulum_2.jpg)
-![](image\Inverted_Pendulum_3.jpg)
-
+<!-- #region -->
+![](image/Inverted_Pendulum_2.jpg)
+![](image/Inverted_Pendulum_3.jpg)
+<!-- #endregion -->
 
 ### 1.4牛顿力学法
 机器人的动力学和运动学模型是实现机器人控制策略的基础。想要完成对自平衡机器人控制系统的设计，需要根据自平衡机器人的运动特点和结构特点进行分析，建立准确可靠的数学模型。机器人动力学建模有两种具有代表性的方法：牛顿力学法和拉格朗日函数法。
@@ -572,8 +575,8 @@ disp(K);
 ```
 
 建模如下图
-![](image\Balanced_Robot_1.jpg)
-![](image\Balanced_Robot_2.jpg)
+![](image/Balanced_Robot_1.jpg)
+![](image/Balanced_Robot_2.jpg)
 
 ### 2.2牛顿力学法
 为了便于两轮自平衡机器人系统牛顿力学法的分析，现在原基础上定义以下物理参数
@@ -686,16 +689,10 @@ $$
 \ddot{\phi}=-\frac{D}{D^2(M_rR+J_r/R)+2J_{\phi}R}(T_L-T_R) \tag{2.2.19}
 $$
 
-
-## 3.观测器
-### 3.1简介
-### 3.2卡尔曼滤波器
-
-
-## 4.轮腿式平衡机器人系统
-### 4.1平衡与纵向运动控制
-#### 4.1.1模型定义
-![](image\Wheel_Balanced_Robot1.png)
+## 3.轮腿式平衡机器人系统(哈工程模型)
+### 3.1平衡与纵向运动控制
+#### 3.1.1模型定义
+![](image/Wheel_Balanced_Robot1.png)
 | 参数符号  | 参数含义                          | 参数单位 |
 | :------- | :------------------------------- | :------ |
 | $\theta$ | 摆杆与竖直方向夹角	                | $rad$    |
@@ -721,7 +718,7 @@ $$
 | $I_p$    | 摆杆绕质心转动惯量$(I_p=\frac{1}{12}m_pL^2)$ | $kg\cdot m^2$ |
 | $I_M$    | 机体绕质心转动惯量$(I_M=\frac{1}{12}Ml^2)$   | $kg\cdot m^2$ |
 
-#### 4.1.2经典力学分析
+#### 3.1.2经典力学分析
 车轮的运动可分解为平动和转动，则由牛顿第二定律可得：
 $$
 m_w\ddot{x}=N_f-N \tag{4.1.1}
@@ -767,7 +764,7 @@ $$
 I_m\ddot{\varphi}=T_p+N_Ml\cos\varphi+P_Ml\sin\varphi \tag{4.1.9}
 $$
 
-#### 4.1.3状态空间方程及LQR控制器
+#### 3.1.3状态空间方程及LQR控制器
 
 定义：
 $$
@@ -808,8 +805,8 @@ function K = get_k_length(leg_length)
     mp1=0.045;              %杆质量
     M1=1.44;                %机体质量
     Iw1=0.5*mw1*R1^2;       %驱动轮转动惯量
-    Ip1=mp1*((L1+LM1)^2+0.048^2)/12.0; %摆杆转动惯量
-    IM1=M1*(0.135^2+0.066^2)/12.0;     %机体绕质心转动惯量
+    Ip1=mp1*((L1+LM1)^2+0.048^2)/12.0; %摆杆转动惯量，视为长方体
+    IM1=M1*(0.135^2+0.066^2)/12.0;     %机体绕质心转动惯量，视为长方体
     %% 定义运动方程
     NM = M*diff(x + (L + LM )*sin(theta)-l*sin(phi),t,2);
     N = NM + mp*diff(x + L*sin(theta),t,2);
@@ -857,12 +854,12 @@ $$
 $$
 
 由于表达式较为复杂所占篇幅较大，此处用符号代替。
-![](image\Wheel_Balanced_Robot2.jpg)
-![](image\Wheel_Balanced_Robot3.jpg)
+![](image/Wheel_Balanced_Robot2.jpg)
+![](image/Wheel_Balanced_Robot3.jpg)
 
-### 4.2五连杆运动学解算与VMC
-#### 4.2.1正运动学解算
-![](image\Five_Link.png)
+### 3.2五连杆运动学解算与VMC
+#### 3.2.1正运动学解算
+![](image/五连杆.png)
 五连杆机构参数定义如图所示，其中 $A、E$ 由电机驱动，其角度 $\phi_1、\phi_4$ 可通过电机编码器测得。控制任务中主要关注五连杆机构末端 $C$ 点的位置，通常可用直角坐标 $(x_C,y_C)$ 或极坐标 $(L_0,\phi_0)$ 表示。
 
 定义 $A$ 点为坐标原点，通过五连杆左右两部分列写 $C$ 点坐标，可得到以下等式：
@@ -936,7 +933,7 @@ L_0=\sqrt{(x_C-l_5/2)^2+y_C^2} \\
 \end{cases} \tag{4.2.8}
 $$
 
-#### 4.2.2VMC雅可比矩阵
+#### 3.2.2VMC雅可比矩阵
 $VMC(virtual\;model\;control)$ 是一种直觉控制方式，其关键是在每个需要控制的自由度上构造恰当的虚拟构件以产生合适的虚拟力。虚拟力不是实际执行机构的作用力或力矩，而是通过执行机构的作用经过机构转换而成。对于一些控制问题，我们可能需要将工作空间 $(Task\;Space)$ 的力或力矩映射成关节空间 $(Joint\;Space)$ 的关节力矩。在该五连杆问题中，我们需要获得五连杆机构末端沿腿的推力 $F$ 与沿中心轴的力矩 $T_p$ （分别对应极坐标 $L_0，\phi_0$ ）与 $A、E$ 点 两驱动电机力矩 $T_1、T_2$ 的映射关系。
 
 定义：
@@ -1048,9 +1045,105 @@ $$
 
 利用 MATLAB 进行符号运算，得：
 
-### 4.3观测器设计
+### 3.3观测器设计
 
-## 5.说明
+使用卡尔曼滤波融合IMU加速度计与电机编码器，对机体姿态进行估计，以应对踩小弹丸一类的打滑场景
+
+[轮腿倒立摆机器人运动速度估计](https://zhuanlan.zhihu.com/p/689921165)
+
+具体代码实现请看
+
+[达妙科技开源轮腿](https://gitee.com/kit-miao/wheel-legged)
+
+### 3.4打滑检测
+| 参数符号  | 参数含义                          | 参数单位 |
+| :------- | :------------------------------- | :------ |
+| $\theta_L、\theta_R$ | 摆杆与竖直方向夹角     | $rad$   |
+| $l_L、l_R$| 左右连杆等效腿长                  | $m$     |
+| $\omega_L、\omega_R$ | 轮毂的转速            | $rad/s$ |
+| $R$      | 轮半径                            | $m$     |
+| $W$      | 机体宽度                          | $m$     |
+| $V_0$    | 上层机体平移速度                   | $m/s$   |
+| $V_L、V_R$ | 轮胎与地面接触点的绝对速度(滑动速度) | $m/s$   |
+| $V^{r_1}_L、V^{r_1}_R$ | 地面接触点相对于轮毂轴心的速度 | $m/s$   |
+| $V^{r_2}_L、V^{r_2}_R$ | 轮毂轴心相对于机体的速度 | $m/s$   |
+| $V^{\omega}_L、V^{\omega}_R$ | 上层机体旋转产生的附加速度  | $m/s$   |
+
+在比赛场上非常有必要分析平衡机器人的打滑状态并做出调整，否则很容易翻车倒地，下面对经典力学防打滑的分析，检测平衡两轮毂与地面接触点的速度差值，当这个差值超过某个阈值时判定为打滑，下面求该速度差值：
+
+![](image/打滑检测.jpg)
+
+右连杆地面接触点速度：
+$$
+\overrightarrow{V_R}=\overrightarrow{V_0}+\overrightarrow{V}^{r_1}_R+\overrightarrow{V}^{r_2}_{R,x}+\overrightarrow{V}^{r_2}_{R,y}+\overrightarrow{V}^{r_2}_{R,z}+\overrightarrow{V}^{\omega_x}_R+\overrightarrow{V}^{\omega_y}_R+\overrightarrow{V}^{\omega_z}_R \tag{4.4.1}
+$$
+
+地面接触点相对于右轮毂轴心的速度：
+$$
+\overrightarrow{V}^{r_1}_R =\overrightarrow{\omega_R}\times\overrightarrow{R}=-\omega_{R}R\overrightarrow{e_x} \tag{4.4.2}
+$$
+
+轮毂轴心相对于机体的位移差为：
+$$
+\Delta{x_L} = (-l_R\sin\theta_R)\overrightarrow{e_x}+(-l_R\cos\theta_R)\overrightarrow{e_z} \tag{4.4.3}
+$$
+
+因此右轮轴心相对于机体的速度向量为：
+$$
+\begin{cases}
+\overrightarrow{V}^{r_2}_{R,x}= \frac{d}{dt}(-l_R\sin\theta_R)\overrightarrow{e_x} = -(\dot{l}_R\sin\theta_R + l_R\cos\theta_R\dot{\theta}_R)\overrightarrow{e_x} \\
+\overrightarrow{V}^{r_2}_{R,y}= 0 \\
+\overrightarrow{V}^{r_2}_{R,z}= \frac{d}{dt}(-l_R\cos\theta_R)\overrightarrow{e_z} = -(\dot{l}_R\cos\theta_R - l_R\sin\theta_R\dot{\theta}_R)\overrightarrow{e_z}
+\end{cases} \tag{4.4.4}
+$$
+
+右侧地面接触点因机体横滚、俯仰、偏航而产生的附加速度向量为：
+$$
+\begin{cases}
+\overrightarrow{V}^{\omega_x}_R = \overrightarrow{\omega_x}\times(\frac{1}{2}\overrightarrow{W}+\overrightarrow{l_R}+\overrightarrow{R}) = \omega_{x}(l_R\cos\theta_R + R)\overrightarrow{e_y}-\frac{1}{2}\omega_{x}W\overrightarrow{e_z} \\
+\overrightarrow{V}^{\omega_y}_R = \overrightarrow{\omega_y}\times(\frac{1}{2}\overrightarrow{W}+\overrightarrow{l_R}+\overrightarrow{R}) = -\omega_{y}(l_R\cos\theta_R + R)\overrightarrow{e_x}+\omega_{y}l_R\sin\theta_{R}\overrightarrow{e_z} \\
+\overrightarrow{V}^{\omega_z}_R = \overrightarrow{\omega_z}\times(\frac{1}{2}\overrightarrow{W}+\overrightarrow{l_R}+\overrightarrow{R}) = \frac{1}{2}\omega_{z}W\overrightarrow{e_x} - \omega_{z}l_R\sin\theta_{R}\overrightarrow{e_y}
+\end{cases} \tag{4.4.5}
+$$
+
+同理
+左连杆地面接触点速度：
+$$
+\overrightarrow{V_L}=\overrightarrow{V_0}+\overrightarrow{V}^{r_1}_L+\overrightarrow{V}^{r_2}_{L,x}+\overrightarrow{V}^{r_2}_{L,y}+\overrightarrow{V}^{r_2}_{L,z}+\overrightarrow{V}^{\omega_x}_L+\overrightarrow{V}^{\omega_y}_L+\overrightarrow{V}^{\omega_z}_L \tag{4.4.6}
+$$
+
+地面接触点相对于左轮毂轴心的速度：
+$$
+\overrightarrow{V}^{r_1}_L =\overrightarrow{\omega_L}\times\overrightarrow{R}=-\omega_{L}R\overrightarrow{e_x} \tag{4.4.7}
+$$
+
+左轮轴心相对于机体的速度向量为：
+$$
+\begin{cases}
+\overrightarrow{V}^{r_2}_{L,x}= \frac{d}{dt}(-l_L\sin\theta_L)\overrightarrow{e_x} = -(\dot{l}_L\sin\theta_L + l_L\cos\theta_L\dot{\theta}_L)\overrightarrow{e_x} \\
+\overrightarrow{V}^{r_2}_{L,y}= 0 \\
+\overrightarrow{V}^{r_2}_{L,z}= \frac{d}{dt}(-l_L\cos\theta_L)\overrightarrow{e_z} = -(\dot{l}_L\cos\theta_L - l_L\sin\theta_L\dot{\theta}_L)\overrightarrow{e_z}
+\end{cases} \tag{4.4.8}
+$$
+
+左侧地面接触点因机体横滚、俯仰、偏航而产生的附加速度向量为：
+$$
+\begin{cases}
+\overrightarrow{V}^{\omega_x}_L = \overrightarrow{\omega_x}\times(-\frac{1}{2}\overrightarrow{W}+\overrightarrow{l_L}+\overrightarrow{R}) = \omega_{x}(l_L\cos\theta_L + R)\overrightarrow{e_y}+\frac{1}{2}\omega_{x}W\overrightarrow{e_z} \\
+\overrightarrow{V}^{\omega_y}_L = \overrightarrow{\omega_y}\times(-\frac{1}{2}\overrightarrow{W}+\overrightarrow{l_L}+\overrightarrow{R}) = -\omega_{y}(l_L\cos\theta_L + R)\overrightarrow{e_x}+\omega_{y}l_L\sin\theta_{L}\overrightarrow{e_z} \\
+\overrightarrow{V}^{\omega_z}_L = \overrightarrow{\omega_z}\times(-\frac{1}{2}\overrightarrow{W}+\overrightarrow{l_L}+\overrightarrow{R}) = -\frac{1}{2}\omega_{z}W\overrightarrow{e_x} - \omega_{z}l_L\sin\theta_{L}\overrightarrow{e_y}
+\end{cases} \tag{4.4.9}
+$$
+
+速度差值为：
+$$
+\overrightarrow{V_L}-\overrightarrow{V_R}=(\overrightarrow{V}^{r_1}_L-\overrightarrow{V}^{r_1}_R)+(\overrightarrow{V}^{r_2}_{L,x}-\overrightarrow{V}^{r_2}_{R,x})+(\overrightarrow{V}^{r_2}_{L,z}-\overrightarrow{V}^{r_2}_{R,z}) \\
++(\overrightarrow{V}^{\omega_x}_L-\overrightarrow{V}^{\omega_x}_R)+(\overrightarrow{V}^{\omega_y}_L-\overrightarrow{V}^{\omega_y}_R)+(\overrightarrow{V}^{\omega_z}_L-\overrightarrow{V}^{\omega_z}_R) \tag{4.4.10}
+$$
+
+当速度差值的大小 $|\overrightarrow{V_L}-\overrightarrow{V_R}| \geq V_{TH}$ 时，判定为机器人打滑，再做后续处理。式 $(4.4.10)$ 中所有值均为已知量，故可以通过 $LinkScope$ 查看 $|\overrightarrow{V_L}-\overrightarrow{V_R}|$ 波形判断速度阈值 $V_{TH}$ ，一般取 $V_{TH} \in [0.05 ,0.15]m/s$ 。
+
+## 4.说明
 
 - 本文所有的公式推导与建模都基于[右手系](https://baike.baidu.com/item/%E5%8F%B3%E6%89%8B%E7%B3%BB/9751780)，本文 $x$ 轴为机体前进正方向， $z$ 轴竖直向上
-- 本文的姿态角均以右手系各轴的逆时针方向为正方向， $Yaw$ 对应 $z$ 轴，$Pitch$ 对应 $y$ 轴，$Roll$ 对应 $x$ 轴，以 $Yaw$ 为例，绕 $z$ 轴逆时针旋转， $Yaw$ 值增加
+- 本文的姿态角均以右手系各轴的逆时针方向为正方向， $Yaw$ 对应 $z$ 轴，$Pitch$ 对应 $y$ 轴，$Roll$ 对应 $x$ 轴，以 $Yaw$ 为例，绕 $z$ 轴逆时针旋转， $Yaw$ 值增加，且角速度为正值
