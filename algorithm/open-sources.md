@@ -1,8 +1,9 @@
 # RM优质开源项目整理
 |学校|年份|内容|链接|备注|
 |:-:|:-:|:-:|:-:|:-:|
-|深北莫|2025|导航|https://github.com/SMBU-PolarBear-Robotics-Team/pb2025_sentry_nav|代码质量高、效果好，完全公开|
-|南理|2025|上位机控制|https://github.com/Alliance-Algorithm/RMCS|使用了一中上下位机混合的新方案，兼顾稳定性和开发效率|
+|深北莫|2025|导航|https://github.com/SMBU-PolarBear-Robotics-Team/pb2025_sentry_nav|代码质量高、效果好，使用广泛|
+|南理|2025|上位机控制|https://github.com/Alliance-Algorithm/RMCS|使用了一种上下位机混合的新方案，兼顾稳定性和开发效率|
+|西南石油|2025|视觉|https://github.com/soloplayl/Total3DAutoAim_md|用神经网络完成装甲板和符的解算，思路新颖|
 |天大|2024|视觉框架|https://github.com/HHgzs/OpenRM-2024|文档清晰架构完善|
 |哈工深|2024|雷达站|https://github.com/chenx-dust/PointCloudDetector||
 |东大|2024|雷达站|https://github.com/T-DT-Algorithm-2024/T-DT-2024-Radar||
