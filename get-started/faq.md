@@ -29,7 +29,7 @@ RoboMaster机甲大师是由大疆主办的机器人比赛，覆盖全球三百�
 
 可以看看[这个视频](https://www.bilibili.com/video/BV1oP41117f1)了解一下这个比赛十多年来的历史，或者去[官方b站](https://space.bilibili.com/20554233/channel/collectiondetail?sid=1572868)看看往期比赛
 
-![](/bf3938492efc21669740407975546242.jpeg)
+![](/RM1_6516.jpg)
 
 ## 我们的目标
 每年的国赛、复活赛在深圳湾春茧体育馆举办，因此，去春茧、去捧起那个金色的机械手奖杯，成了每个RMer的梦想
