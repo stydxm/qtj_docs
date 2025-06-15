@@ -69,8 +69,9 @@ https://www.bilibili.com/video/BV1xV411r7YY
 https://www.bilibili.com/video/BV1p741147xW?p=3
 
 #### （7）自行设计制做电源板
+学习DCDC设计基础：https://www.bilibili.com/video/BV1jDx5exEs3
 
-要求：使用TPS5430芯片，实现24V转12V，5V，-5V，3.3V，接口使用公母XT60，XT30和排针
+作业：使用TPS5430芯片，实现24V转12V，5V，-5V，3.3V，接口使用XT30和排针
 
 #### （8）绘制四层板和高速线走线
 https://www.bilibili.com/video/BV1nj411v7Lu
