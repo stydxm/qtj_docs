@@ -6,7 +6,7 @@
   },
   "devDependencies": {
     "@chenfengyuan/vue-qrcode": "^2.0.0",
-    "@fontsource/jetbrains-mono": "^5.2.5",
+    "@fontsource/jetbrains-mono": "^5.2.6",
     "lxgw-wenkai-webfont": "^1.7.0",
     "markdown-it-footnote": "^4.0.0",
     "markdown-it-mathjax3": "^4.3.2",

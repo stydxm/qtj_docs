@@ -14,7 +14,7 @@ hero:
       link: /get-started/
     - theme: alt
       text: 了解RoboMaster💻
-      link: https://www.bilibili.com/video/BV14g4y1z7QC
+      link: https://www.bilibili.com/video/BV1kD5KzCEvw
     - theme: alt
       text: 常见问题❔
       link: /get-started/faq
@@ -31,9 +31,7 @@ features:
 ---
 
 ![](/album/FA7A6994-opq3139806501.jpg)
-![](/album/3P9A9944-opq3139824586.jpg)
 ![](/album/FG__4848-opq3139806429.jpg)
-![](/album/FG__9589-opq3160622680.jpg)
 ![](/album/FG__9014-opq3159817776.jpg)
 
 <!-- <script setup>
