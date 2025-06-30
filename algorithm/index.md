@@ -47,7 +47,7 @@ Search the F**king website
 
 - 尝试自己通过搜索引擎和官方文档解决问题
 
-![](llm.jpg)
+![](/llm.jpg)
 
 - <strong style="color: red">请直接、清晰、准确地描述你的问题</strong>，尽量简洁一些，不需要太多的礼貌用语，不要起手`救命啊`，更不要说一句`在吗` `能不能问个问题`就没有下文
 
