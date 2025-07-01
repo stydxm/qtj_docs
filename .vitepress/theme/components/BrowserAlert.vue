@@ -10,7 +10,7 @@ function detectBrowser() {
         return "QQ"
     }
     else {
-        return "114514"
+        return
     }
 }
 
@@ -21,9 +21,9 @@ function detectMobile() {
 const dir=useRoute().path
 const browser = detectBrowser()
 const mobile = detectMobile()
-// if (dir !== "/") {
+if (dir !== "/") {
     if (browser) 
         /*while (1) */alert(`请不要使用${browser}访问\n建议使用电脑端的 Chrome 或 Firefox 或 Edge`)
-    // else if (mobile) alert("建议使用电脑访问")
-// }
+    if (mobile) alert("建议使用电脑访问")
+}
 </script>
