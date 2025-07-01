@@ -48,7 +48,7 @@ https://bbs.robomaster.com/article/43564
 
 ### 英雄
 
-负责同学：蒋洪俊
+负责同学：蒋鸿俊
 
 优秀开源模型：
 
