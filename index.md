@@ -5,7 +5,7 @@ layout: home
 hero:
   name: 钱塘蛟
   text: 技术文档
-  tagline: 浙江理工大学robomaster战队
+  tagline: 浙江理工大学 RoboMaster 战队
   image:
     src: ./logo.png
   actions:
@@ -13,7 +13,7 @@ hero:
       text: 开始➡️
       link: /get-started/
     - theme: alt
-      text: 了解RoboMaster💻
+      text: 了解 RoboMaster💻
       link: https://www.bilibili.com/video/BV1kD5KzCEvw
     - theme: alt
       text: 常见问题❔
@@ -21,13 +21,13 @@ hero:
 
 features:
   - title: 算法组
-    details: AI识别、环境感知、自主决策导航
+    details: 人工智能算法、环境感知、自主决策导航
   - title: 电控组
     details: 嵌入式算法编写和调试
   - title: 机械组
-    details: 机器人机械结构设计及制造
+    details: 机械结构设计及制造
   - title: 硬件组
-    details: 电路板和线路的设计、制造和调试
+    details: 电路板设计、制造和调试
 ---
 
 ![](/album/FA7A6994-opq3139806501.jpg)

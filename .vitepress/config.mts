@@ -13,7 +13,7 @@ export default withMermaid({
     ['meta', { property: 'og:title', content: '浙理钱塘蛟' }],
     ['meta', { property: 'og:description', content: '浙江理工大学 RoboMaster 战队' }],
     ['meta', { property: 'og:image', content: 'https://docs.015609.best/logo.png' }],
-    ['script', { async: '', src: "/global.js" }]
+    // ['script', { async: '', src: "/global.js" }]
   ],
   lang: "zh-cn",
   themeConfig: {
