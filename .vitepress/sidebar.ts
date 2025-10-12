@@ -9,7 +9,7 @@ export const sidebar = {
         },
         {
             text: '实验室资源', items: [
-                { text: '培训视频', link: '/get-started/record' },
+                // { text: '培训视频', link: '/get-started/record' },
                 { text: '网络', link: '/get-started/network' },
                 { text: 'Git服务器', link: '/get-started/git' },
                 { text: 'NAS', link: '/get-started/nas' }
@@ -17,7 +17,7 @@ export const sidebar = {
         },
         {
             text: '各组通用内容', items: [
-                { text: '相关QQ群', link: '/get-started/qq-group' },
+                // { text: '相关QQ群', link: '/get-started/qq-group' },
                 { text: '兵种介绍', link: '/get-started/robots' },
                 { text: '学习Git', link: '/get-started/learn-git' },
                 { text: 'Markdown语法', link: '/get-started/markdown' },

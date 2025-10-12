@@ -27,7 +27,7 @@ Linux使用可以[装deb包](https://ghfast.top/github.com/localsend/localsend/r
 - 如果扫描不到，在上方地址栏手动输入`\\192.168.1.4`，注意斜杠方向
 - 如果提示要输入用户名密码，用户名写`nobody`，密码留空
 
-## 公网连接
+<!-- ## 公网连接
 ::: warning 注意
 仅供不在实验室时使用，在实验室内请直接使用内网连接，否则所有人挤小水管，会很慢很慢……
 :::
@@ -41,4 +41,4 @@ Linux使用可以[装deb包](https://ghfast.top/github.com/localsend/localsend/r
 
 ::: tip 提示
 因为跨域问题，部分文件预览有问题，下载再看即可
-:::
+::: -->
