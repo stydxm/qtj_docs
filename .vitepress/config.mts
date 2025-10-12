@@ -1,11 +1,10 @@
 import footnote from 'markdown-it-footnote'
 import taskCheckbox from 'markdown-it-task-checkbox'
-import { withMermaid } from 'vitepress-plugin-mermaid'
 import { pagefindPlugin } from 'vitepress-plugin-pagefind'
 import { icons } from './icons'
 import { sidebar } from './sidebar'
 
-export default withMermaid({
+export default {
   title: "浙理钱塘蛟",
   description: "浙江理工大学RoboMaster战队",
   head: [
@@ -62,5 +61,5 @@ export default withMermaid({
       })
     ]
   }
-})
+}
 
