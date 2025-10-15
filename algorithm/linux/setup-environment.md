@@ -23,8 +23,7 @@
 然后输入
 
 ``` bash
-sudo sed -i 's/cn.archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
-sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+sudo sed -i 's@//.*archive.ubuntu.com@//mirrors.ustc.edu.cn@g' /etc/apt/sources.list.d/ubuntu.sources
 sudo apt update
 sudo apt upgrade -y
 ```
@@ -62,7 +61,7 @@ sudo apt -y install python3 python3-pip python3-venv python3-opencv python-is-py
 python --version
 ```
 
-如果显示`Python 3.10.12`，那说明已经正常安装里
+如果显示`Python 3.12.3`，那说明已经正常安装里
 
 ::: info 说明
 后面的不一样没关系，3.1开头的就行

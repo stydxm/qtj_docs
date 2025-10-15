@@ -1,5 +1,5 @@
 ::: tip 提示
-这里只有大致的步骤描述，应该都能看懂，哪一步实在搞不明白可以看看[这篇文章](https://hdu-cs.wiki/2.%E7%BC%96%E7%A8%8B%E6%A8%A1%E5%9D%97/2.1%20NekoBytes-TheMissing/2.1.1%20Book/2.%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE)，里面有每一步的截图
+这里只有大致的步骤描述，应该都能看懂，哪一步实在搞不明白可以看看[这个视频](https://www.bilibili.com/video/BV1MHtPepEHf/)，但下载链接使用本文的，且不要跟着他安装Chrome浏览器，自带的Firefox已经是一个很优秀的浏览器
 
 看到3就够了，安装增强功能以及后面的4-8可先不用，在后面的`系统配置`章节中会有
 :::
@@ -9,9 +9,9 @@
 
 ![](/ubuntu.png)
 
-这张图就是ubuntu的logo
+这就是ubuntu的logo
 
-不同于windows，ubuntu的版本命名规则非常简单，就是`年份.月份`，比如`22.04`就是2022年4月份发布的ubuntu版本，比如`23.10`就是2023年10月份发布的
+不同于windows，ubuntu的版本命名规则非常简单，就是`年份.月份`，比如`24.04`就是2024年4月份发布的ubuntu版本，比如`25.10`就是2025年10月份发布的
 
 按现行的策略，两年发布一个`LTS`版，即长支持版本，规模大的项目通常只会提供lts的支持[^1]
 
@@ -20,30 +20,26 @@
 ::: info 说明
 如果你了解这一部分内容，那就不用看了，自己按习惯配好环境装好IDE就行了
 
-别的系统通常也没问题，比如我自己用的是Arch，但不懂就别自己乱整花活（
+别的系统通常也没问题，比如我自己用的是AOSC，但不懂就别自己乱整花活（
 :::
 
 ## 安装虚拟机软件
 ::: tip 提示
-推荐的安装方法是虚拟机，如果你有空闲的电脑，直接在裸机上安装那更好，也可以自己去折腾WSL这些方案（同上，不懂就先按课程走，别瞎搞）
+推荐的安装方法是虚拟机，如果你有空闲的电脑，直接在裸机上安装更好，也可以自己去折腾WSL这些方案（同上，不懂就先按课程走，别瞎搞）
 
-如果你愿意折腾，双系统方案的学习体验会好得多，这部分可以看[这个教程](https://hx-cn.top/archives/dual-boot-ubuntu-2204-and-windows-11)，注意其中的下载系统镜像部分可以参照我下面写的，下载速度应该会快不少
+如果你愿意再多花一点时间，双系统方案的学习体验会好得多，这部分可以看[这个视频](https://www.bilibili.com/video/BV1Xkm2Y2EJE/)，下载系统镜像部分可以参照我下面写的，且安装完成Ubuntu之后不要跟着他安装其他软件
 :::
 
 我们推荐的虚拟机软件是VirtualBox。这一方面是因为它是开源软件，同时VMWare被broadcom收购后下载、授权方式发生了比较大的变化
 
-[点击这里下载](https://mirrors.bfsu.edu.cn/virtualbox/7.0.20/VirtualBox-7.0.20-163906-Win.exe)VirtualBox软件本体
+[点击这里下载](https://mirrors.bfsu.edu.cn/virtualbox/7.2.2/VirtualBox-7.2.2-170484-Win.exe)VirtualBox软件本体
 
 下载完直接双击打开，一路下一步完成安装
 
-然后[再点这里下载拓展包](https://mirrors.bfsu.edu.cn/virtualbox/7.0.20/Oracle_VM_VirtualBox_Extension_Pack-7.0.20.vbox-extpack)，下载完成后双击打开既可完成安装
+然后[再点这里下载拓展包](https://mirrors.bfsu.edu.cn/virtualbox/7.2.2/Oracle_VirtualBox_Extension_Pack-7.2.2.vbox-extpack)，下载完成后双击打开即可完成安装
 
 ## 下载系统镜像
-浏览器直接打开[这个链接](https://mirrors.bfsu.edu.cn/ubuntu-releases/22.04.5/ubuntu-22.04.5-desktop-amd64.iso)，然后等下载完成就行
-
-::: tip 提示
-如果你在实验室，可以尝试从NAS里拉取
-:::
+浏览器直接打开[这个链接](https://mirrors.ustc.edu.cn/ubuntu-releases/noble/ubuntu-24.04.3-desktop-amd64.iso)，然后等下载完成就行
 
 ::: info 说明
 本页写于2024.4.23，此时距24.04LTS发布还有两天
@@ -53,6 +49,8 @@
 请后人维护文档时注意与时俱进，不要老用着EOL的古董！
 :::
 
+这里下载的是Ubuntu 24.04.3 LTS，注意不要下错版本了，否则会导致后续的OpenCV或者ROS装不上等问题
+
 ## 创建虚拟机
 打开前面安装的Virtual Box，点首页中间的`创建新的虚拟机`
 
@@ -60,7 +58,7 @@
 这里CPU和内存都可以给多一点，具体多少要看电脑配置，近几年主流配置给到8个CPU核心和8G内存应该是没有问题的，这样可以减少虚拟机带来的卡顿
 :::
 
-点击上方新建，名称可以自己写（英文），虚拟光盘这里选中刚才下载的iso，勾选下面的跳过自动安装
+点击上方新建，名称可以自己写（英文），虚拟光盘这里选中刚才下载的iso（名字和图里不一样），勾选下面的跳过自动安装
 
 ![](/virtualbox-ubuntu2.png)
 
