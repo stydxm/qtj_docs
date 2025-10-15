@@ -38,7 +38,7 @@ export const sidebar = {
                 {
                     text: 'Linux', link: '/algorithm/linux/', collapsed: true, items: [
                         { text: '基础概念', link: '/algorithm/linux/' },
-                        { text: '安装虚拟机', link: '/algorithm/linux/install-vm' },
+                        { text: '安装系统', link: '/algorithm/linux/install-vm' },
                         { text: '系统配置', link: '/algorithm/linux/setup-environment' },
                         { text: 'Linux基础', link: '/algorithm/linux/basics' },
                         { text: '使用SSH连接', link: '/algorithm/linux/ssh' }
