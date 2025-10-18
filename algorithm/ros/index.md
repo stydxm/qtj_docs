@@ -1,13 +1,13 @@
 # ROS介绍
 
 ::: warning 警告
-这里介绍的ROS是robot operating system，不是router os
+这里介绍的ROS是robot operating system，不是router os ~~哎怎么还有软路由玩家~~
 
 router os是用于路由器的操作系统，两者除了名字像之外没有任何关系，找资料的时候不要搞错了
 :::
 
 ## 什么是ROS
-ROS虽然名字里带`operating system`，但它不是系统，是一些软件库和工具的集合
+ROS虽然名字里带`operating system`，但它不是真正的操作系统，是一些软件库和工具的集合
 
 它是一种中间件，诞生的目的是解决机器人各个组件之间的通信问题
 
@@ -28,9 +28,9 @@ ROS虽然名字里带`operating system`，但它不是系统，是一些软件�
 
 而且图像信息等数据量大的，还要考虑进程间通信的性能问题，代码编写时也更复杂
 
-面对这样的情况，在2007年有人写出了ROS，由它来处理不同组件之间的通信，开发者只需要定义数据格式，然后关注各组件本身就可以了
+面对这样的情况，斯坦福大学的两位博士生 Eric Berger 和 Keenan Wyrobek在2007年编写并公开发布了ROS，由它来处理不同组件之间的通信，开发者只需要定义数据格式，然后关注各组件本身就可以了
 
-[^1]: 这里说的是`像ROS`，那么其实能达到相同功能的软件并不只这一个，比如dora和yarp等。很显然别的生态都远不如ros，技术选型时完全不会考虑
+[^1]: 这里说的是`像ROS`，因为其实能达到相同功能的软件并不只这一个，比如dora和yarp等。很显然别的生态都远不如ros，技术选型时还不会考虑它
 
 ## ROS2
 ROS经过多年发展之后，代码越来越臃肿，当初架构的弊端也开始不断显现，于是开发者们完全重构了ROS，在2015年推出了ROS2
@@ -41,16 +41,15 @@ ROS2与ROS1的区别很大，找资料的时候请注意[^2]，**完全没有必
 
 ROS的大版本号由两个单词组成，一般是一个形容词加动物名，但一般叫的时候只会写第一个单词，就是那个形容词，随着版本发布，还会有一张漫画风格的画作为logo，画中会有ros的吉祥物乌龟~~有点像忍者神龟？~~
 
-目前最新的版本是jazzy(`Jazzy Jalisco`)，但最流行的是humble(`Humble Hawksbill`)，更早的foxy和dashing基本只有那时候的代码在用了
+目前最新的版本是jazzy(`Jazzy Jalisco`)，仍然在维护的LTS还有humble(`Humble Hawksbill`)，更早的foxy和dashing基本只有那时候的代码在用了
 
 要注意noetic melodic kinetic等也有可能见到，但这些都是ros1的
 
 目前ros的发行策略是每年发布一个大版本，隔一年的版本为LTS即长支持版本，会有五年的支持，非LTS则是到次年底
 
-现在还在维护的是jazzy iron humble，其中jazzy和humble是LTS版本，我们推荐使用humble
-
 |ROS2版本代号[^3]|发布时间|
 |:-:|:-:|
+|Kilted Kaiju|2025.5.23|
 |Jazzy Jalisco|2024.5.23|
 |Iron Irwini|2023.5.23|
 |Humble Hawksbill|2022.5.23|
@@ -64,7 +63,7 @@ ROS的大版本号由两个单词组成，一般是一个形容词加动物名�
 
 [^3]: https://docs.ros.org/en/jazzy/Releases.html
 
-ros1目前仅剩最后一个版本仍在维护，到2025年也将终止
+ros1目前所有的版本均已停止维护，不再建议任何人使用
 
 |ROS1版本代号[^4]|发布时间|
 |:-:|:-:|

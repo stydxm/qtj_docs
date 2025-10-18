@@ -29,7 +29,7 @@ target_link_libraries(first_node rclcpp::rclcpp)
 ```
 :::
 
-这里编辑器或者IDE应该会因为缺头文件而报错，可以不管，直接用命令行编译，或者把`/opt/ros/humble/include/rclcpp/`和`/opt/ros/humble/lib/`目录加到编辑器设置查找头文件的目录里
+这里编辑器或者IDE应该会因为缺头文件而报错，可以不管，直接用命令行编译，或者把`/opt/ros/jazzy/include/rclcpp/`和`/opt/ros/jazzy/lib/`目录加到编辑器设置查找头文件的目录里
 
 
 ## 再用Python写一个
@@ -42,7 +42,7 @@ rclpy.init()
 rclpy.spin(Node("second_node"))
 ```
 
-同样的，编辑器大概率也找不到库，在意的话加`/opt/ros/humble/lib/python3.10/site-packages`和`/opt/ros/humble/local/lib/python3.10/dist-packages`目录
+同样的，编辑器大概率也找不到库，在意的话加`/opt/ros/jazzy/lib/python3.10/site-packages`和`/opt/ros/jazzy/local/lib/python3.10/dist-packages`目录
 
 ## 运行节点
 把这两个节点**分别**、**同时**运行起来，然后再另开一个终端

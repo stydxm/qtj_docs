@@ -7,13 +7,13 @@
 
 ``` bash
 # 添加公钥和软件源
-sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] https://mirrors.ustc.edu.cn/ros2/ubuntu jammy main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
+sudo curl -sSL https://mirrors.ustc.edu.cn/rosdistro/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://mirrors.ustc.edu.cn/ros2/ubuntu $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
 
 # 安装并启用
 sudo apt update
-sudo apt install -y ros-humble-desktop python3-rosdep ros-humble-rqt rviz python3-colcon-ros
-echo 'source /opt/ros/humble/setup.bash' >> ~/.bashrc
+sudo apt install -y ros-jszzy-desktop python3-rosdep ros-jazzy-rqt ros-jazzy-rviz2 python3-colcon-ros
+echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 
 # 手动rosdep换源
@@ -36,7 +36,7 @@ echo 'export ROSDISTRO_INDEX_URL=https://mirrors.ustc.edu.cn/rosdistro/index-v4.
 
 ``` bash
 sudo apt update
-sudo apt install ros-humble-turtlesim
+sudo apt install ros-jazzy-turtlesim
 ```
 
 安装完成后，再输入`ros2 pkg executables turtlesim`，命令窗口内应该会显示

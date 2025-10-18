@@ -1,6 +1,6 @@
 # ROS2服务通信
 
-官方文档链接：[了解服务](https://fishros.org/doc/ros2/humble/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html)
+官方文档链接：[了解服务](https://fishros.org/doc/ros2/jazzy/Tutorials/Beginner-CLI-Tools/Understanding-ROS2-Services/Understanding-ROS2-Services.html)
 ## 1. 服务的概念
 ### 1.1 概念介绍
 服务分为客户端和服务端，平时我们用的手机APP都可以成为客户端，而APP服务器对于软件来说就是服务端。
