@@ -12,7 +12,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-a
 
 # 安装并启用
 sudo apt update
-sudo apt install -y ros-jszzy-desktop python3-rosdep ros-jazzy-rqt ros-jazzy-rviz2 python3-colcon-ros
+sudo apt install -y ros-jazzy-desktop python3-rosdep ros-jazzy-rqt ros-jazzy-rviz2 python3-colcon-ros
 echo 'source /opt/ros/jazzy/setup.bash' >> ~/.bashrc
 source ~/.bashrc
 
