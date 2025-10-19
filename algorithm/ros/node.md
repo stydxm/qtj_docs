@@ -11,7 +11,7 @@
 C++的客户端API，即rclcpp的文档，请参考[这里](https://docs.ros2.org/latest/api/rclcpp/)
 
 ::: code-group
-``` cpp [first-node.cpp] {4-5}
+``` cpp [first_node.cpp] {4-5}
 #include "rclcpp/rclcpp.hpp"
 
 int main(int argc, char *argv[]) {
