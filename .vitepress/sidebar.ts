@@ -40,8 +40,7 @@ export const sidebar = {
                         { text: '基础概念', link: '/algorithm/linux/' },
                         { text: '安装系统', link: '/algorithm/linux/install-vm' },
                         { text: '系统配置', link: '/algorithm/linux/setup-environment' },
-                        { text: 'Linux基础', link: '/algorithm/linux/basics' },
-                        { text: '使用SSH连接', link: '/algorithm/linux/ssh' }
+                        { text: 'Linux基础', link: '/algorithm/linux/basics' }
                     ]
                 },
                 {
@@ -103,7 +102,8 @@ export const sidebar = {
             text: '其他', items: [
                 { text: '优秀RM开源项目', link: '/algorithm/open-sources' },
                 { text: '优秀学习资料', link: '/algorithm/resources' },
-                { text: '与其他工种协作', link: '/algorithm/others' }
+                { text: '与其他工种协作', link: '/algorithm/others' },
+                { text: '使用SSH连接', link: '/algorithm/linux/ssh' }
             ]
         },
         {
