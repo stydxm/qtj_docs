@@ -90,8 +90,9 @@ export const sidebar = {
                     ]
                 },
                 {
-                    text: 'Docker与容器化技术', link: '/algorithm/docker/', collapsed: true, items: [
-                        { text: '基础概念', link: '/algorithm/docker/' },
+                    text: '容器化技术与Docker', link: '/algorithm/docker/', collapsed: true, items: [
+                        { text: '容器化技术介绍', link: '/algorithm/docker/' },
+                        { text: '基础概念', link: '/algorithm/docker/basics' },
                         { text: '安装和使用', link: '/algorithm/docker/usage' },
                         { text: '构建镜像', link: '/algorithm/docker/build' }
                     ]

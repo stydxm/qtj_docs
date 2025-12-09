@@ -1,4 +1,4 @@
-# 基础概念
+# 容器化技术介绍
 ## 容器化
 容器化是一种极轻量化的虚拟化技术，主要原理是建立一个虚拟的文件系统，挂载到宿主机的内核上，以此在无性能损耗的前提下完全隔离[^1]环境与权限
 
@@ -40,4 +40,6 @@ Docker是容器化技术最常见、最流行的实现方式。虽然一定意�
 k8s主要用于管理调度服务器集群，我们不会用到它，但类似的容器编排工具如docker compose还是有可能应用到的
 :::
 
-除了Docker，还有Podman、cri-o等功能类似的工具，容器化领域在发展中逐渐形成了一些标准，比如Open Container Initiative提出的[OCI Image Format](https://github.com/opencontainers/image-spec)使得不同的容器运行时可以使用相同的镜像，Kubernetes提出的[Container Runtime Interface](https://kubernetes.io/docs/concepts/containers/cri/)使我们可以用相同的API控制这些不同的容器运行时。容器化领域其实是标准化程度相当高的
+除了Docker，还有Podman、cri-o等功能类似的工具，容器化领域在发展中逐渐形成了一些标准，比如Open Container Initiative提出的[OCI Image Format](https://github.com/opencontainers/image-spec)使得不同的容器运行时可以使用相同的镜像，Kubernetes提出的[Container Runtime Interface](https://kubernetes.io/docs/concepts/containers/cri/)使我们可以用相同的API控制这些不同的容器运行时
+
+虽然本部分后面的内容全部以Docker为例，但是因为容器化领域标准化程度相当高，很多操作、镜像等其实在其他容器运行时中也可以通用
