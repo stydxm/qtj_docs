@@ -39,7 +39,7 @@
 然后[再点这里下载拓展包](https://mirrors.bfsu.edu.cn/virtualbox/7.2.2/Oracle_VirtualBox_Extension_Pack-7.2.2.vbox-extpack)，下载完成后双击打开即可完成安装
 
 ## 下载系统镜像
-浏览器直接打开[这个链接](https://mirrors.ustc.edu.cn/ubuntu-releases/noble/ubuntu-24.04.3-desktop-amd64.iso)，然后等下载完成就行
+浏览器直接打开[这个链接](https://mirrors.ustc.edu.cn/ubuntu-releases/noble/ubuntu-24.04.4-desktop-amd64.iso)，然后等下载完成就行
 
 ::: info 说明
 本页写于2024.4.23，此时距24.04LTS发布还有两天
