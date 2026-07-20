@@ -61,9 +61,10 @@ int main(int argc, char **argv)
 }
 ```
 
-:::tips 提示
+:::tip 提示
 此时代码报错没关系，因为编辑器的扩展C/C++插件还没有定位到rclcpp库，所以找不到头文件。
 :::
+
 我们需要在C/C++配置中添加rclcpp头文件路径。
 
 ```json
@@ -86,7 +87,6 @@ int main(int argc, char **argv)
 }
 ```
 
-:::
 
 ### 在CMakeLists.txt中注册节点
 一般来说节点是一个可执行文件，所以我们需要在CMakeLists.txt中注册节点。

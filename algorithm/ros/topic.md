@@ -75,7 +75,7 @@ uint8 phone_type
 ```
 ### 2.2 修改CMakeLists.txt
 在more_interfaces包中，打开CMakeLists.txt文件，添加以下内容：
-```cmake {12-15}
+```cmake
 cmake_minimum_required(VERSION 3.8)
 project(more_interfaces)
 
@@ -87,11 +87,11 @@ endif()
 find_package(ament_cmake REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
-# 生成接口// [!code focus]
-rosidl_generate_interfaces(${PROJECT_NAME}// [!code focus]
-  "msg/AddressBook.msg"#此处为自定义接口.msg// [!code focus]
-  DEPENDENCIES builtin_interfaces// [!code focus]
-)// [!code focus]
+# 生成接口 // [!code focus:5]
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/AddressBook.msg" #此处为自定义接口.msg
+  DEPENDENCIES builtin_interfaces
+)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -110,19 +110,19 @@ ament_package()
 ```
 ### 2.3 修改package.xml
 在话题消息接口文件夹下package.xml中添加以下内容：
-```xml {13}
+```xml {12}
 <?xml version="1.0"?>
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>more_interfaces</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>Package description</description>
   <maintainer email="wushidong_robotics@163.com">shidong</maintainer>
   <license>all rights reserved</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
-  <member_of_group>rosidl_interface_packages</member_of_group>// [!code focus]
+  <member_of_group>rosidl_interface_packages</member_of_group>
 
   <depend>rosidl_default_generators</depend>
   <depend>builtin_interfaces</depend>
@@ -134,8 +134,8 @@ ament_package()
     <build_type>ament_cmake</build_type>
   </export>
 </package>
-
 ```
+
 ### 2.4 编译消息接口功能包
 在工作空间目录下，输入以下命令编译功能包：
 ```bash
