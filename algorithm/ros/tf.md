@@ -455,7 +455,7 @@ world
 
 - `Show Names`：显示坐标系名称
 - `Show Axes`：显示每个坐标系的XYZ轴
-- `Show Arrows`：显示父子坐标系之间的箭头
+- `Show Arrows`：显示父子坐标系之间的箭头(*Rviz2里默认是子坐标系原点指向父坐标系原点哦*)
 - `Marker Scale`：调整坐标轴和文字大小
 - `Frames`：单独隐藏或显示某个坐标系
 
