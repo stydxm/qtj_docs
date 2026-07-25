@@ -27,6 +27,20 @@ Linux使用可以[装deb包](https://ghfast.top/github.com/localsend/localsend/r
 - 如果扫描不到，在上方地址栏手动输入`\\192.168.1.4`，注意斜杠方向
 - 如果提示要输入用户名密码，用户名写`nobody`，密码留空
 
+如果能发现`MEMOSPACE`但win无法进入，建议检查win是否允许无凭据的SMB和匿名登录
+```powershell
+Get-SmbClientConfiguration |
+Select EnableInsecureGuestLogons, RequireSecuritySignature
+# 期望得到
+EnableInsecureGuestLogons RequireSecuritySignature
+------------------------- ------------------------
+True                      False
+
+# 否则，强制允许，然后再次尝试连接NAS
+Set-SmbClientConfiguration -EnableInsecureGuestLogons $true -Force
+Set-SmbClientConfiguration -RequireSecuritySignature $false
+```
+
 <!-- ## 公网连接
 ::: warning 注意
 仅供不在实验室时使用，在实验室内请直接使用内网连接，否则所有人挤小水管，会很慢很慢……

@@ -1,7 +1,7 @@
 # TF 树
 
 ## 用ROS不就是为了这种方便么
-机器人学不是一朝一夕能练成的，但算法之路亦有捷径，好歹不用像电控一样手写状坐标变换代码(其实永远逃不过)，因为ROS2自带的TF2已经帮我们造好轮子了。  
+机器人学不是一朝一夕能练成的，但算法之路亦有捷径，好歹不用像电控一样手写状态坐标变换代码(其实永远逃不过)，因为ROS2自带的TF2已经帮我们造好轮子了。  
 关于坐标转换的功能大部分都能开箱即用   
 * 维护坐标系关系
 ```text
@@ -119,7 +119,7 @@ tf_demo
 
 在`tf_demo/src`中创建`dynamic_broadcaster.cpp`和`tf_listener.cpp`(监听节点)
 
-::: code-grop
+::: code-group
 ```cpp [tf_demo/src/dynamic_broadcaster.cpp]
 #include <chrono>
 #include <cmath>
