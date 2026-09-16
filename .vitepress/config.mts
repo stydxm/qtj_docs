@@ -5,12 +5,12 @@ import { icons } from './icons'
 import { sidebar } from './sidebar'
 
 export default {
-  title: "浙理钱塘蛟",
-  description: "浙江理工大学RoboMaster战队",
+  title: "钱塘蛟战队",
+  description: "我校唯一 RoboMaster 战队",
   head: [
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:title', content: '浙理钱塘蛟' }],
-    ['meta', { property: 'og:description', content: '浙江理工大学 RoboMaster 战队' }],
+    ['meta', { property: 'og:title', content: '钱塘蛟战队' }],
+    ['meta', { property: 'og:description', content: '我校唯一 RoboMaster 战队' }],
     ['meta', { property: 'og:image', content: 'https://docs.015609.best/logo.png' }],
     // ['script', { async: '', src: "/global.js" }]
   ],

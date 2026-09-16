@@ -6,7 +6,7 @@
 关于git的使用，请看[后续章节](learn-git)
 
 ::: warning 重要
-git和github是完全不同的概念，就好像高数之于浙理，浙理教高数但不高数并非浙理专有
+git和github是完全不同的概念，就好像高数之于浙理，浙理教高数但高数并非浙理专有
 
 可以[点此](https://www.bilibili.com/video/BV1uZ421S79B)感受我的情绪，**但不要跟他学java**
 :::

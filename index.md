@@ -5,7 +5,7 @@ layout: home
 hero:
   name: 钱塘蛟
   text: 技术文档
-  tagline: 浙江理工大学 RoboMaster 战队
+  tagline: 我校唯一 RoboMaster 战队
   image:
     src: ./logo.png
   actions:
