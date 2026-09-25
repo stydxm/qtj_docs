@@ -46,7 +46,7 @@ python的包管理工具还有PDM和Poetry，使用率都远不及pip
 和apt相同，我们先换个源
 
 ```bash
-pip3 config set global.index-url https://mirror.nju.edu.cn/pypi/web/simple
+pip3 config set global.index-url https://mirrors.ustc.edu.cn/pypi/web/simple
 ```
 
 ### 安装新的包
