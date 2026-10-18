@@ -58,7 +58,7 @@ sudo apt -y install python3 python3-pip python3-venv python3-opencv python-is-py
 安装完成后输入
 
 ``` bash
-python --version
+python3 --version
 ```
 
 如果显示`Python 3.12.3`，那说明已经正常安装里

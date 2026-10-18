@@ -19,7 +19,7 @@ sudo apt install -y python3 python3-pip python3-venv python3-opencv python-is-py
 理论上说装好了的话，输入
 
 ``` bash
-python --version
+python3 --version
 ```
 
 会显示`Python 3.10.12`
