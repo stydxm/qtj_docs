@@ -32,11 +32,11 @@
 
 我们推荐的虚拟机软件是VirtualBox。这一方面是因为它是开源软件，同时VMWare被broadcom收购后下载、授权方式发生了比较大的变化
 
-[点击这里下载](https://mirrors.bfsu.edu.cn/virtualbox/7.2.2/VirtualBox-7.2.2-170484-Win.exe)VirtualBox软件本体
+[点击这里下载](https://mirrors.zju.edu.cn/virtualbox/7.2.2/VirtualBox-7.2.2-170484-Win.exe)VirtualBox软件本体
 
 下载完直接双击打开，一路下一步完成安装
 
-然后[再点这里下载拓展包](https://mirrors.bfsu.edu.cn/virtualbox/7.2.2/Oracle_VirtualBox_Extension_Pack-7.2.2.vbox-extpack)，下载完成后双击打开即可完成安装
+然后[再点这里下载拓展包](https://mirrors.zju.edu.cn/virtualbox/7.2.2/Oracle_VirtualBox_Extension_Pack-7.2.2.vbox-extpack)，下载完成后双击打开即可完成安装
 
 ## 下载系统镜像
 浏览器直接打开[这个链接](https://mirrors.ustc.edu.cn/ubuntu-releases/noble/ubuntu-24.04.4-desktop-amd64.iso)，然后等下载完成就行
