@@ -68,12 +68,12 @@ export const sidebar = {
                     ]
                 },
                 {
-                    text: '网络基础（选修）', link: '/algorithm/network/', collapsed: true, items: [
-                        { text: '网络基础与连接路径', link: '/algorithm/network/' },
-                        { text: '用 Linux 查看网络与 IPv4', link: '/algorithm/network/observe-ip' },
-                        { text: 'DHCP、网关与路由器', link: '/algorithm/network/dhcp-gateway' },
-                        { text: 'NAT、DNS、ISP 与公网访问', link: '/algorithm/network/internet' },
-                        { text: '虚拟机桥接与 NoMachine 远控', link: '/algorithm/network/virtual-remote' }
+                    text: '网络基础（选择性必修）', link: '/algorithm/network/', collapsed: true, items: [
+                        { text: '网络基础', link: '/algorithm/network/' },
+                        { text: '查看网络', link: '/algorithm/network/observe-ip' },
+                        { text: '网络自动配置', link: '/algorithm/network/dhcp-gateway' },
+                        { text: '网络访问', link: '/algorithm/network/internet' },
+                        { text: '桥接与远控', link: '/algorithm/network/virtual-remote' }
                     ]
                 },
                 {
